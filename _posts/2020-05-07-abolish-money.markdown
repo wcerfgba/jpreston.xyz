@@ -33,11 +33,11 @@ If you have any feedback or counter-arguments to these ideas, please write to me
 
 ## References
 
-[1] [Money, functions of - Wikipedia](https://en.wikipedia.org/w/index.php?title=Money&oldid=952636531#Functions) \
-[2] [Theory of value (economics) - Wikipedia](https://en.wikipedia.org/w/index.php?title=Theory_of_value_(economics)&oldid=938808471) \
-[3] [Gift economy - Wikipedia](https://en.wikipedia.org/w/index.php?title=Gift_economy&oldid=954340153) \
-[4] [Hyperinflation - Wikipedia](https://en.wikipedia.org/w/index.php?title=Hyperinflation&oldid=954064898) \
-[5] [Free-rider problem - Wikipedia](https://en.wikipedia.org/w/index.php?title=Free-rider_problem&oldid=954833169) \
-[6] [Calculation in kind - Wikipedia](https://en.wikipedia.org/w/index.php?title=Calculation_in_kind&oldid=948081948) \
-[7] [Artificial scarcity - Wikipedia](https://en.wikipedia.org/w/index.php?title=Artificial_scarcity&oldid=944371219) \
+[1] [Money, functions of - Wikipedia](https://en.wikipedia.org/w/index.php?title=Money&oldid=952636531#Functions)  
+[2] [Theory of value (economics) - Wikipedia](https://en.wikipedia.org/w/index.php?title=Theory_of_value_(economics)&oldid=938808471)  
+[3] [Gift economy - Wikipedia](https://en.wikipedia.org/w/index.php?title=Gift_economy&oldid=954340153)  
+[4] [Hyperinflation - Wikipedia](https://en.wikipedia.org/w/index.php?title=Hyperinflation&oldid=954064898)  
+[5] [Free-rider problem - Wikipedia](https://en.wikipedia.org/w/index.php?title=Free-rider_problem&oldid=954833169)  
+[6] [Calculation in kind - Wikipedia](https://en.wikipedia.org/w/index.php?title=Calculation_in_kind&oldid=948081948)  
+[7] [Artificial scarcity - Wikipedia](https://en.wikipedia.org/w/index.php?title=Artificial_scarcity&oldid=944371219)  
 [8] [Substitute good, perfect and imperfect - Wikipedia](https://en.wikipedia.org/w/index.php?title=Substitute_good&oldid=943193072#Perfect_and_imperfect_substitutes)
