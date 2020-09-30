@@ -77,3 +77,10 @@ a:any-link {
   list-style: none;
   padding: 0;
 }
+
+
+.flex { display: flex; }
+.flex-row { flex-direction: row; }
+.flex-nowrap { flex-wrap: nowrap; }
+
+.margin-right-0-5 { margin-right: 0.5rem; }
