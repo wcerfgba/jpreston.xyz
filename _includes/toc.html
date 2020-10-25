@@ -1,14 +1,16 @@
 {% assign posts = site.posts %}
 {%- if posts.size > 0 -%}
-  <ul class="post-list">
+  <table class="post-list">
     {%- assign date_format = "%Y-%m-%d" -%}
     {%- for post in posts -%}
-    <li class="flex flex-row flex-nowrap">
-      <span class="post-meta margin-right-0-5">{{ post.date | date: date_format }} </span>
-      <a class="post-link" href="{{ post.url | relative_url }}">
-        {{ post.title | escape }}
-      </a>
+    <tr>
+      <td class="post-meta padding-right-0-5">{{ post.date | date: date_format }}</td>
+      <td>
+        <a class="post-link" href="{{ post.url | relative_url }}">
+          {{ post.title | escape }}
+        </a>
+      </td>
     </li>
     {%- endfor -%}
-  </ul>
+  </table>
 {%- endif -%}
