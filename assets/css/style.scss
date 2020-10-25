@@ -84,3 +84,22 @@ a:any-link {
 .flex-nowrap { flex-wrap: nowrap; }
 
 .padding-right-0-5 { padding-right: 0.5rem; }
+
+img {
+  max-width: 100%;
+}
+
+tr {
+  vertical-align: top;
+}
+
+td {
+  padding: 0;
+}
+
+
+.superscript {
+  font-size: 0.7em;
+  position: relative;
+  top: -0.5em;
+}

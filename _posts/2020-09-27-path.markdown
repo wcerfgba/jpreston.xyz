@@ -1,0 +1,6 @@
+---
+layout: post
+title: Path
+---
+
+[![](/assets/img/path_small.jpg)](/assets/img/path.jpg)

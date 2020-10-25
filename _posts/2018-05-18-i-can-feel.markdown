@@ -1,0 +1,62 @@
+---
+layout: post
+title: I CAN FEEL
+---
+
+<style>
+  canvas {
+    position: absolute;
+  }
+
+  .container {
+    width: 100%
+  }
+
+  .container:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+</style>
+
+<div class="container">
+  <canvas></canvas>
+</div>
+
+<script>
+  const omega = [ 1009, 997, 991, 983, 977, 971, 967, 953, 947, 941, 937, 929, 919, 911, 907, 887, 883, 881, 877, 863, 859, 857, 853, 839, 829, 827, 823, 821, 811, 809, 797, 787, 773, 769, 761, 757, 751, 743, 739, 733, 727, 719, 709, 701, 691, 683, 677, 673, 661, 659, 653, 647, 643, 641, 631, 619, 617, 613, 607, 601, 599, 593, 587, 577, 571, 569, 563, 557, 547, 541, 523, 521, 509, 503, 499, 491, 487, 479, 467, 463, 461, 457, 449, 443, 439, 433, 431, 421, 419, 409, 401, 397, 389, 383, 379, 373, 367, 359, 353, 349, 347, 337, 331, 317, 313, 311, 307, 293, 283, 281, 277, 271, 269, 263, 257, 251, 241, 239, 233, 229, 227, 223, 211, 199, 197, 193, 191, 181, 179, 173, 167, 163, 157, 151, 149, 139, 137, 131, 127, 113, 109, 107, 103, 101, 97, 89, 83, 79, 73, 71, 67, 61, 59, 53, 47, 43, 41, 37, 31, 29, 23, 19, 17, 13, 11, 7, 5, 3, 2 ]
+  const n = Math.floor(Math.sqrt(omega.length))
+  const theta = [ 940, 388, 364, 823, 796, 284, 268, 688, 188, 164, 616, 580, 535, 499, 28, 835, 373, 805, 785, 283, 695, 256, 665, 175, 545, 121, 103, 505, 455, 40, 385, 335, 651, 629, 585, 185, 530, 115, 464, 431, 35, 714, 299, 606, 546, 156, 462, 101, 366, 24, 318, 605, 579, 246, 186, 423, 410, 78, 345, 6, 293, 551, 215, 439, 111, 383, 341, 299, 229, 187, 61, 47, 472, 424, 392, 328, 296, 232, 136, 335, 318, 56, 216, 165, 351, 80, 63, 189, 380, 81, 9, 370, 95, 230, 190, 316, 70, 349, 106, 239, 217, 275, 41, 204, 156, 287, 237, 209, 220, 193, 1, 58, 31, 82, 126, 165, 15, 224, 11, 64, 32, 79, 198, 181, 44, 67, 29, 110, 159, 33, 74, 67, 11, 24, 50, 83, 99, 2, 19, 16, 51, 91, 5, 36, 86, 49, 52, 34, 50, 21, 18, 60, 58, 4, 19, 12, 8, 26, 27, 25, 11, 10, 4, 1, 8, 5, 0, 0, 0 ]
+  const canvas = document.querySelector('canvas')
+  const resize = () => {
+    canvas.width = canvas.parentElement.clientWidth
+    canvas.height = canvas.parentElement.clientHeight
+  }
+  resize()
+  window.addEventListener('resize', resize)
+  const ctx = canvas.getContext('2d')
+  const w = canvas.width / n
+  const x = (i) => canvas.width * (i % n) / n
+  const y = (i) => canvas.height * Math.floor(i / n) / n
+  const animate = () => {
+    for (let i = 0; i < omega.length; i++) {
+      theta[i] = (theta[i] + 1) % omega[i]
+      const c = Math.floor(255 * (theta[i] / omega[i])) % 255
+      ctx.fillStyle = `rgb(${c}, ${c}, ${c})`
+      ctx.fillRect(x(i), y(i), w, w)
+    }
+    requestAnimationFrame(animate)
+  }
+  animate()
+</script>
+
+This art piece is composed of a 13 x 13 grid of squares, each of which changes between black and white at a set rate. The frequency of each oscillator is chosen such that the grid will eventually produce every 13 x 13 black and white picture, before looping. This takes approximately 10<span class="superscript">409</span> years.
+
+The initial state of the oscillators has been chosen such that after approximately 60 seconds, the eponymous phrase _I CAN FEEL_ appears in the image.
+
+_I CAN FEEL_ invites us to observe the chaotic output of a mathematical system and find something meaningful. A set of lights becomes a writing system, a phrase, an emotional self-recognition.
+
+This meaningful image is just one shard in a vast library of meaningless arrangements of squares. As we continue to watch the piece, we can recognise smaller patterns in the pixels. One might consider what shapes our concept of 'meaning' to be so specific.
+
+
+It is important to consider that the system of oscillators is not aware of its own arrangement: if we rearranged the squares into a line or circle, each square would continue to change at the same rate, and the eponymous pattern would not appear. This raises questions around machine sentience: if a machine is sentient but not aware of how it is structured and perceived by human operators, how could it signal its sentience to us?
