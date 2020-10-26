@@ -74,7 +74,7 @@ a:any-link {
 }
 
 .post-list {
-  list-style: none;
+  table-layout: fixed;
   padding: 0;
 }
 
@@ -84,6 +84,8 @@ a:any-link {
 .flex-nowrap { flex-wrap: nowrap; }
 
 .padding-right-0-5 { padding-right: 0.5rem; }
+
+.white-space-nowrap { white-space: nowrap; }
 
 img {
   max-width: 100%;
