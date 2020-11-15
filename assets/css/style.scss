@@ -44,6 +44,7 @@ small, .text_small {font-size: 0.8em;}
 pre, code {
   font-family: monospace;
   background: $grey;
+  overflow-x: auto;
 }
 
 
