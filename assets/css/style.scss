@@ -5,41 +5,98 @@ $black: #333;
 $grey: #eee;
 $white: #fbfbfb;
 
-html {font-size: 100%;} /*16px*/
+html {
+  font-size: 16px;
+  line-height: 26px;
+}
 
 body {
-  background-color: $white;
-  font-family: 'Merriweather', serif;
+  font-family: sans-serif;
+  font-family: 'Merriweather';
   font-weight: 400;
-  line-height: 1.65;
+  font-size: 1em;
+  line-height: 1.625em;
+  background-color: $white;
   color: $black;
   margin: 1rem;
 }
 
-p {margin-bottom: 1.15rem;}
-
-h1, h2, h3, h4, h5 {
-  margin: 2.75rem 0 1.05rem;
-  font-family: 'Merriweather', serif;
+h1, .h1 {
   font-weight: 400;
-  line-height: 1.15;
+  font-size: 3.0625em;
+  line-height: 1.06122448em;
+  margin-top: 0em;
+  margin-bottom: 1.06122448em;
 }
 
-h1 {
-  margin-top: 0;
-  font-size: 3.052em;
+h2, .h2 {
+  font-weight: 400;
+  font-size: 2.4375em;
+  line-height: 0.66666667em;
+  margin-top: 0em;
+  margin-bottom: 0.66666667em;
 }
 
-h2 {font-size: 1.953em;}
+h3, .h3 {
+  font-weight: 400;
+  font-size: 1.9375em;
+  line-height: 0.83870968em;
+  margin-top: 0em;
+  margin-bottom: 0.83870968em;
+}
 
-h3 {font-size: 1.953em;}
+h4, .h4 {
+  font-weight: 400;
+  font-size: 1.5625em;
+  line-height: 1.04em;
+  margin-top: 0em;
+  margin-bottom: 1.04em;
+}
 
-h4 {font-size: 1.563em;}
+h5, .h5 {
+  font-weight: 400;
+  font-size: 1.25em;
+  line-height: 1.3em;
+  margin-top: 0em;
+  margin-bottom: 1.3em;
+}
 
-h5 {font-size: 1.25em;}
+p, ul, ol, pre, table, blockquote  {
+  margin-top: 1.625em;
+  margin-bottom: 1.625em;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+/* Let's make sure all's aligned */
+hr, .hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+
+a, b, i, strong, em, small, code {
+  line-height: 0;
+}
+
+sub, sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
 
 small, .text_small {font-size: 0.8em;}
-
 
 pre, code {
   font-family: monospace;
@@ -92,6 +149,10 @@ img {
   max-width: 100%;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 tr {
   vertical-align: top;
 }
@@ -100,5 +161,3 @@ td {
   padding: 0;
   vertical-align: top;
 }
-
-
