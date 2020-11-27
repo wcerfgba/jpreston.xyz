@@ -7,7 +7,7 @@ $white: #fbfbfb;
 
 html {
   font-size: 16px;
-  line-height: 26px;
+  line-height: 28px;
 }
 
 body {
@@ -15,7 +15,7 @@ body {
   font-family: 'Merriweather';
   font-weight: 400;
   font-size: 1em;
-  line-height: 1.625em;
+  line-height: 1.75em;
   background-color: $white;
   color: $black;
   margin: 1rem;
@@ -24,46 +24,46 @@ body {
 h1, .h1 {
   font-weight: 400;
   font-size: 3.0625em;
-  line-height: 1.06122448em;
+  line-height: 1.14285714em;
   margin-top: 0em;
-  margin-bottom: 1.06122448em;
+  margin-bottom: 1.14285714em;
 }
 
 h2, .h2 {
   font-weight: 400;
   font-size: 2.4375em;
-  line-height: 0.66666667em;
+  line-height: 1.43589744em;
   margin-top: 0em;
-  margin-bottom: 0.66666667em;
+  margin-bottom: 0.71794872em;
 }
 
 h3, .h3 {
   font-weight: 400;
   font-size: 1.9375em;
-  line-height: 0.83870968em;
+  line-height: 1.80645162em;
   margin-top: 0em;
-  margin-bottom: 0.83870968em;
+  margin-bottom: 0.90322581em;
 }
 
 h4, .h4 {
   font-weight: 400;
   font-size: 1.5625em;
-  line-height: 1.04em;
+  line-height: 1.12em;
   margin-top: 0em;
-  margin-bottom: 1.04em;
+  margin-bottom: 1.12em;
 }
 
 h5, .h5 {
   font-weight: 400;
   font-size: 1.25em;
-  line-height: 1.3em;
+  line-height: 1.4em;
   margin-top: 0em;
-  margin-bottom: 1.3em;
+  margin-bottom: 1.4em;
 }
 
-p, ul, ol, pre, table, blockquote  {
-  margin-top: 1.625em;
-  margin-bottom: 1.625em;
+p, ul, ol, pre, table, blockquote {
+  margin-top: 1.75em;
+  margin-bottom: 1.75em;
 }
 
 ul ul, ol ol, ul ol, ol ul {
@@ -94,6 +94,7 @@ sup {
 sub {
   bottom: -0.25em;
 }
+
 
 
 small, .text_small {font-size: 0.8em;}
