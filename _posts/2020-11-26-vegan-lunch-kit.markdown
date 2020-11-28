@@ -150,11 +150,16 @@ And when I say 'whisk', what I mean is 'beat in a cup with a fork, which I then 
 ##### Satay
 
 * Peanut butter
+* Water
 * Soy sauce
 * Lime juice
 * (Optional) sriracha
 
-Mix to combine. I like more soy than lime. Lemon juice would probably work too but I have only tried lime and I like the sherberty tang that lime has which I find lacking in lemon -- that fruity sweetness pairs nicely with the peanuts.
+There is a bit of an art to making satay sauce, for two reasons: first, peanut is a very strong flavour and it can be quite intense, and second, peanut butter and water do not naturally mix. The trick to a good satay is to add a bit of water first to loosen the peanut butter and dilute the flavour, before adding the other ingredients.
+
+Start with one heaped teaspoon of peanut butter per portion, and add one teaspoon of water. Mix the peanut butter into the water using a mashing-smearing motion: you are effectively folding the water into the peanut butter by increasing the surface area of the peanut butter and trapping the water between the layers. It will take some time and at first it may seem like you are just granulating the peanut butter and sloshing water around, but keep at it and it will eventually combine.
+
+Once the initial water is incorporated, the peanut butter will take the other ingredients more easily. I like more soy than lime. Lemon juice would probably work too but I have only tried lime and I like the sherberty tang that lime has which I find lacking in lemon -- that fruity sweetness pairs nicely with the peanuts. Add as much water as you need to get the consistency and flavour intensity to your liking.
 
 ##### Other ideas
 
