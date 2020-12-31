@@ -70,6 +70,8 @@ During the breaks, the drums play a 3:2 polyrhythm on the cowbell and kick respe
 
 ### Harmony
 
+I identified the chords by first listening to the top, or melody, notes of the rhythm guitar -- I find it hard to hear any other notes inside the chords but the upper contour is quite easy to obtain. Once the upper notes are identified, I try to add an extra note below at intervals of fours, major thirds, or minor thirds, listening for consonance or dissonance, in an attempt to spell out the chord. Combined with chord charts for guitar from which we can determine the voicing of chords, I was eventually able to spell out each chord with its voicing. I found this to be great ear training and I've used this technique on a few other progressions since with some success.
+
 Blackjack is written in G Dorian. The A section chords for rhythm guitar follow a
 
 i - III - IV - ii7
