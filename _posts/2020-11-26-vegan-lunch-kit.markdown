@@ -90,7 +90,7 @@ Sauce is important because not only does it provide another layer of flavours to
   * Mustard
   * Lemon / lime juice
 
-I organise vegetables by colour and note the different ways they can be prepped so I can easily build a rainbow of veggies.
+I organise vegetables by colour so I can easily build a rainbow of veggies.
 
 Virtually every vegetable and fruit can be used to make a sauce: it either naturally forms a sauce when cooked (like tomatoes), or it can be cooked appropriately and mashed or blended into a purée. This also applies to many protein sources, particularly beans, seeds and nuts.
 
