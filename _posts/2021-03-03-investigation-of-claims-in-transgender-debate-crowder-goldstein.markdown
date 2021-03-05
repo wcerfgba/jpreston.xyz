@@ -16,7 +16,7 @@ The following is an analysis of the claims made and references provided in the v
 [C1] "National Survey of Sexual Health and Behavior" <https://web.archive.org/web/20180705165021/https://nationalsexstudy.indiana.edu/> \
 [C2] "Sexual and Physical Health After Sex Reassignment Surgery", Griet De Cuypere, Guy T’Sjoen, Ruth Beerten, et al. <https://sci-hub.tf/https://link.springer.com/article/10.1007/s10508-005-7926-5>
 
-The NSSHB website [C1] is very thin, containig only a few bullet points on the page. There are a number of publications listed originating from the project but I could not find any which looked directly relevant to Crowder's claim. If Crowder's claim originates from one of the papers, Crowder should have cited the paper directly. According to one article I have found [J1]:
+The NSSHB website [C1] is very thin, containing only a few bullet points on the page. There are a number of publications listed originating from the project but I could not find any which looked directly relevant to Crowder's claim. If Crowder's claim originates from one of the papers, Crowder should have cited the paper directly. According to one article I have found [J1]:
 
 > The Diagnostic and Statistical Manual of Mental Disorders, 5th edition, states that only 25% of men routinely achieve orgasm in all sexual encounters. According to the Diagnostic and Statistical Manual of Mental Disorders, 5th edition, the prevalence remains constant until age 50 years and then the rate steadily increases with men in their 80s complaining twice as much as men less than age 59 years.
 
