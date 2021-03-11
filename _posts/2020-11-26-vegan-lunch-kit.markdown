@@ -56,7 +56,6 @@ Sauce is important because not only does it provide another layer of flavours to
     * Beetroot
     * Red onion
     * Aubergine
-    * Beetroot
 * Fruit
   * Apple
   * Orange
