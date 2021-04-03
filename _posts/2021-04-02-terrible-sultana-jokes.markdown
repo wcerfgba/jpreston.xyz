@@ -33,6 +33,9 @@ Insultana
 What is the cheapest fruit? \
 Saletana
 
+What is the most litigious fruit? \
+Suetana
+
 What is the tangiest fruit? \
 Sourtana
 
