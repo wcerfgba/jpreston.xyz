@@ -7,8 +7,8 @@ I have finally perfected my burger recipe. The key is to ensure the final mixtur
 
 To make 8 burgers, combine:
 
-* 1-2 cups cooked beetroot, mashed
-* 1 cup raw oats
+* 1-2 cups or ~300g cooked beetroot, mashed
+* 1 ½ cup raw oats
 * 2 cups cooked red split lentils
 
 To cook the lentils, I start with 1 cup of raw lentils, add 1 1/2 cups water, bring to a boil, and then reduce to a low simmer for 20 minutes or until soft. You can cook the lentils until they go mushy, since everything will get mashed and mixed together anyway. Since there is not a lot of water for the lentils, some may get stuck to the bottom of your pan, but if you turn the heat off and let them cool for a while then you will be able to scrape everything off. Just make sure to stir a few times while cooking to prevent burning.
