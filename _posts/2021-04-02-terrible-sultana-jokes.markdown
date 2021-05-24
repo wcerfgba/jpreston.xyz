@@ -12,6 +12,9 @@ Soultana
 What is the grittiest fruit? \
 Siltana
 
+What is the smoothest fruit? \
+Silktana
+
 What is the saddest fruit? \
 Sulktana
 
