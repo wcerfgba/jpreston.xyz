@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Sriracha Marmite Cashews
 date: '2021-03-18'
 modified_at: '2021-03-18'

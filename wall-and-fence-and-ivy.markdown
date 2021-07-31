@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Wall and Fence and Ivy
 date: '2021-03-06'
 modified_at: '2021-03-06'

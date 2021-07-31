@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Vegan Lunch Kit
 date: '2020-11-26'
 modified_at: '2020-11-26'

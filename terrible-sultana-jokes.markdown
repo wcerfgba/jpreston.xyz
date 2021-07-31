@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Terrible Sultana Jokes
 date: '2021-04-02'
 modified_at: '2021-05-18'

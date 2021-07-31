@@ -1,13 +1,13 @@
-{% assign posts = site.posts %}
-{%- if posts.size > 0 -%}
-  <table class="post-list">
+{% assign pages = site.pages | sort: "date" | reverse %}
+{%- if pages.size > 0 -%}
+  <table class="page-list">
     {%- assign date_format = "%Y-%m-%d" -%}
-    {%- for post in posts -%}
+    {%- for page in pages -%}
     <tr>
-      <td class="post-meta padding-right-0-5 white-space-nowrap">{{ post.date | date: date_format }}</td>
+      <td class="page-meta padding-right-0-5 white-space-nowrap">{{ page.date | date: date_format }}</td>
       <td>
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
+        <a class="page-link" href="{{ page.url | relative_url }}">
+          {{ page.title | escape }}
         </a>
       </td>
     </tr>

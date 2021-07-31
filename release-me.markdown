@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Release Me
 date: '2021-02-22'
 modified_at: '2021-03-13'

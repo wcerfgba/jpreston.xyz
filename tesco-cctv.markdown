@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Tesco CCTV
 date: '2019-05-23'
 modified_at: '2020-10-25'

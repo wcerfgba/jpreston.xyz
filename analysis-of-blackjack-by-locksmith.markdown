@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: An Analysis of "Blackjack" by Locksmith
 date: '2020-12-31'
 modified_at: '2020-12-31'

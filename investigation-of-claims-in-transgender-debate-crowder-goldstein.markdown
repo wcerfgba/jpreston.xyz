@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: >-
   Investigation of Claims in "TRANSGENDER DEBATE: Crowder Argues Science vs.
   Julie Rei Goldstein | Louder With Crowder"

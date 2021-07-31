@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Mushroom Stroganoff
 date: '2020-03-13'
 modified_at: '2020-03-13'

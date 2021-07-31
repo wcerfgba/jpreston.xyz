@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: No Knead Dutch Oven Bread / Crumpet Loaf
 date: '2020-03-13'
 modified_at: '2020-03-13'

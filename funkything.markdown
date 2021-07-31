@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Funkything
 date: '2021-03-01'
 modified_at: '2021-03-01'

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: the-light-of-the.world
 date: '2019-05-20'
 modified_at: '2021-07-02'

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Building and Tree
 date: '2020-09-16'
 modified_at: '2020-09-16'

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Random Wall
 date: '2019-06-18'
 modified_at: '2020-10-25'

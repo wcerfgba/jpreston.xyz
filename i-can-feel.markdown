@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: I CAN FEEL
 date: '2018-05-18'
 modified_at: '2020-10-25'

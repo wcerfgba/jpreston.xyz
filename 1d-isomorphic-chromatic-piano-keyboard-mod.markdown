@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 1D Isomorphic Chromatic Piano Keyboard Mod
 date: '2021-01-30'
 modified_at: '2021-01-30'

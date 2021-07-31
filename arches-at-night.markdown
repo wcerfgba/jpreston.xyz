@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Arches at Night
 date: '2019-05-02'
 modified_at: '2020-10-25'

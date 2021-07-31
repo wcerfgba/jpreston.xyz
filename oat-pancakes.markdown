@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Oat Pancakes
 date: '2020-05-07'
 modified_at: '2020-05-07'
