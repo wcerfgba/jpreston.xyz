@@ -22,8 +22,21 @@ layout: default
      </p>
   </header>
 
+  {%- assign links = '' | split: '' -%}
+  {%- assign replaced_content = '' -%}
+  {%- assign content_array = content | split: '[[' -%}
+  {%- for item in content_array -%}
+    {%- assign item_parts = item | split: ']]' -%}
+    {%- if item_parts.size < 2 -%}
+      {%- assign replaced_content = replaced_content | append: item -%}
+    {%- else -%}
+      {%- assign link = site.url | append: '/' | append: item_parts[0] | append: '.html' -%}
+      {%- assign replaced_content = replaced_content | append: '<a href="' | append: link | append: '">' | append: link | append: '</a>' | append: item_parts[1] -%}
+      {%- assign links = links | push: item_parts[0] -%}
+    {%- endif -%}
+  {%- endfor -%}
   <div class="page-content e-content" itemprop="mainContentOfPage">
-    {{ content }}
+    {{ replaced_content }}
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
