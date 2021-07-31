@@ -2,7 +2,7 @@
 layout: page
 title: Gradient Resonance
 date: '2019-03-24'
-modified_at: '2020-10-25'
+last_modified_at: '2020-10-25'
 ---
 
 <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC|VT323" rel="stylesheet">

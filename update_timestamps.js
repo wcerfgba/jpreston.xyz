@@ -28,4 +28,4 @@ function updateFields(pattern, updates) {
 }
 
 updateFields("**/*.markdown", { "date": replaceCreatedAt,
-                                "modified_at": replaceModifiedAt });
+                                "last_modified_at": replaceModifiedAt });

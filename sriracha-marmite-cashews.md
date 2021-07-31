@@ -2,7 +2,7 @@
 layout: page
 title: Sriracha Marmite Cashews
 date: '2021-03-18'
-modified_at: '2021-03-18'
+last_modified_at: '2021-03-18'
 ---
 
 My colleague Carnun shared this great snack [[recipe]] with me, which combines three of my favourite things! I've gradually refined the recipe to get these just how I like them. Be careful, they are extremely moreish!

@@ -2,7 +2,7 @@
 layout: page
 title: Cream Spinach Pasta
 date: '2020-03-14'
-modified_at: '2020-03-14'
+last_modified_at: '2020-03-14'
 ---
 
 My partner came up with this [[recipe]] for a rich pasta sauce incorporating minced spinach.
