@@ -14,9 +14,11 @@ layout: default
     </p>
     <p class="page-meta">
       Last modified:
-      <time class="dt-modified" datetime="{{ page.modified_at | date_to_xmlschema }}" itemprop="dateModified">
-        {{ page.modified_at | date: date_format }}
-      </time>
+      <a href="https://github.com/wcerfgba/jpreston.xyz/commits/master/{{ page.path }}" target="_blank" rel="noopener">
+        <time class="dt-modified" datetime="{{ page.modified_at | date_to_xmlschema }}" itemprop="dateModified">
+          {{ page.modified_at | date: date_format }}
+        </time>
+      </a>
      </p>
   </header>
 
