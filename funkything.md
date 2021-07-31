@@ -7,4 +7,4 @@ modified_at: '2021-03-01'
 
 <audio controls="controls" src="/assets/audio/Funkything.mp3"></audio>
 
-Some jazz-funk.
+Some jazz-funk [[music]].

@@ -7,4 +7,4 @@ modified_at: '2021-02-09'
 
 <audio controls="controls" src="/assets/audio/Blue Flame.mp3"></audio>
 
-A modal jazz cover of the Fireman Sam theme.
+Some [[music]], a modal jazz cover of the Fireman Sam theme.

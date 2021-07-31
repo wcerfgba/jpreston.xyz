@@ -5,6 +5,8 @@ date: '2020-05-07'
 modified_at: '2020-05-07'
 ---
 
+A [[recipe]].
+
 If you're craving delicious pancakes but have no eggs, or if you're vegan, you can make great pancakes using oat flour. The natural stickiness of oats means that no additional binder is required. If you can't buy oat flour, you can just blend regular porridge oats, that's what I do!
 
 Combine one cup oat flour with one cup water, and a pinch of salt. Add sugar to taste -- I use 1-2 flat tablespoons per cup of oats -- and mix well. I have not tried leaving the mixture to hydrate so I am not sure how that changes the flavour or texture, but I have had great results without waiting.

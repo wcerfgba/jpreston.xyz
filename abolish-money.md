@@ -5,6 +5,8 @@ date: '2020-05-07'
 modified_at: '2020-05-07'
 ---
 
+An [[essay]].
+
 I have started to consider that money is not necessary for our society to function, and in fact there are benefits that could come by 'abolishing' money. To illustrate this, first we need to consider what 'money' is, and what functions it serves.
 
 To begin, I define money as any form of commodity, or representative or fiat currency, in physical form or recorded electronically. This definition of money therefore includes coins and notes issued by any reputable central bank, balances in bank accounts which correspond to such currencies, cryptocurrencies such as Bitcoin, and commodities such as gold, silver, diamonds, etc. where such commodities are used as payment in transactions.

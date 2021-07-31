@@ -5,7 +5,7 @@ date: '2020-03-14'
 modified_at: '2020-03-14'
 ---
 
-Originally from Victoria Granof at Epicurious [1].
+A [[recipe]], originally from Victoria Granof at Epicurious [1].
 
 * 2 cups broth
 * 2/3 cup uncooked orzo (or rice or pastina) [2]

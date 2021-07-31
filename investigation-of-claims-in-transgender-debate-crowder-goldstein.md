@@ -7,7 +7,7 @@ date: '2021-03-03'
 modified_at: '2021-03-03'
 ---
 
-The following is an analysis of the claims made and references provided in the video "TRANSGENDER DEBATE: Crowder Argues Science vs. Julie Rei Goldstein \| Louder With Crowder" [1].
+The following [[essay]] is an analysis of the claims made and references provided in the video "TRANSGENDER DEBATE: Crowder Argues Science vs. Julie Rei Goldstein \| Louder With Crowder" [1].
 
 ### Minute-by-minute
 

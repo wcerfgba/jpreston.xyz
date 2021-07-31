@@ -5,6 +5,8 @@ date: '2021-03-28'
 modified_at: '2021-03-28'
 ---
 
+A [[poem]].
+
 midnight drunken ramble, \
 car park vacant, cold. \
 head to platform's shelter, \

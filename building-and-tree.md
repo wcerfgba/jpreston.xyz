@@ -6,3 +6,5 @@ modified_at: '2020-09-16'
 ---
 
 [![](/assets/img/building and tree_small.jpg)](/assets/img/building and tree.jpg)
+
+A [[photograph]].

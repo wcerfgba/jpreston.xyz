@@ -5,7 +5,7 @@ date: '2019-05-20'
 modified_at: '2021-07-02'
 ---
 
-[the-light-of-the.world](https://the-light-of-the.world) was a piece of self-describing network art I created that was active from May 2019 to June 2020. The original copy that was hosted on the site is presented below.
+[the-light-of-the.world](https://the-light-of-the.world) was a piece of self-describing network [[art]] I created that was active from May 2019 to June 2020. The original copy that was hosted on the site is presented below.
 
 <style>
   .container {

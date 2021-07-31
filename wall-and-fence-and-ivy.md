@@ -6,3 +6,5 @@ modified_at: '2021-03-06'
 ---
 
 [![](/assets/img/wall and fence and ivy_small.jpg)](/assets/img/wall and fence and ivy.jpg)
+
+A [[photograph]].

@@ -5,6 +5,8 @@ date: '2020-11-15'
 modified_at: '2020-11-15'
 ---
 
+An [[essay]].
+
 ### Motivation
 
 I was listening to a show on Mixcloud today and when I went to try and rewind I discovered that I was unable to, unless I purchased a premium subscription. While I appreciate that platforms such as Mixcloud have to monetise somehow -- in order to cover employee wages and bandwidth costs, and eventually make profit to invest in new innovations --, I resent the use of anti-features or 'crippleware' as a way to drive users to convert to paying customers. In particular, I have no patience for restrictions which are imposed on my local machine. By the time the data has transferred to my computer, if I were to rewind the stream it would be my own computer which is doing the work of loading data from its local cache and seeking through that data. Scrubbing over a timeline is a basic feature of any audio or video player, and if Mixcloud offered an option to download an MP3 then I would be able to seek freely through the show in the audio player of my choice.

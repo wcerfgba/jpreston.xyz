@@ -52,7 +52,7 @@ modified_at: '2020-10-25'
   animate()
 </script>
 
-This art piece is composed of a 13 x 13 grid of squares, each of which changes between black and white at a set rate. The frequency of each oscillator is chosen such that the grid will eventually produce every 13 x 13 black and white picture, before looping. This takes approximately 10<sup>409</sup> years.
+This [[art]] piece is composed of a 13 x 13 grid of squares, each of which changes between black and white at a set rate. The frequency of each oscillator is chosen such that the grid will eventually produce every 13 x 13 black and white picture, before looping. This takes approximately 10<sup>409</sup> years.
 
 The initial state of the oscillators has been chosen such that after approximately 60 seconds, the eponymous phrase _I CAN FEEL_ appears in the image.
 

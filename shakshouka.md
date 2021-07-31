@@ -5,7 +5,7 @@ date: '2020-03-13'
 modified_at: '2020-03-13'
 ---
 
-Eggs poached in a spicy tomato sauce.
+[[recipe]] for eggs poached in a spicy tomato sauce.
 
 * 1 onion, diced or sliced
 * passata or chopped tomatoes in sauce

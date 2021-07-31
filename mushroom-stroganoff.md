@@ -5,6 +5,8 @@ date: '2020-03-13'
 modified_at: '2020-03-13'
 ---
 
+A [[recipe]].
+
 * 1pt onion
 * 2pt mushrooms
 * crème fraîche

@@ -5,7 +5,7 @@ date: '2020-11-26'
 modified_at: '2020-11-26'
 ---
 
-I usually struggle with ideas for healthy lunches, but recently I've been having success with this modular approach. Using a template and a set of base components, it is possible to create a multitude of delicious, healthy lunch recipes. I like to eat vegan when I can (for environmental and animal rights purposes) but this technique can be adapted to other diets as well.
+I usually struggle with ideas for healthy lunches, but recently I've been having success with this modular [[recipe]] approach. Using a template and a set of base components, it is possible to create a multitude of delicious, healthy lunch recipes. I like to eat vegan when I can (for environmental and animal rights purposes) but this technique can be adapted to other diets as well.
 
 ### Template
 
