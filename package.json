@@ -1,0 +1,27 @@
+{
+  "name": "jpreston.xyz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "date-fns": "^2.23.0",
+    "fs": "0.0.1-security",
+    "glob": "^7.1.7",
+    "gray-matter": "^4.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update": "node update_timestamps.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wcerfgba/jpreston.xyz.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/wcerfgba/jpreston.xyz/issues"
+  },
+  "homepage": "https://github.com/wcerfgba/jpreston.xyz#readme"
+}
