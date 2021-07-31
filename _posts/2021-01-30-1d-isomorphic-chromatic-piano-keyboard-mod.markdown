@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 1D Isomorphic Chromatic Piano Keyboard Mod
+date: '2021-01-30'
+modified_at: '2021-01-30'
 ---
 
 My approach to music theory is very mathematical and chromatic. To demonstrate, here are a few different ways one might think about a CMaj7 chord:

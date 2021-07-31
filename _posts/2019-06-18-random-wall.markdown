@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Random Wall
+date: '2019-06-18'
+modified_at: '2020-10-25'
 ---
 
 [![](/assets/img/random wall_small.jpg)](/assets/img/random wall.jpg)

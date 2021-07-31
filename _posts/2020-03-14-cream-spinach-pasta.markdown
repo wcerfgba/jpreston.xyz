@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Cream Spinach Pasta
+date: '2020-03-14'
+modified_at: '2020-03-14'
 ---
 
-My partner came up with this idea for a rich pasta sauce incorporating minced spinach. 
+My partner came up with this idea for a rich pasta sauce incorporating minced spinach.
 
 * ~12oz fresh spinach
 * 2-3 cloves garlic, minced
