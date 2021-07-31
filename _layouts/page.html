@@ -26,7 +26,6 @@ layout: default
     {%- endif -%}
   </header>
 
-  {%- assign links = '' | split: '' -%}
   {%- assign replaced_content = '' -%}
   {%- assign content_array = content | split: '[[' -%}
   {%- for item in content_array -%}
@@ -35,8 +34,7 @@ layout: default
       {%- assign replaced_content = replaced_content | append: item -%}
     {%- else -%}
       {%- assign link = site.url | append: '/' | append: item_parts[0] | append: '.html' -%}
-      {%- assign replaced_content = replaced_content | append: '<a href="' | append: link | append: '">' | append: link | append: '</a>' | append: item_parts[1] -%}
-      {%- assign links = links | push: item_parts[0] -%}
+      {%- assign replaced_content = replaced_content | append: '<a href="' | append: link | append: '">' | append: '[[' | append: item_parts[0] | append: ']]</a>' | append: item_parts[1] -%}
     {%- endif -%}
   {%- endfor -%}
   <div class="page-content e-content" itemprop="mainContentOfPage">
