@@ -51,7 +51,7 @@
         <ul class="page-tree-links">
           {%- for link in page_links -%}
             {%- assign link_name = link | append: '.md' -%}
-            {%- assign subpage = pages | where: "name", link_name | first -%}
+            {%- assign subpage = site.pages | where: "name", link_name | first -%}
             <li>
               <a class="page-link" href="{{ subpage.url | relative_url }}">
                 {{ subpage.title | escape }}
@@ -62,7 +62,7 @@
         <ul class="page-tree-backlinks">
           {%- for link in page_backlinks -%}
             {%- assign link_name = link | append: '.md' -%}
-            {%- assign subpage = pages | where: "name", link_name | first -%}
+            {%- assign subpage = site.pages | where: "name", link_name | first -%}
             <li>
               <a class="page-link" href="{{ subpage.url | relative_url }}">
                 {{ subpage.title | escape }}
