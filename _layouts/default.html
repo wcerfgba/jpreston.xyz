@@ -3,14 +3,76 @@
 
   {%- include head.html -%}
 
+  {%- assign backlinks = '' | split: '' -%}
+  {%- assign links = '' | split: '' -%}
+  {%- for page in site.pages %}
+    {%- assign page_name = page.name | split: '.' | first -%}
+    {%- assign page_links = '' | split: '' -%}
+    {%- assign content_array = page.content | split: '[[' -%}
+    {%- for item in content_array -%}
+      {%- assign item_parts = item | split: ']]' -%}
+      {%- if item_parts.size >= 2 -%}
+        {%- assign page_links = page_links | push: item_parts[0] -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- assign page_links = '' | split: '' | push: page_name | push: page_links -%}
+    {%- assign links = links | push: page_links -%}
+  {%- endfor -%}
+  {%- for page in site.pages -%}
+    {%- assign page_name = page.name | split: '.' | first -%}
+    {%- assign page_backlinks = '' | split: '' -%}
+    {%- for page_links in links -%}
+      {%- for link in page_links[1] -%}
+        {%- if page_name == link -%}
+          {%- assign page_backlinks = page_backlinks | push: page_links[0] -%}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- endfor -%}
+    {%- assign page_backlinks = '' | split: '' | push: page_name | push: page_backlinks -%}
+    {%- assign backlinks = backlinks | push: page_backlinks -%}
+  {%- endfor -%}
+
   <body>
     <div class="site-container">
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}"><h1>{{ site.title | escape }}</h1></a>
-  
+
       <main class="page-content" aria-label="Content">
         {{ content }}
       </main>
-  
+
+      {%- assign page_name = page.name | split: '.' | first -%}
+      {%- assign links_where_exp = "links[0] == '" | append: page_name | append: "'" -%}
+      {%- assign page_backlinks = backlinks | where_exp: "links", links_where_exp | first | last -%}
+      {%- assign page_links = links | where_exp: "links", links_where_exp | first | last -%}
+
+      {%- assign linked_pages = page_links | concat: page_backlinks -%}
+      {%- if linked_pages.size > 0 -%}
+        <h3>Linked pages</h3>
+        <ul class="page-tree-links">
+          {%- for link in page_links -%}
+            {%- assign link_name = link | append: '.md' -%}
+            {%- assign subpage = pages | where: "name", link_name | first -%}
+            <li>
+              <a class="page-link" href="{{ subpage.url | relative_url }}">
+                {{ subpage.title | escape }}
+              </a>
+            </li>
+          {%- endfor -%}
+        </ul>
+        <ul class="page-tree-backlinks">
+          {%- for link in page_backlinks -%}
+            {%- assign link_name = link | append: '.md' -%}
+            {%- assign subpage = pages | where: "name", link_name | first -%}
+            <li>
+              <a class="page-link" href="{{ subpage.url | relative_url }}">
+                {{ subpage.title | escape }}
+              </a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+
+
       {%- include footer.html -%}
     </div>
   </body>

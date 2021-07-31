@@ -1,10 +1,10 @@
-{% assign pages = site.pages | sort: "date" | reverse %}
+{%- assign pages = site.pages | sort: "modified_at" | reverse | slice: 0, 5 -%}
 {%- if pages.size > 0 -%}
   <table class="page-list">
     {%- assign date_format = "%Y-%m-%d" -%}
     {%- for page in pages -%}
     <tr>
-      <td class="page-meta padding-right-0-5 white-space-nowrap">{{ page.date | date: date_format }}</td>
+      <td class="page-meta padding-right-0-5 white-space-nowrap">{{ page.modified_at | date: date_format }}</td>
       <td>
         <a class="page-link" href="{{ page.url | relative_url }}">
           {{ page.title | escape }}

@@ -158,6 +158,7 @@ a:any-link {
 
 .site-footer {
   border-top: 1px solid $black;
+  margin-top: 3.25rem;
 }
 
 .page-list {
@@ -189,4 +190,31 @@ tr {
 td {
   padding: 0;
   vertical-align: top;
+}
+
+.page-tree {
+  &, > ul {
+    margin-left: 1rem;
+    padding-left: 0;
+  }
+
+  &-links {
+    list-style-type: '↳';
+    margin-top: 0;
+    margin-bottom: 0;
+
+    li {
+      padding-left: 0.5rem;
+    }
+  }
+
+  &-backlinks {
+    list-style-type: '↑';
+    margin-top: 0;
+    margin-bottom: 0;
+
+    li {
+      padding-left: 0.5rem;
+    }
+  }
 }
