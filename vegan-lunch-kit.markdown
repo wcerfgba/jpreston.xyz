@@ -227,7 +227,7 @@ The chickpeas and lemon juice can be substituted with houmous, but best to add s
 
 #### Beetroot, oat and lentil burgers
 
-For the patties, see my earlier recipe: [{{ site.url }}{% link beetroot-oat-lentil-burgers.markdown %}]({% link beetroot-oat-lentil-burgers.markdown %})
+For the patties, see my earlier recipe: [[beetroot-oat-lentil-burgers]]
 
 For the burger stack:
 * Cucumber, raw, sliced
