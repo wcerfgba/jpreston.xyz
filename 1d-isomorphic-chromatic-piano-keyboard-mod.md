@@ -5,7 +5,9 @@ date: '2021-01-30'
 last_modified_at: '2021-01-30'
 ---
 
-My approach to [[music]] theory is very mathematical and chromatic. To demonstrate, here are a few different ways one might think about a CMaj7 chord:
+A [[music]]al [[invention]] to make approaching the keyboard easier.
+
+My approach to music theory is very mathematical and chromatic. To demonstrate, here are a few different ways one might think about a CMaj7 chord:
 
 * The notes C, E, G, and B
 * A stack of intervals: a major third, a minor third, and a major third
