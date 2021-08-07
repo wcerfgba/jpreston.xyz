@@ -37,6 +37,113 @@ As we continue and fold over page 2, folio 2 moves to wrap around the back of fo
 
 I am currently working on an algorithm to calculate the page numbers for each folio of a criss-cross booklet. This page will be updated with more information in the future.
 
+<script language="text/clojurescript">
+;; WIP
+(def pages-per-folio 4)
+
+(defn pages->folios [pages]
+  (Math/ceil (/ pages pages-per-folio)))
+
+(defn folio-vec [folio]
+  [[{:folio folio
+     :side 0
+     :leaf 1}
+    {:folio folio
+     :side 1
+     :leaf 0}]
+   [{:folio folio
+     :side 0
+     :leaf 0}
+    {:folio folio
+     :side 1
+     :leaf 1}]])
+
+(defn leaves-column [folios idx]
+  (let [top-folio (if (and (even? folios) (= idx folios))
+                    nil
+                    (Math/floor (/ idx 2)))
+        bottom-folio (cond (zero? idx)
+                           nil
+                           (and (odd? folios) (= idx folios))
+                           nil
+                           :else
+                           (Math/ceil (/ idx 2)))
+        top-folio-vec (some-> top-folio (folio-vec))
+        bottom-folio-vec (some-> bottom-folio (folio-vec))]
+    (vec (concat (cond (nil? top-folio-vec)
+                       [nil
+                        nil]
+
+                       (even? idx)
+                       (get top-folio-vec 0)
+
+                       :else
+                       (get top-folio-vec 1))
+                 (cond (nil? bottom-folio-vec)
+                       [nil
+                        nil]
+
+                       (even? idx)
+                       (get bottom-folio-vec 1)
+
+                       :else
+                       (get bottom-folio-vec 0))))))
+
+(defn leaves-vec [folios]
+  (mapv (partial leaves-column folios) (range (inc folios))))
+
+(defn next-pos [folios page pos]
+  (let [[col row] pos
+        last-page (* folios pages-per-folio)
+        middle-page (/ last-page 2)]
+    (cond (< page middle-page)
+          (if (even? col)
+            (get {0 [col 2]
+                  2 [(inc col) 3]} row)
+            (get {3 [col 1]
+                  1 [(inc col) 0]} row))
+
+          (= page middle-page)
+          (get {2 [(dec col) 0]
+                1 [(dec col) 3]} row)
+
+          (< page last-page)
+          (if (even? col)
+            (get {3 [col 1]
+                  1 [(dec col) 0]} row)
+            (get {0 [col 2]
+                  2 [(dec col) 3]} row))
+          
+          (= page last-page)
+          (get {0 [folios 0]
+                folios [folios 3]} col))))
+
+(defn pages-vec 
+  ([folios leaves-vec] (pages-vec folios leaves-vec 1 [0 0]))
+  ([folios leaves-vec page pos]
+   (let [[col row] pos
+         last-page (* folios pages-per-folio)
+         next-pos (next-pos folios page pos)]
+     (prn page pos)
+     (when (nil? next-pos)
+       (throw (ex-info "Invalid position" {:pos pos})))
+     (cond
+       (> page last-page)
+       leaves-vec
+       
+       (nil? (get-in leaves-vec pos))
+       (pages-vec folios leaves-vec page next-pos)
+
+       (some? (get-in leaves-vec (conj pos :page)))
+       (throw (ex-info "Attempted to reassign page"))
+
+       (nil? (get-in leaves-vec (conj pos :page)))
+       (pages-vec folios
+                  (assoc-in leaves-vec (conj pos :page) page)
+                  (inc page)
+                  next-pos)))))
+</script>
+
 [1] There is a section of the GNOME help webpages for Evince, the GNOME PDF reader, which provide algorithms for calculating the page numbers [1.1] but there is no calculator widget and nobody has implemented this in Evince or GNOME print settings yet 🙃.
 
 [1.1] <https://help.gnome.org/users/evince/stable/print-booklet.html.en>
