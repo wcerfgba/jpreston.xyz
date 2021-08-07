@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="76.739mm" height="30.552mm" version="1.1" viewBox="0 0 76.739 30.552" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker id="Arrow1Lend-1" overflow="visible" orient="auto">
+   <path transform="matrix(-.8 0 0 -.8 -10 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow1Lend-8-6-9" overflow="visible" orient="auto">
+   <path transform="matrix(-.8 0 0 -.8 -10 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(-12.49 -203.24)">
+  <g transform="translate(-3.282 -.014558)">
+   <path d="m51.513 220.96-8.7694 8.7694-8.7795-8.679" fill="none" stroke="#000" stroke-width=".26458px"/>
+   <g font-family="'Liberation Sans'" font-size="2.8222px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+    <text x="36.552986" y="227.67929" style="line-height:1.25" xml:space="preserve"><tspan x="36.552986" y="227.67929" font-size="2.8222px" stroke-width=".26458">5</tspan></text>
+    <text x="38.617905" y="225.29694" style="line-height:1.25" xml:space="preserve"><tspan x="38.617905" y="225.29694" font-size="2.8222px" stroke-width=".26458">7</tspan></text>
+    <text x="46.963425" y="227.62001" style="line-height:1.25" xml:space="preserve"><tspan x="46.963425" y="227.62001" font-size="2.8222px" stroke-width=".26458">10</tspan></text>
+    <text x="45.344955" y="225.14847" style="line-height:1.25" xml:space="preserve"><tspan x="45.344955" y="225.14847" font-size="2.8222px" stroke-width=".26458">2</tspan></text>
+   </g>
+   <path d="m24.728 212.09-8.7694 8.7694 8.679 8.7795" fill="none" stroke="#000" stroke-width=".26458px"/>
+   <g font-family="'Liberation Sans'" font-size="2.8222px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+    <text x="20.6546" y="218.14894" style="line-height:1.25" xml:space="preserve"><tspan x="20.6546" y="218.14894" font-size="2.8222px" stroke-width=".26458">1</tspan></text>
+    <text x="17.767981" y="215.89162" style="line-height:1.25" xml:space="preserve"><tspan x="17.767981" y="215.89162" font-size="2.8222px" stroke-width=".26458">11</tspan></text>
+    <text x="20.745893" y="225.41156" style="line-height:1.25" xml:space="preserve"><tspan x="20.745893" y="225.41156" font-size="2.8222px" stroke-width=".26458">9</tspan></text>
+    <text x="18.851431" y="227.52731" style="line-height:1.25" xml:space="preserve"><tspan x="18.851431" y="227.52731" font-size="2.8222px" stroke-width=".26458">3</tspan></text>
+   </g>
+   <g transform="translate(6.6452,192.97)">
+    <path d="m27.132 19.114-8.7694 8.7694 8.679 8.7795" fill="none" stroke="#000" stroke-width=".26458px"/>
+    <g font-family="'Liberation Sans'" font-size="2.8222px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+     <text x="20.858292" y="34.303593" style="line-height:1.25" xml:space="preserve"><tspan x="20.858292" y="34.303593" font-size="2.8222px" stroke-width=".26458">4</tspan></text>
+     <text x="22.923212" y="31.921246" style="line-height:1.25" xml:space="preserve"><tspan x="22.923212" y="31.921246" font-size="2.8222px" stroke-width=".26458">8</tspan></text>
+     <text x="19.728106" y="22.920612" style="line-height:1.25" xml:space="preserve"><tspan x="19.728106" y="22.920612" font-size="2.8222px" stroke-width=".26458">12</tspan></text>
+     <text x="22.999882" y="25.626274" style="line-height:1.25" xml:space="preserve"><tspan x="22.999882" y="25.626274" font-size="2.8222px" stroke-width=".26458">6</tspan></text>
+    </g>
+   </g>
+   <path d="m42.622 222.24c7.1433-7.8598-5.046-10.022-5.046-10.022" fill="none" marker-end="url(#Arrow1Lend-1)" stroke="#000" stroke-width=".13229"/>
+  </g>
+  <g transform="translate(-3.6077 .97175)">
+   <path d="m83.881 202.36 8.7694 8.7694-8.679 8.7795" fill="none" stroke="#000" stroke-width=".26458px"/>
+   <g font-family="'Liberation Sans'" font-size="2.8222px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+    <text x="88.586441" y="218.53775" style="line-height:1.25" xml:space="preserve"><tspan x="88.586441" y="218.53775" font-size="2.8222px" stroke-width=".26458">5</tspan></text>
+    <text x="86.646812" y="215.25429" style="line-height:1.25" xml:space="preserve"><tspan x="86.646812" y="215.25429" font-size="2.8222px" stroke-width=".26458">7</tspan></text>
+    <text x="88.413536" y="206.12183" style="line-height:1.25" xml:space="preserve"><tspan x="88.413536" y="206.12183" font-size="2.8222px" stroke-width=".26458">10</tspan></text>
+    <text x="85.736732" y="208.41272" style="line-height:1.25" xml:space="preserve"><tspan x="85.736732" y="208.41272" font-size="2.8222px" stroke-width=".26458">2</tspan></text>
+   </g>
+   <path d="m74.645 211.23-8.7694 8.7694 8.679 8.7795" fill="none" stroke="#000" stroke-width=".26458px"/>
+   <g font-family="'Liberation Sans'" font-size="2.8222px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+    <text x="70.571388" y="217.28798" style="line-height:1.25" xml:space="preserve"><tspan x="70.571388" y="217.28798" font-size="2.8222px" stroke-width=".26458">1</tspan></text>
+    <text x="67.684769" y="215.03065" style="line-height:1.25" xml:space="preserve"><tspan x="67.684769" y="215.03065" font-size="2.8222px" stroke-width=".26458">11</tspan></text>
+    <text x="70.662682" y="224.5506" style="line-height:1.25" xml:space="preserve"><tspan x="70.662682" y="224.5506" font-size="2.8222px" stroke-width=".26458">9</tspan></text>
+    <text x="68.768219" y="226.66635" style="line-height:1.25" xml:space="preserve"><tspan x="68.768219" y="226.66635" font-size="2.8222px" stroke-width=".26458">3</tspan></text>
+   </g>
+   <g transform="translate(56.562,192.11)">
+    <path d="m27.132 19.114-8.7694 8.7694 8.679 8.7795" fill="none" stroke="#000" stroke-width=".26458px"/>
+    <g font-family="'Liberation Sans'" font-size="2.8222px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+     <text x="20.858292" y="34.303593" style="line-height:1.25" xml:space="preserve"><tspan x="20.858292" y="34.303593" font-size="2.8222px" stroke-width=".26458">4</tspan></text>
+     <text x="22.923212" y="31.921246" style="line-height:1.25" xml:space="preserve"><tspan x="22.923212" y="31.921246" font-size="2.8222px" stroke-width=".26458">8</tspan></text>
+     <text x="19.728106" y="22.920612" style="line-height:1.25" xml:space="preserve"><tspan x="19.728106" y="22.920612" font-size="2.8222px" stroke-width=".26458">12</tspan></text>
+     <text x="22.999882" y="25.626274" style="line-height:1.25" xml:space="preserve"><tspan x="22.999882" y="25.626274" font-size="2.8222px" stroke-width=".26458">6</tspan></text>
+    </g>
+   </g>
+   <g transform="translate(40.045,177.17)">
+    <circle cx="23.917" cy="53.982" r=".77644" fill="#070bff"/>
+    <ellipse cx="23.894" cy="54.048" rx="3.0688" ry="1.5344" fill="none" stroke="#000" stroke-width=".13229"/>
+   </g>
+   <path d="m66.146 229.27 2.1107-2.5456" fill="none" marker-end="url(#Arrow1Lend-8-6-9)" stroke="#000" stroke-width=".13229"/>
+  </g>
+ </g>
+</svg>
