@@ -45,18 +45,18 @@ I am currently working on an algorithm to calculate the page numbers for each fo
   (Math/ceil (/ pages pages-per-folio)))
 
 (defn folio-vec [folio]
-  [[{:folio folio
-     :side 0
-     :leaf 1}
-    {:folio folio
-     :side 1
-     :leaf 0}]
-   [{:folio folio
-     :side 0
-     :leaf 0}
-    {:folio folio
-     :side 1
-     :leaf 1}]])
+  (vector [{:folio folio
+            :side 0
+            :leaf 1}
+           {:folio folio
+            :side 1
+            :leaf 0}]
+          [{:folio folio
+            :side 0
+            :leaf 0}
+           {:folio folio
+            :side 1
+            :leaf 1}]))
 
 (defn leaves-column [folios idx]
   (let [top-folio (if (and (even? folios) (= idx folios))
