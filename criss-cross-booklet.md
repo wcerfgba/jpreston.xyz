@@ -2,8 +2,10 @@
 layout: page
 title: Criss-Cross Booklet
 date: '2021-08-07'
-last_modified_at: '2021-08-07'
+last_modified_at: '2021-08-08'
 ---
+
+<link rel="stylesheet" href="{{ "/assets/css/highlight.css" | relative_url }}">
 
 An [[invention]] to improve the ergonomics of unbound booklets.
 
@@ -35,13 +37,12 @@ Above we see the result of folding over page 1 on a 12-page criss-cross booklet.
 
 As we continue and fold over page 2, folio 2 moves to wrap around the back of folios 1 and 3, and the process repeats itself as we continue to read, with folios weaving in to each other like a zip. Notice that the direction in which a page is turned alternates as we read through the booklet.
 
-I am currently working on an algorithm to calculate the page numbers for each folio of a criss-cross booklet. This page will be updated with more information in the future.
+The following Clojure code allows you to calculate the page numbers for each folio of a criss-cross booklet. I am currently working on some interop to embed a form in to this page which uses this code.
 
-<script language="text/clojurescript">
+```cljs
+(ns criss-cross-booklet)
+
 (def pages-per-folio 4)
-
-(defn pages->folios [pages]
-  (Math/ceil (/ pages pages-per-folio)))
 
 (defn folio-vec [folio]
   (vector [{:folio folio
@@ -58,15 +59,25 @@ I am currently working on an algorithm to calculate the page numbers for each fo
             :leaf 1}]))
 
 (defn leaves-column [folios idx]
-  (let [top-folio (if (and (even? folios) (= idx folios))
-                    nil
-                    (Math/floor (/ idx 2)))
+  (let [top-folio (cond (and (even? folios) (= idx folios))
+                        nil
+
+                        (odd? idx)
+                        (dec idx)
+
+                        :else
+                        idx)
         bottom-folio (cond (zero? idx)
                            nil
+
                            (and (odd? folios) (= idx folios))
                            nil
+
+                           (even? idx)
+                           (dec idx)
+
                            :else
-                           (Math/ceil (/ idx 2)))
+                           idx)
         top-folio-vec (some-> top-folio (folio-vec))
         bottom-folio-vec (some-> bottom-folio (folio-vec))]
     (vec (concat (cond (nil? top-folio-vec)
@@ -88,7 +99,7 @@ I am currently working on an algorithm to calculate the page numbers for each fo
                        :else
                        (get bottom-folio-vec 0))))))
 
-(defn leaves-vec [folios]
+(defn leaves-array [folios]
   (mapv (partial leaves-column folios) (range (inc folios))))
 
 (defn next-pos [folios pos direction]
@@ -107,42 +118,75 @@ I am currently working on an algorithm to calculate the page numbers for each fo
             (get {0 [col 2]
                   2 [(dec col) 3]} row)))))
 
-(defn pages-vec
-  ([folios] (pages-vec folios (leaves-vec folios)))
-  ([folios leaves-vec] (pages-vec folios leaves-vec 1 [0 0]))
-  ([folios leaves-vec page pos]
+(defn pages-array
+  ([folios] (pages-array folios (leaves-array folios)))
+  ([folios leaves-array] (pages-array folios leaves-array 1 [0 0]))
+  ([folios leaves-array page pos]
    (let [[col row] pos
          last-page (* folios pages-per-folio)
          middle-page (/ last-page 2)
          direction (if (<= page middle-page) :forwards :backwards)]
      (cond
        (> page last-page)
-       leaves-vec
+       leaves-array
 
        (= page last-page)
-       (assoc-in leaves-vec [folios (if (odd? folios) 0 3) :page] page)
+       (assoc-in leaves-array [folios (if (odd? folios) 0 3) :page] page)
 
-       (nil? (get-in leaves-vec pos))
-       (pages-vec folios leaves-vec page (next-pos folios pos direction))
+       (nil? (get-in leaves-array pos))
+       (pages-array folios leaves-array page (next-pos folios pos direction))
 
-       (some? (get-in leaves-vec (conj pos :page)))
+       (some? (get-in leaves-array (conj pos :page)))
        (throw (ex-info "Attempted to reassign page"))
 
-       (nil? (get-in leaves-vec (conj pos :page)))
+       (nil? (get-in leaves-array (conj pos :page)))
        (cond
          (= page middle-page)
-         (pages-vec folios
-                    (assoc-in leaves-vec (conj pos :page) page)
+         (pages-array folios
+                    (assoc-in leaves-array (conj pos :page) page)
                     (inc page)
                     [col (get {1 2
                                2 1} row)])
 
          :else
-         (pages-vec folios
-                    (assoc-in leaves-vec (conj pos :page) page)
+         (pages-array folios
+                    (assoc-in leaves-array (conj pos :page) page)
                     (inc page)
                     (next-pos folios pos direction)))))))
-</script>
+
+(defn pages-vec [pages-array]
+  (->> pages-array
+       (flatten)
+       (filter some?)
+       (sort (fn [a b]
+               (cond (< (:folio a) (:folio b))
+                     -1
+
+                     (and (= (:folio a) (:folio b))
+                          (< (:side a) (:side b)))
+                     -1
+
+                     (and (= (:folio a) (:folio b))
+                          (= (:side a) (:side b))
+                          (< (:leaf a) (:leaf b)))
+                     -1
+
+                     (= (select-keys a [:folio :side :leaf])
+                        (select-keys b [:folio :side :leaf]))
+                     0
+
+                     :else
+                     1)))))
+
+(defn pages [pages-vec first-page last-page filler-page]
+  (->> pages-vec
+       (map :page)
+       (map #(+ (dec first-page) %))
+       (map #(if (> % last-page) filler-page %))))
+
+(defn pages->folios [pages]
+  (Math/ceil (/ pages pages-per-folio)))
+```
 
 [1] There is a section of the GNOME help webpages for Evince, the GNOME PDF reader, which provide algorithms for calculating the page numbers [1.1] but there is no calculator widget and nobody has implemented this in Evince or GNOME print settings yet 🙃.
 
