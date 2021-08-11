@@ -2,7 +2,7 @@
 layout: page
 title: Criss-Cross Booklet
 date: '2021-08-07'
-last_modified_at: '2021-08-08'
+last_modified_at: '2021-08-11'
 ---
 
 <link rel="stylesheet" href="{{ "/assets/css/highlight.css" | relative_url }}">
@@ -37,9 +37,15 @@ Above we see the result of folding over page 1 on a 12-page criss-cross booklet.
 
 As we continue and fold over page 2, folio 2 moves to wrap around the back of folios 1 and 3, and the process repeats itself as we continue to read, with folios weaving in to each other like a zip. Notice that the direction in which a page is turned alternates as we read through the booklet.
 
-The following Clojure code allows you to calculate the page numbers for each folio of a criss-cross booklet. I am currently working on some interop to embed a form in to this page which uses this code.
+### Calculator
 
-<!-- TODO: use https://borkdude.github.io/scittle/ ? -->
+Below is a calculator, implemented in ClojureScript using scittle [3] which allows you to determine the page numbers for use with your printing software. Because of the way the page numbering works inside a criss-cross booklet, if you do not want to print an exact multiple of 4 pages (thus making each folio complete), you will need to provide a page number for a _filler page_, which is an ideally blank page, inserted in to the page number sequence, to allow you to skip pages which appear in the topology of the criss-cross booklet, but which you do not actually want printed.
+
+Please note that this calculator has only been lightly tested!
+
+<script src="https://cdn.jsdelivr.net/gh/borkdude/scittle@0.0.2/js/scittle.js" type="application/javascript"></script>
+
+<div id="calculator-app"></div>
 
 ```cljs
 (ns criss-cross-booklet)
@@ -105,7 +111,7 @@ The following Clojure code allows you to calculate the page numbers for each fol
   (mapv (partial leaves-column folios) (range (inc folios))))
 
 (defn next-pos [folios pos direction]
-  (let [[col row] pos]
+  (let [ [col row] pos]
     (cond (= :forwards direction)
           (if (even? col)
             (get {0 [col 2]
@@ -124,7 +130,7 @@ The following Clojure code allows you to calculate the page numbers for each fol
   ([folios] (pages-array folios (leaves-array folios)))
   ([folios leaves-array] (pages-array folios leaves-array 1 [0 0]))
   ([folios leaves-array page pos]
-   (let [[col row] pos
+   (let [ [col row] pos
          last-page (* folios pages-per-folio)
          middle-page (/ last-page 2)
          direction (if (<= page middle-page) :forwards :backwards)]
@@ -187,8 +193,64 @@ The following Clojure code allows you to calculate the page numbers for each fol
        (map #(if (> % last-page) filler-page %))))
 
 (defn pages->folios [pages]
-  (Math/ceil (/ pages pages-per-folio)))
+  (js/Math.ceil (/ pages pages-per-folio)))
+
+(defn pages-str [first-page last-page filler-page]
+  (clojure.string/join ", " (-> (inc (- last-page first-page))
+                                (pages->folios)
+                                (pages-array)
+                                (pages-vec)
+                                (pages first-page last-page filler-page))))
 ```
+{: #source}
+
+<script type="application/x-scittle">
+(js/scittle.core.eval_string
+  (.-innerText (. js/document getElementById "source")))
+
+(defn update []
+  (let [start (js/parseInt (.-value (. js/document getElementById "start")))
+        end (js/parseInt (.-value (. js/document getElementById "end")))
+        filler (js/parseInt (.-value (. js/document getElementById "filler")))
+        pages-input (. js/document getElementById "pages")]
+    (set! (.-value pages-input) (criss-cross-booklet/pages-str start end filler))))
+
+(set! (.-update js/document) update)
+
+(set! (.-innerHTML (. js/document getElementById "calculator-app"))
+      "
+      <label id='start-label'>Start page: <input type='number' min='1' step='1' value='1' id='start' onchange='update()' /></label>
+      <label id='end-label'>End page: <input type='number' min='1' step='1' value='1' id='end' onchange='update()' /></label>
+      <label id='filler-label'>Filler page: <input type='number' min='1' step='1' value='1' id='filler' onchange='update()' /></label>
+      <label id='pages-label'>Pages: <input type='text' disabled='true' id='pages' /></label>
+      ")
+
+(update)
+</script>
+
+<style>
+  #calculator-app {
+    display: grid;
+    grid-template-areas: "start end filler"
+                         "pages pages pages";
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+
+  #calculator-app label {
+    font-size: 0.8rem;
+  }
+
+  #calculator-app input {
+    width: 100%;
+    display: block;
+  }
+
+  #calculator-app #start-label { grid-area: start; }
+  #calculator-app #end-label { grid-area: end; }
+  #calculator-app #filler-label { grid-area: filler; }
+  #calculator-app #pages-label { grid-area: pages; }
+</style>
 
 [1] There is a section of the GNOME help webpages for Evince, the GNOME PDF reader, which provide algorithms for calculating the page numbers [1.1] but there is no calculator widget and nobody has implemented this in Evince or GNOME print settings yet 🙃.
 
@@ -197,3 +259,5 @@ The following Clojure code allows you to calculate the page numbers for each fol
 [2] Installing Adobe Acrobat DC on Linux was a _painful_ experience: between the absurd throttling of Adobe's file servers (I averaged about 10-20 KiB/s) and random crashes in the installer due to Wine config, it took me _multiple hours_ to get it working. In the end I had to use a Snap package [2.1].
 
 [2.1] <https://github.com/mmtrt/acrordrdc>
+
+[3] <https://borkdude.github.io/scittle/>
