@@ -39,6 +39,8 @@ As we continue and fold over page 2, folio 2 moves to wrap around the back of fo
 
 The following Clojure code allows you to calculate the page numbers for each folio of a criss-cross booklet. I am currently working on some interop to embed a form in to this page which uses this code.
 
+<!-- TODO: use https://borkdude.github.io/scittle/ ? -->
+
 ```cljs
 (ns criss-cross-booklet)
 
