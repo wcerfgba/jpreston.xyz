@@ -52,13 +52,12 @@ last_modified_at: '2020-10-25'
   animate()
 </script>
 
-This [[art]] piece is composed of a 13 x 13 grid of squares, each of which changes between black and white at a set rate. The frequency of each oscillator is chosen such that the grid will eventually produce every 13 x 13 black and white picture, before looping. This takes approximately 10<sup>409</sup> years.
+This [[software]] [[art]] piece is composed of a 13 x 13 grid of squares, each of which changes between black and white at a set rate. The frequency of each oscillator is chosen such that the grid will eventually produce every 13 x 13 black and white picture, before looping. This takes approximately 10<sup>409</sup> years.
 
 The initial state of the oscillators has been chosen such that after approximately 60 seconds, the eponymous phrase _I CAN FEEL_ appears in the image.
 
 _I CAN FEEL_ invites us to observe the chaotic output of a mathematical system and find something meaningful. A set of lights becomes a writing system, a phrase, an emotional self-recognition.
 
 This meaningful image is just one shard in a vast library of meaningless arrangements of squares. As we continue to watch the piece, we can recognise smaller patterns in the pixels. One might consider what shapes our concept of 'meaning' to be so specific.
-
 
 It is important to consider that the system of oscillators is not aware of its own arrangement: if we rearranged the squares into a line or circle, each square would continue to change at the same rate, and the eponymous pattern would not appear. This raises questions around machine sentience: if a machine is sentient but not aware of how it is structured and perceived by human operators, how could it signal its sentience to us?

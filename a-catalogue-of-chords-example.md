@@ -5,7 +5,7 @@ date: '2021-02-04'
 last_modified_at: '2021-08-14'
 ---
 
-At the start of 2021 I spent some time writing a Clojure program to generate a catalogue of assorted [[music]]al chords. You can find the catalogue, with explanatory info and the script to generate it, on GitHub [1].
+At the start of 2021 I spent some time writing some Clojure [[software]] to generate a catalogue of assorted [[music]]al chords. You can find the catalogue, with explanatory info and the script to generate it, on GitHub [1].
 
 In this [[essay]] I'll demonstrate using the catalogue to build a chord progression.
 

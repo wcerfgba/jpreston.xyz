@@ -39,7 +39,7 @@ As we continue and fold over page 2, folio 2 moves to wrap around the back of fo
 
 ### Calculator
 
-Below is a calculator, implemented in ClojureScript using scittle [3] which allows you to determine the page numbers for use with your printing software. Because of the way the page numbering works inside a criss-cross booklet, if you do not want to print an exact multiple of 4 pages (thus making each folio complete), you will need to provide a page number for a _filler page_, which is an ideally blank page, inserted in to the page number sequence, to allow you to skip pages which appear in the topology of the criss-cross booklet, but which you do not actually want printed.
+Below is a calculator [[software]], implemented in ClojureScript using scittle [3] which allows you to determine the page numbers for use with your printing software. Because of the way the page numbering works inside a criss-cross booklet, if you do not want to print an exact multiple of 4 pages (thus making each folio complete), you will need to provide a page number for a _filler page_, which is an ideally blank page, inserted in to the page number sequence, to allow you to skip pages which appear in the topology of the criss-cross booklet, but which you do not actually want printed.
 
 Please note that this calculator has only been lightly tested!
 

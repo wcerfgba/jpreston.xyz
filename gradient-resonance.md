@@ -217,6 +217,6 @@ glslCanvas = new GlslCanvas(canvas, {
 glslCanvas.mouseListener = mouseListener
 </script>
 
-Inspired by Bridget Riley's op art and the wallpapers in the confessionals of recent seasons of RuPaul's Drag Race, _Gradient Resonance_ is an interactive op [[art]] piece. Move your cursor over or tap on the canvas to create a linear gradient from two full-saturation colours.
+Inspired by Bridget Riley's op art and the wallpapers in the confessionals of recent seasons of RuPaul's Drag Race, _Gradient Resonance_ is an interactive op [[art]] piece, implemented in [[software]]. Move your cursor over or tap on the canvas to create a linear gradient from two full-saturation colours.
 
 The gradient is re-imposed on top of itself in a pattern. As the gradient is translated with respect to itself, different segments of the squares blend in to the background. This creates an effect of squares fading in from the top and bottom of the piece. The prominence of the effect varies depending on the colours chosen for the gradient, and some interesting combinations have been highlighted.
