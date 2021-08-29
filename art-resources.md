@@ -2,7 +2,7 @@
 layout: page
 title: Art Resources
 date: '2021-08-28'
-last_modified_at: '2021-08-28'
+last_modified_at: '2021-08-29'
 ---
 
 Some useful [[links]] about [[art]].
@@ -134,3 +134,10 @@ Place-based arts and commissions via UCLan.
 Fine arts lecturer at UCLan, works with place.
 
 * <http://www.charlesquick.org/>
+
+### Critical Making
+
+ Critical Making is a handmade book project by Garnet Hertz that explores how hands-on productive work -- making -- can supplement and extend critical reflection on technology and society.
+
+* <http://www.conceptlab.com/criticalmaking/>
+* <http://opendesignnow.org/index.php/article/critical-making-matt-ratto/>
