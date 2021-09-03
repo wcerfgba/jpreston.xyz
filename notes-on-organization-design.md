@@ -136,6 +136,8 @@ Structures are dependent on processes, because a process defines the interaction
 
 ### Bibliography
 
+Atlassian. ‘What Is Agile?’ Atlassian. Accessed 3 September 2021. <https://www.atlassian.com/agile>.
+
 Daft, Richard L. Organization Theory and Design. Cengage Learning, 2012.
 
 Irwin, Christine, and Patricia Cichocki. Organization Design: A Guide to Building Effective Organizations. Kogan Page Publishers, 2011.
