@@ -2,7 +2,7 @@
 layout: page
 title: Notes on Organization Design
 date: '2021-09-02'
-last_modified_at: '2021-09-03'
+last_modified_at: '2021-09-04'
 ---
 
 These [[notes]] are a living document as I move towards an essay documenting a new theory of the organization.
@@ -11,9 +11,12 @@ These [[notes]] are a living document as I move towards an essay documenting a n
 
 This essay presents my thoughts on the nature of organizations: the factors that make up what an 'organization' is, how those factors interrelate, and what it means for these factors to be well-designed. I show how the factors I define in this WOPRS model relate to factors and components in other theories of the organization, such as the McKinsey 7S model and the Burke-Litwin model. I discuss some of the meta-processes an organization may carry out, and provide a minimal blueprint for developing new and existing organizations.
 
+* Table of Contents
+{:toc}
+
 ### Basic definitions
 
-Organizations are groups of individuals who share an objective, and seek to achieve that objective by coordinated action, which is managed by certain structures and processes.
+Organizations are groups of individuals who share one or more objectives, and seek to achieve those objectives by coordinated action, which is managed by certain structures and processes.
 
 Organization design is the application of design thinking and design processes for the purpose of creating effective organizations, such as businesses.
 
@@ -29,7 +32,7 @@ Design is a wide-reaching approach to solution development which involves:
 
 ### Existing theories of the organization
 
-Many theories and models of the organization and organizational change break down the abstract concept of the organization into a set of interconnected factors. All of these factors are present in some form in any organization, and they influence each other in specific ways, which leads to the success or failure of the organization and any initiatives to redesign it.
+Many theories and models of the organization and organizational change break down the abstract concept of the organization into a set of interconnected factors. These factors influence each other in specific ways, which leads to the success or failure of the organization and any initiatives to redesign it.
 
 The following models are quite common in the literature, and I define the different factors that constitute these models. Later on as I develop the WOPRS model I will reference these factors and show how WOPRS generalizes them.
 
@@ -54,7 +57,7 @@ The following models are quite common in the literature, and I define the differ
 * Skills -- the capabilities of the organization, its subgroups, and its members
 * Systems -- processes, how work is done
 * Structure -- authority relations
-* Staff -- members, their intrinsic talents, diversity of membership,
+* Staff -- members, their intrinsic talents, diversity of membership
 * Strategy -- main functions of the organization
 * Shared values or superordinate goals -- what does the organization want to achieve, social missions
 
@@ -75,13 +78,13 @@ The following models are quite common in the literature, and I define the differ
 
 #### Purpose and criticism of existing models
 
-The documented models primarily aim to assist organization designers with understanding the factors involved in creating change and how they interact. Some of the factor definitions are inherently vague or overlapping, because these models are not supposed to provide a rigorous definition of what an organization is, but instead are supposed to stimulate the mind of the organization designer throughout the ideation and evaluation processes, and to allow the designer to make sure they are considering all the different angles and perspectives, and creating a 'complete picture' throughout the design process.
+The documented models primarily aim to assist organization designers with understanding the factors involved in creating change and how they interact. Some of the factor definitions are inherently vague or overlapping, because these models are not supposed to provide a rigorous definition of what an organization is, but instead are supposed to stimulate the mind of the organization designer throughout the ideation and evaluation processes, and to allow the designer to make sure they are considering all the different angles and perspectives, creating a 'complete picture' throughout the design process.
 
 For example, in McKinsey's 7S model, there is overlap between skills, systems, and strategy -- as I will demonstrate later in WOPRS, these can all be reduced to 'processes'. Likewise in Burke-Litwin, working climate, motivational level, and culture also overlap, whereas in WOPRS these factors are instead viewed as particular objectives and processes.
 
-Despite these overlaps, when we ask "what is X in this organization/team/individual?" or "how will changing X affect this organization/team/individual?" or "how do X and Y interact?", we will come up with different ideas for different combinations of factors, and this is why these models are useful as design tools: they assist with thinking and exploration, rather than concrete definition.
+Despite these overlaps, when we ask "what is X in this organization/team/individual?" or "how will changing X affect this organization/team/individual?" or "how do X and Y interact?", we will come up with different ideas for different factors, and this is why these models are useful as design tools: they assist with thinking and exploration, rather than concrete definition.
 
-This lack of concrete definition and hard separation between these factors can create problems later in the process when we are trying to develop a particular design or change a design. Where do we start, and where do we end? What needs to be re-evaluated along the way, and what can remain the same? When we are dealing with the specifics of one particular organization, we want to be able to identify specific problems, and determine specific changes and their effects.
+This lack of concrete definition and hard separation between these factors can create problems later in the change process when we are trying to develop a particular design or transformation. Where do we start, and where do we end? What needs to be re-evaluated along the way, and what can remain the same? When we are dealing with the specifics of one particular organization, we want to be able to identify specific problems, and determine specific changes and their effects.
 
 For example, imagine a software company that uses Asana for managing a Kanban-style product development workflow. The Sales department are finding it hard to understand how the roadmap is changing when a project has to be extended a few weeks due to unforeseen complexity, and the project managers in the Product team are struggling to reorganise the roadmap in response to these delays. Team members take some time to do some organization design thinking and evaluate the problems through the aforementioned models, and many perspectives are formed:
 
@@ -89,11 +92,11 @@ For example, imagine a software company that uses Asana for managing a Kanban-st
    1. It doesn't have a good timeline view for scheduling projects.
    2. It doesn't make it easy to update the wider company when the roadmap changes.
    3. It doesn't let us experiment with the roadmap, weigh all the factors, and determine what the roadmap should look like.
-   4. It doesn't allow us to attach explanations to the roadmap, so Sales know why it is that way.
+   4. It doesn't allow us to attach explanations to the roadmap, so Sales don't know why the roadmap is the way it is.
 2. The Kanban process is not suitable for the kinds of projects we are working on right now.
    1. There is no timeboxing of projects or tickets, so some people get bogged down in complexity and are required to press ahead until they can move the ticket on, which creates a drain of available engineers.
-   2. Projects get fragmented in to smaller tickets which deliver technical slices of the solution (e.g. "update database tables", "implement API", "implement frontend") but which don't deliver tangible outcomes to our customers or the business.
-   3. The PM spends a lot of time trying to prioritise work that has been pushed in to the backlog, but the analysis on this work has started to go 'stale' and become out of date by the time it is prioritised.
+   2. Projects get fragmented into smaller tickets which deliver technical slices of the solution (e.g. "update database tables", "implement API", "implement frontend") but which don't deliver tangible outcomes to our customers or the business.
+   3. The PM spends a lot of time trying to prioritise work that has been pushed into the backlog, but the analysis on this work has started to go 'stale' and become out of date by the time the projects are prioritised.
 
 Some solutions are proposed:
 
@@ -110,11 +113,11 @@ Some solutions are proposed:
    2. The PM must incorporate this grace period in to the roadmap as it is built out.
    3. The PM must notify Sales as soon as the grace period is entered and whenever a project is cancelled.
 
-There are many other possible solutions, but even this small set of changes would affect style, systems, structure, leadership, culture, working climate, and motivation. The existing models do not address how these problems are identified, how solutions are developed and adopted, and how this adoption is communicated and monitored. WOPRS aims to codify these processes and enable organizations to successfully enact continuous and specific changes to address their specific needs and problems.
+There are many other possible solutions, but even this small set of changes would affect style, systems, structure, leadership, culture, working climate, and motivation. I will avoid a SWOT analysis of these changes here as this is merely an illustrative example to demonstrate the complexity and specificity involved in organization design 'in the trenches'. The existing models do not address how these problems are identified, how solutions are developed and adopted, and how this adoption is communicated and monitored. WOPRS aims to codify these processes and enable organizations to successfully enact continuous and specific changes to address their specific needs and problems.
 
-### The World-Objectives-Processes-Resources-Structures, or WOPRS model
+### The WOPRS model
 
-WOPRS consists of five primary factors which interact in a specific order, depending on the perspective or 'mode' in which the theory is being applied. The primary factors are:
+WOPRS consists of five primary factors which interact in specific ways, depending on the perspective or 'mode' in which the theory is being applied. The primary factors are:
 
 * World
 * Objectives
@@ -122,21 +125,25 @@ WOPRS consists of five primary factors which interact in a specific order, depen
 * Resources
 * Structures
 
-The first mode is the 'standard', or 'business as usual' mode. This is how the members of an organization understand the organization on a day-to-day basis as it operates and tries to achieve its objectives.
+The first mode is the 'standard', or 'business as usual' mode. This is how the members of an organization understand the organization on a day-to-day basis as it operates and tries to achieve its objectives. In the standard mode, each factor builds on and is determined by the preceding factors in the order given in the model name: world, objectives, processes, resources, and finally structures.
 
-The second mode is the 'meta', or 'change' or 'design' mode. This is how an organization designer sees the different factors as influencing each other in the context of trying to change one or more factors, and change the organization. From the meta perspective, there is no clear root factor or sequence in which the factors should be considered, because they push and pull on each other in mutual and symbiotic ways.
+The second mode is the 'meta', or 'change' or 'design' mode. This is how an organization designer sees the different factors as influencing each other in the context of trying to bring about an organizational transformation or change. From the meta perspective, there is no clear root factor or sequence in which the factors should be considered, because they push and pull on each other in mutual and symbiotic ways.
+
+I will now define and discuss each factor in order according to the standard mode.
 
 #### World
 
 The world is the set of true statements about the objective reality which surrounds us. "The sky is blue", "goats cheese is made from milk from goats", "if I don't water my plants, they will die", and "UK law requires a company to file a tax return each year", are all true statements, and largely free of controversy, meaning most people will immediately agree that these statements are all true without argument (even if there are interesting philosophical rabbit-holes, such as what 'blue' is).
 
-In the standard mode, the world is our most fundamental factor, because it defines the current state of affairs which inspire, motivate, and constrain our imagined way of how the world could be; the world is the 'is' to the 'ought' of our objectives.
+In the standard mode, the world is our most fundamental factor, because it defines the current state of affairs which inspire, motivate, and constrain our imagined way of how the world could be, and what is possible for us to achieve; the world is the 'is' to the 'ought' of our objectives.
 
 In the meta mode, the world constrains our processes and resources, through external policy. Statements like "UK law requires a company to file a tax return each year" are an example of such an external policy: a limitation on a process or an objective that must be met, to avoid an existential threat to the existence of the organization -- in this case, legal action from Revenue and Customs.
 
-World corresponds to external environment in Burke-Litwin, and is notably missing from other models.
+The organization can bring about changes in the world through its processes. When the world changes, it may be necessary to re-evaluate all other factors, particularly objectives and processes.
 
-World also serves to describe the current status of the organization, since the organization is situated inside the world. In this way, factors such as Burke-Litwin's culture appear in WOPRS as statements which span both world and objectives: there is a current culture, and there is also an ideal culture.
+World corresponds to external environment in Burke-Litwin, and is notably missing from other models. World also serves to describe the current status of the organization, since the organization is situated inside the world. In this way, factors such as Burke-Litwin's culture, working climate, and motivational level appear in WOPRS as statements in both world and objectives: there is a current culture, climate, and motivation, and there is also an ideal culture, climate, and motivation.
+
+Beliefs can also appear in the world factor as statements of the form "X believes Y", such as "our organization (i.e. all members) believe that brie is better than camembert".
 
 #### Objectives
 
@@ -144,9 +151,9 @@ Objectives are statements about the world that a person wants to be true. Exampl
 
 In the standard mode, objectives follow directly from the world, because individuals have desires and wish the world to be in a different state, and it is when a group of people share a set of common objectives that they come together to form an organization in order to successfully achieve those objectives. Additionally, an organization must know what it's objectives are before it can define processes and structures, because these other factors only exist to ensure that the objectives are secured. An organization can be said to be 'well-designed' if the other factors allow the organization to successfully achieve its objectives.
 
-Objectives are constrained by the world because some objectives are unrealistic or unachievable ("make the sky green"), and others are already true ("this is a sentence"), in which case there is no need to try and change them.
+Objectives are constrained by the world because some objectives are unrealistic or unachievable ("make the sky green"), and others are already true ("this is a sentence"), in which case there is no need to try and achieve them.
 
-In the meta mode, ... TODO ...
+In the meta mode, the construction of objectives is itself a process, where an organization designer attempts to list the different objectives, their priorities, and their relationships. Thus the objectives are influenced by the specifics of the "determine objectives" meta-process.
 
 Objectives may form their own tree of dependencies, where some objectives are a necessary condition for achieving others. For example "win the lottery" is conditional on "hold a valid lottery ticket", which is conditional on "have enough money to buy a lottery ticket".
 
@@ -154,7 +161,7 @@ Individual members will have their own objectives, for example many employees of
 
 Galbraith's rewards constitute a nexus of particular objectives and processes, such as the previous salary example, or a yearly bonus. Members have an objective of "earn a bonus" and the organization has the objective "incentivise members", which is supported by the additional objective of "pay members a bonus if they help the organization to achieve certain objectives".
 
-... TODO ...
+McKinsey's shared values and Burke-Litwin's mission and strategy map directly on to WOPRS' objectives.
 
 ##### Comparison with OKRs and KPIs
 
@@ -166,9 +173,9 @@ KPIs may be qualitative or quantitative but they are inherently metrics, because
 
 Since a OKR-objective _can_ be measurable, and because larger organizations tend to have deeper structures, it is not uncommon for there to be multiple sets of OKRs which connect into a tree, where the key result of one department becomes an objective for a subdepartment, who may then choose their own key results. This can be an explicit part of the process for how OKRs are deployed in an organization, but it may also arise more as an artifact of well-aligned 'strategic' and 'tactical' OKRs, rather than as a step-by-step 'cascade' (see Castro 2016).
 
-With KPIs there is an implicit and unstated assumption that a certain value for each KPI is good, but this can create problems. Firstly, if this is unstated, it is not obvious that everyone in the organization has the same idea of what the optimal value, or range of values is. Secondly, the optimal value for a KPI may change over time and in response to other KPIs. For example, if "manufactured widgets per day" is high then I want "widgets sold per day" to be high so I don't amass a big inventory of widgets, and likewise if sales are high I want manufacturing to keep up with demand. Conversely, if sales are low then I need to reduce production, and if production is low then it will put a limit on how much we can sell. This latter scenario is particularly interesting because it means a poor KPI in sales does not indicate a problem in the sales department, it may indicate a problem in another area of the organization which affects sales. OKR's key results can also suffer from this "unspecified optimum value" problem, but the objective part of the OKR framework seeks to offset this.
+With KPIs there is an implicit and unstated assumption that a certain value for each KPI is good, but this can create problems. Firstly, if this is unstated, it is not obvious that everyone in the organization has the same idea of what the optimal value, or range of values is. Secondly, the optimal value for a KPI may change over time and in response to other KPIs. For example, if "manufactured widgets per day" is high then I want "widgets sold per day" to be high so I don't amass a big inventory of widgets, and likewise if sales are high I want manufacturing to keep up with demand. Conversely, if sales are low then I need to reduce production, and if production is low then it will put a limit on how much I can sell. This latter scenario is particularly interesting because it means a poor KPI in sales does not indicate a problem in the sales department, it may indicate a problem in another area of the organization which affects sales. OKR's key results can also suffer from this "unspecified optimum value" problem, but the objective part of the OKR framework seeks to offset this. Additionally, key results can be phrased as "value of X should be above/below/equal to Y" to incorporate the optimum value explicitly.
 
-The definition I provide of an objective as "a statement someone wants to be true" subsumes OKR-objectives, key results, and KPIs. Objectives can nest and form a tree, and can developed in a top-down, bottom-up, or hybrid fashion. If an objective can be easily measured in a quantitative sense, like "widgets sold per day", this can be very useful, but it is not essential. However, objectives should be 'objective' in the sense that any member of the organization should be able to determine if the objective has been or is being met, even if there is effort involved in obtaining all relevant information. In other words, there should be no room for one person to say "the objective has been met" and another person to say "the objective has not been met": objectives serve to align all members of the organization on both the current state of the world, and the intended state that the organization wishes to arrive at.
+The definition I provide of an objective as "a statement someone wants to be true" subsumes OKR's objectives and key results, and KPIs. Objectives can nest and form a tree, and can developed in a top-down, bottom-up, or hybrid fashion. If an objective can be easily measured in a quantitative sense, like "widgets sold per day", this can be very useful, but it is not essential. However, objectives should be 'objective' in the sense that any member of the organization should be able to determine if the objective has been or is being met, even if there is effort involved in obtaining all relevant information. In other words, there should be no room for one person to say "the objective has been met" and another person to say "the objective has not been met": objectives serve to align all members of the organization on both the current state of the world, and the intended state that the organization wishes to arrive at.
 
 #### Processes
 
@@ -176,9 +183,15 @@ A process is an algorithm. It defines a sequence of steps which must be carried 
 
 In the standard mode, processes are dependent on objectives, because we need to know what we want before we can decide how we can get it. If objectives describe how we should measure the current state of the world, and tell us what state we want the world to be in, processes are the tools which allow us to change the world and move us towards that ideal state.
 
-In the meta mode, the development of an organization, its objectives and other factors are themselves processes! ... TODO ...
+In the meta mode, the development of an organization, its objectives and other factors are themselves processes. Even the action of writing a process is itself a process! These meta-processes are very commonly undocumented, and in my mind present a huge gap in the day-to-day life of organizations, and organization design thinking. How are processes developed? Who develops them? What's involved? How does a new process replace an old process? All these questions and more are answered by meta-processes (processes which operate on processes) and a key feature of the WOPRS model is to explicitly document these meta-processes, as we will see later.
 
-Processes may define roles and deliverables, and may be recursive or initiate other processes. Consider the following set of processes:
+Processes subsume Leavitt's tasks, McKinsey's systems, and various factors in Burke-Litwin including systems and tasks and skills.
+
+Culture and style constitute a set of unwritten beliefs (world) and processes which affect working climate and motivation. Behaviours like greeting your colleagues in the morning, going out for lunch together, advertising meetings publicly and allowing people to sit in and observe, encouraging engineers to talk directly with customers, regular 1:1 meetings between colleagues, and so many more practices, are often undocumented or implicit, arise organically and bottom-up, and have a strong emotional effect on members. These are the things which make up an organization's culture. Likewise, the unwritten parts of how members carry out their duties and execute processes, such as the tone in an email, or the way someone breaks down a task and the order they perform those sub-tasks in, constitute style.
+
+It is possible to document these cultural and stylistic processes, and WOPRS encourages the organization designer to do so, although they do not have to be rigorously defined. In a sense, writing a process document about "how to greet your colleagues in the morning" is pedantic, and will actually harm the culture more than help it. However, it is good to be thorough and make note of these behaviours in your collection of processes, to acknowledge that it exists and indicate that it is desired. In particular, documenting different members' styles is an (auto)ethnographic process, and can bring great advantages to an organization by allowing different members to learn from each other's approaches, and even develop a deeper understanding of their own work and why they work in that way.
+
+Processes may define roles and deliverables, and may be recursive or initiate other processes. Here is an example set of processes:
 
 * Hire an Engineer
   1. The Hiring Manager takes a set of job applications from the Engineering Job Applications inbox.
@@ -218,21 +231,37 @@ Processes may define roles and deliverables, and may be recursive or initiate ot
      1. This includes:
         1. Arranging a call with the new Engineer to welcome them to the team.
 
-<!-- TODO metaprocesses, bootstrapping and pyramid, subsumption of many functions from many models as 'processes', culture and implicit/unwritten processes, tedium and pedantry, the appropriate level of detail, policy as (external) constraints on processes -->
+The heart of a process description is this algorithmic sequence of steps, but the mentions of people, roles, checklists, inboxes, notifications and hand-overs, reveals that processes encode resources and structures, and in their respective sections we will see how these are extracted from processes.
+
+Processes may be triggered on a schedule (e.g. filing taxes), in response to an incoming resource (e.g. onboarding a new member), or on demand (e.g. updating an existing process).
+
+A well-written process document should explicitly list the required (input), produced (output) and intermediary resources involved, which includes roles and 'human resources', to make the process document easier to scan and connect with other process documents. Additionally, process documents should explain the objectives they help to achieve and how they contribute to any metrical objectives, so as to make reporting and performance monitoring easier. Finally, process documents should contain the design documentation for those processes, to explain why the process is that way and what alternatives have been considered, in order to assist future process development.
+
+Policies, both internal and external to the organization, are essentially constraints on processes, requiring that a certain step is taken or not taken, or even that a certain entire process exists or is enacted on a particular schedule. For example, health and safety regulations require welders to put lower a face shield before they can begin a weld, and filing a tax return is its own sequence of steps which must be completed between certain dates.
 
 #### Resources
 
-... TODO ...
+Resources are objects which exist in the world. This includes people (including the organization's members), steel, widgets, computers, software, offices, and documents (including process documents).
+
+In the normal mode, resources are dependent on processes because we only need certain resources in order to allow us to carry out the processes which we have determined are the best way of achieving our objectives. If I work at a software company, none of my processes require me to work with steel and so steel does not appear as a resource for my organization.
+
+In the meta mode, resources push back on processes because we can only design processes for which the required resources are readily available, or can be secured by another process. If I decide I want to start manufacturing steel widgets, and I write a "manufacture a steel widget" process, I will also need to build an "obtain steel" process. In this way, the inputs and outputs of different processes connect together to form a structure of resource flows, where the terminal inputs and outputs come from and flow out of the organization. For a manufacturing company, these terminal resources include raw materials for production, customers, investment capital, and candidate staff as in-flows, and products, profits, and outgoing staff as out-flows.
+
+Resources directly maps to Leavitt's technology and people, Galbraith's people, McKinsey's skills, and Burke-Litwin's leadership.
 
 #### Structures
 
 Organizations contain many structures, which are networks of relationships between members and resources.
 
-In the normal mode, structures are dependent on processes, because a process defines the interactions betweens members and resources which constitute a structure. We can describe many structures in an organization, such as a tree of departments and teams, or a tree of managers and their reports, or a RACI grid, but all of these structures exist as a 'shadow' of the processes which are operating within the organization on daily, weekly, and monthly bases. If a worker never has to communicate with their manager or vice versa, it is questionable if there should really be a line connecting them in the org chart, and if that manager-report structure and relationship really exists in that case.
+In the normal mode, structures are dependent on processes, because a process defines the interactions betweens members and resources which constitute a structure. We can describe many structures in an organization, such as a tree of departments and teams, or a tree of managers and their reports, or a RACI grid, or the flows of inputs and outputs between different processes, but all of these structures exist as a 'shadow' of the processes which are operating within the organization on daily, weekly, and monthly bases. If a worker never has to communicate with their manager or vice versa, it is questionable if there should really be a line connecting them in the org chart, and if that manager-report structure and relationship really exists.
+
+In the meta mode, structures are sometimes proscribed by conventional wisdom, a desire to maintain oversight, control, or authority, or because particular members want to hold particular roles. It is possible for structures to come before processes, but WOPRS argues that this is faulty, and instead structures should arise totally from the reality of the processes which exist in the organization. If a problem is detected, it is never a problem of structure, it is always a problem of process, and when that problem is fixed by changing the processes, then the change may be reflected in a change in a structure as well.
+
+Structure occurs in all of the previously discussed models and subsumes all of these definitions. Where WOPRS structure differs is this insight that structure arises from processes, rather than existing by itself.
 
 ### The minimal WOPRS organization
 
-... TODO ...
+... TODO ... <!-- ... TODO ... meta-processes, bootstrapping,  -->
 
 ### References
 
