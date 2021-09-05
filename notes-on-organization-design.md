@@ -241,7 +241,7 @@ The heart of a process description is this algorithmic sequence of steps, but th
 
 Processes may be triggered on a schedule (e.g. filing taxes), in response to an incoming resource (e.g. onboarding a new member), or on demand (e.g. updating an existing process).
 
-A well-written process document should explicitly list the required (input), produced (output) and intermediary resources involved, which includes roles and 'human resources', to make the process document easier to scan and connect with other process documents. Additionally, process documents should explain the objectives they help to achieve and how they contribute to any metrical objectives, so as to make reporting and performance monitoring easier. Finally, process documents should contain the design documentation for those processes, to explain why the process is that way and what alternatives have been considered, in order to assist future process development.
+A well-written process document should explicitly list the required (input), produced (output) and intermediary resources involved, which includes roles and 'human resources', to make the process document easier to scan and connect with other process documents. Additionally, process documents should explain the objectives they help to achieve and how they contribute to any metrical objectives, so as to make reporting and performance monitoring easier. Finally, process documents should contain the design documentation for those processes, to explain why the process is that way and what alternatives have been considered, in order to assist future process development. A Markdown template is included later on demonstrating all of these sections.
 
 ##### Policies as constraints on or requirements of processes
 
@@ -295,9 +295,12 @@ To implement WOPRS, an organization must start with a minimal set of meta-proces
    1. Organize objectives into a nested list, such that sub-items are necessary conditions of their super-item.
    2. Try to make objectives specific and measurable.
       1. It should be possible for any member of the organization with access to the necessary data to conclusively determine if the objective has been met or not.
-3. Once the objectives have been updated, begin "Evaluate processes" to determine if processes are still relevant or require updating.
+3. Once the objectives have been updated, apply the  "Evaluate process" process to each process in the list, until all processes have been re-evaluated.
+   1. This is to determine if processes are still relevant or require updating.
 
-##### Evaluate processes
+##### Evaluate process
+
+<!-- ensure all resources exist, if not create them -->
 
 ##### Create a process
 
@@ -307,7 +310,45 @@ To implement WOPRS, an organization must start with a minimal set of meta-proces
 
 ##### Update structure documentation
 
+#### Process document Markdown template
 
+This code block is a Markdown file you can use as an initial template for a WOPRS process document. Being Markdown, you can paste this in to Notion and some other web-based document systems.
+
+```markdown
+# <title of process>
+_Give this process a unique title. The title should be actionable, like a command, e.g. "Onboard an Engineer"._
+
+## Affected objectives
+_List any objectives which this process helps the organization to achieve when it is carried out, with the expected changes to metrics if possible._
+_For example, "Onboard an Engineer" may affect "Have enough Engineers to deliver our roadmap", and "Have enough money to pay all our employees next month"._
+
+*
+
+## Input resources
+_List any resources that this process requires or are touched during its execution. This includes specific members or roles if they are involved in the process or if they are required to initiate a follow-on process._
+_For example, "Onboard an Engineer" may require "HR Manager", "New Engineer", "GSuite Admin panel", and "Engineer Onboarding Checklist"._
+
+*
+
+## Output resources
+_List any resources that this process produces._
+_For example, "Onboard an Engineer" may produce "copy of onboarding checklist" and "new GSuite account"._
+
+*
+
+## Steps
+_A numbered list of steps to be taken when carrying out this process. Each step should be actionable, like the process title, and may contain sub-steps and additional explanation, context, or constraints, as required._
+_For example, "Onboard an Engineer" may include a step "1. Create a new account in GSuite" with sub-items "1.1 Ensure a new email account will be created.", and "1.1.1 The email format should be <first name>.<last name>@org.org"._
+
+1.
+
+## Design notes
+_Any documentation to explain how this process was developed or why it is the way it is. This may help people to understand the motivation for the process, why certain steps are necessary or omitted, and is particularly useful when re-evaulating or changing this process._
+_For example, "Onboard an Engineer" might include a note that "Step 4.1 ('Find an existing Engineer to be a Buddy for the new Engineer') is included because in the past new joiners have struggled to build connections with their colleagues."._
+
+
+```
+{: .white-space-break-spaces}
 
 ... TODO ... <!-- ... TODO ... meta-processes, bootstrapping,  -->
 
