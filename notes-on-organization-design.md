@@ -2,7 +2,7 @@
 layout: page
 title: Notes on Organization Design
 date: '2021-09-02'
-last_modified_at: '2021-09-04'
+last_modified_at: '2021-09-05'
 ---
 
 These [[notes]] are a living document as I move towards an essay documenting a new theory of the organization.
@@ -145,6 +145,8 @@ World corresponds to external environment in Burke-Litwin, and is notably missin
 
 Beliefs can also appear in the world factor as statements of the form "X believes Y", such as "our organization (i.e. all members) believe that brie is better than camembert".
 
+<!-- TODO are beliefs necessary? do we need to document the world?  -->
+
 #### Objectives
 
 Objectives are statements about the world that a person wants to be true. Examples include "retire before I am 50", "make $50 million annual recurring revenue", and "be the market leader in widget manufacturing". This definition is intentionally open and allows defining some questionable objectives, such as "brie is better than camembert", which is subjective (a matter of each person's taste), not easily measured (what is "better"?), and not well-scoped (does everyone have to think brie is better, or just myself?).
@@ -187,9 +189,13 @@ In the meta mode, the development of an organization, its objectives and other f
 
 Processes subsume Leavitt's tasks, McKinsey's systems, and various factors in Burke-Litwin including systems and tasks and skills.
 
+##### Culture and style as unwritten processes
+
 Culture and style constitute a set of unwritten beliefs (world) and processes which affect working climate and motivation. Behaviours like greeting your colleagues in the morning, going out for lunch together, advertising meetings publicly and allowing people to sit in and observe, encouraging engineers to talk directly with customers, regular 1:1 meetings between colleagues, and so many more practices, are often undocumented or implicit, arise organically and bottom-up, and have a strong emotional effect on members. These are the things which make up an organization's culture. Likewise, the unwritten parts of how members carry out their duties and execute processes, such as the tone in an email, or the way someone breaks down a task and the order they perform those sub-tasks in, constitute style.
 
 It is possible to document these cultural and stylistic processes, and WOPRS encourages the organization designer to do so, although they do not have to be rigorously defined. In a sense, writing a process document about "how to greet your colleagues in the morning" is pedantic, and will actually harm the culture more than help it. However, it is good to be thorough and make note of these behaviours in your collection of processes, to acknowledge that it exists and indicate that it is desired. In particular, documenting different members' styles is an (auto)ethnographic process, and can bring great advantages to an organization by allowing different members to learn from each other's approaches, and even develop a deeper understanding of their own work and why they work in that way.
+
+##### Examples of processes
 
 Processes may define roles and deliverables, and may be recursive or initiate other processes. Here is an example set of processes:
 
@@ -237,6 +243,8 @@ Processes may be triggered on a schedule (e.g. filing taxes), in response to an 
 
 A well-written process document should explicitly list the required (input), produced (output) and intermediary resources involved, which includes roles and 'human resources', to make the process document easier to scan and connect with other process documents. Additionally, process documents should explain the objectives they help to achieve and how they contribute to any metrical objectives, so as to make reporting and performance monitoring easier. Finally, process documents should contain the design documentation for those processes, to explain why the process is that way and what alternatives have been considered, in order to assist future process development.
 
+##### Policies as constraints on or requirements of processes
+
 Policies, both internal and external to the organization, are essentially constraints on processes, requiring that a certain step is taken or not taken, or even that a certain entire process exists or is enacted on a particular schedule. For example, health and safety regulations require welders to put lower a face shield before they can begin a weld, and filing a tax return is its own sequence of steps which must be completed between certain dates.
 
 #### Resources
@@ -253,15 +261,58 @@ Resources directly maps to Leavitt's technology and people, Galbraith's people, 
 
 Organizations contain many structures, which are networks of relationships between members and resources.
 
-In the normal mode, structures are dependent on processes, because a process defines the interactions betweens members and resources which constitute a structure. We can describe many structures in an organization, such as a tree of departments and teams, or a tree of managers and their reports, or a RACI grid, or the flows of inputs and outputs between different processes, but all of these structures exist as a 'shadow' of the processes which are operating within the organization on daily, weekly, and monthly bases. If a worker never has to communicate with their manager or vice versa, it is questionable if there should really be a line connecting them in the org chart, and if that manager-report structure and relationship really exists.
+In the normal mode, structures are dependent on processes, because a process defines the interactions between members and resources which constitute a structure. We can describe many structures in an organization, such as a tree of departments and teams, or a tree of managers and their reports, or a RACI grid, or the flows of inputs and outputs between different processes, but all of these structures exist as a 'shadow' of the processes which are operating within the organization on daily, weekly, and monthly bases. If a worker never has to communicate with their manager or vice versa, it is questionable if there should really be a line connecting them in the org chart, and if that manager-report structure and relationship really exists.
 
-In the meta mode, structures are sometimes proscribed by conventional wisdom, a desire to maintain oversight, control, or authority, or because particular members want to hold particular roles. It is possible for structures to come before processes, but WOPRS argues that this is faulty, and instead structures should arise totally from the reality of the processes which exist in the organization. If a problem is detected, it is never a problem of structure, it is always a problem of process, and when that problem is fixed by changing the processes, then the change may be reflected in a change in a structure as well.
+In the meta mode, structures are sometimes proscribed by conventional wisdom, a desire to maintain oversight, control, or authority, or because particular members want to hold particular roles. It is possible for structures to come before processes, but WOPRS argues that this is faulty, and instead structures should arise totally from the reality of the processes which exist in the organization. If a problem is detected, it is never a problem of structure, it is always a problem of process, and when that problem is fixed by changing the processes, then the change may be reflected in a change in a structures.
 
-Structure occurs in all of the previously discussed models and subsumes all of these definitions. Where WOPRS structure differs is this insight that structure arises from processes, rather than existing by itself.
+Structure occurs in all of the previously discussed models and WOPRS' definition of structure subsumes all of these other definitions. Where WOPRS structure differs is this insight that structures arise from processes, rather than existing by themselves.
 
-### The minimal WOPRS organization
+### WOPRS in practice
+
+To implement WOPRS, an organization must start with a minimal set of meta-processes, which allow organization designers to iteratively develop the objectives and processes of the organization. The organization should create a central repository of process documents, and populate this initially with the meta-processes. Each meta-process can then be invoked to further build out this suite of processes, and these processes in turn will build out the objectives, structures, and information resources of the organization. Thus I present the fundamental meta-process "Implement WOPRS" and the referenced suite of initial meta-processes.
+
+#### The "Implement WOPRS" process
+
+1. Choose a document repository for storing process documents and other WOPRS documentation.
+   1. This should be readable by all members of the organization
+      1. because members will need to consult these processes in order to carry out their tasks
+      2. and because members will need to know the objectives of the organization to keep themselves aligned
+      3. and because members need to know how the meta-processes work, so they can create change in the organization.
+   2. Possible options include:
+      1. A big folder on a desk somewhere.
+      2. A digital documentation system such as Notion, Google Docs, or Dropbox.
+      3. Text files in a version control system or file system, like Git or NFS.
+2. Create a section in the WOPRS document repository labelled "Processes".
+3. Create a document for each meta-process from the below documentation of "Initial meta-processes".
+4. Begin the "Update objectives" process.
+
+#### Initial meta-processes
+
+##### Update objectives
+
+1. In the root of the WOPRS document repository, create a document labelled "Objectives" if it does not already exist.
+2. Edit the "Objectives" document with the new objectives.
+   1. Organize objectives into a nested list, such that sub-items are necessary conditions of their super-item.
+   2. Try to make objectives specific and measurable.
+      1. It should be possible for any member of the organization with access to the necessary data to conclusively determine if the objective has been met or not.
+3. Once the objectives have been updated, begin "Evaluate processes" to determine if processes are still relevant or require updating.
+
+##### Evaluate processes
+
+##### Create a process
+
+##### Update or replace a process
+
+##### Remove a process
+
+##### Update structure documentation
+
+
 
 ... TODO ... <!-- ... TODO ... meta-processes, bootstrapping,  -->
+
+
+### Summary
 
 ### References
 
