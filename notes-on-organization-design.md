@@ -326,9 +326,47 @@ To implement WOPRS, an organization must start with a minimal set of meta-proces
 
 ##### Update or replace a process
 
+1. Determine the set of individuals who must be consulted before the existing process is changed.
+   1. This may include:
+      1. The author and/or owner of the existing process document.
+      2. Any members whose roles are named in the process.
+         1. These people should appear as 'input resources' for the process.
+      3. Any individuals or roles connected to surrounding processes, which provide inputs to or take outputs from this process.
+      4. Any consultees named in the preamble of the current process document.
+         1. These people may not be participants in the process itself, but are major stakeholders for the process.
+2. Produce a request-for-comment (RFC) draft of the updated process as a new document in the organization's document repository inside "Processes" > "Drafts".
+3. Perform "Evaluate process" against the RFC to determine if any other documents need to be changed.
+   1. If so, produce new drafts of those documents to include with the RFC.
+4. Circulate the RFC to all consultees.
+5. Gather feedback from the consultees.
+   1. If all consultees approve the new draft:
+      1. Replace the current process document with the RFC.
+      2. Update any other documents as per the result of the evaluation from step 3.
+      3. Communicate to all consultees that this process has been completed and the process document is updated.
+   2. Otherwise, revise the RFC and seek another round of feedback, returning to step 2.
+
 ##### Remove a process
 
-##### Update structure documentation
+1. Determine the set of individuals who must be consulted before the process is removed.
+   1. This may include:
+      1. The author and/or owner of the existing process document.
+      2. Any members whose roles are named in the process.
+         1. These people should appear as 'input resources' for the process.
+      3. Any individuals or roles connected to surrounding processes, which provide inputs to or take outputs from this process.
+      4. Any consultees named in the preamble of the current process document.
+         1. These people may not be participants in the process itself, but are major stakeholders for the process.
+2. Perform "Evaluate process" against the process to determine if any other documents need to be changed.
+   1. If so, produce new drafts of those documents to present to the consultees.
+3. Gather feedback from the consultees.
+   1. If all consultees approve the removal and any necessary changes:
+      1. Delete the current process document.
+      2. Update any other documents as per the result of the evaluation from step 2.
+      3. Communicate to all consultees that this process has been completed and the process document has been deleted.
+   2. Otherwise:
+      1. If related documents require further revision, update the drafts and seek another round of feedback, returning to step 3.
+      2. If consultees do not agree that a process should be removed, abandon this change.
+
+##### Update Resource Flow Chart document
 
 #### Process document Markdown template
 
@@ -337,6 +375,8 @@ This code block is a Markdown file you can use as an initial template for a WOPR
 ```markdown
 # <title of process>
 _Give this process a unique title. The title should be actionable, like a command, e.g. "Onboard an Engineer"._
+
+**Author**: _Provide the name and contact information of the author of the process document. This ensures anyone reading the document has a point of contact for questions, and indicates an appropriate person to consult about changes to the process._
 
 ## Relevant objectives
 _List any objectives which this process helps the organization to achieve when it is carried out, with the expected changes to metrics if possible._
