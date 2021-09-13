@@ -2,7 +2,7 @@
 layout: page
 title: Notes on Organization Design
 date: '2021-09-02'
-last_modified_at: '2021-09-05'
+last_modified_at: '2021-09-13'
 ---
 
 These [[notes]] are a living document as I move towards an essay documenting a new theory of the organization.
