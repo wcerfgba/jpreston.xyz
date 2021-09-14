@@ -1,22 +1,22 @@
 ---
 layout: page
-title: Notes on Organization Design
+title: The WOPRS Organization Model
 date: '2021-09-02'
-last_modified_at: '2021-09-13'
+last_modified_at: '2021-09-14'
 ---
 
-These [[notes]] are a living document as I move towards an essay documenting a new theory of the organization.
-
------
-
-This essay presents my thoughts on the nature of organizations: the factors that make up what an 'organization' is, how those factors interrelate, and what it means for these factors to be well-designed. I show how the factors I define in my 'WOPRS' model relate to factors and components in other theories of the organization, such as the McKinsey 7S model and the Burke-Litwin model. I discuss some of the meta-processes an organization may carry out, and provide a minimal blueprint for developing new and existing organizations.
+This [[essay]] presents my thoughts on the nature of organizations: the factors that make up what an 'organization' is, how those factors interrelate, and what it means for these factors to be well-designed. I define the 'WOPRS' model, a concrete framework for defining all relevant knowledge for maintaining an organization. I show how the factors I define in the WOPRS model relate to factors and components in other theories of the organization, such as the McKinsey 7S model and the Burke-Litwin model. I discuss some of the meta-processes an organization may carry out, and provide a minimal blueprint for developing new and existing organizations.
 
 * Table of Contents
 {:toc}
 
-<!-- TODO motivation, background, quick summary -->
+### Summary
 
-### Basic definitions
+Many organizations fail to clearly define their objectives and processes, which leads to confusion and misalignment between members and the organization as a whole. Existing models of the organization and organizational change are vague and better used as high-level 'tools for thought' to aid with design thinking, rather than as comprehensive frameworks indicating how organization designers should enact change and how change can be captured and communicated. The WOPRS model provides a minimal set of documentation with a strong focus on processes, providing a concrete framework for enacting change.
+
+### Background
+
+#### Basic definitions
 
 Organizations are groups of individuals who share one or more objectives, and seek to achieve those objectives by coordinated action, which is managed by certain structures and processes.
 
@@ -33,20 +33,20 @@ Design is a wide-reaching approach to solution development which involves:
 * Execution of that plan
 * Liaising with other stakeholders throughout this process
 
-### Existing theories of the organization
+#### Existing theories of the organization
 
 Many theories and models of the organization and organizational change break down the abstract concept of the organization into a set of interconnected factors. These factors influence each other in specific ways, which leads to the success or failure of the organization and any initiatives to redesign it.
 
 The following models are quite common in the literature, and I define the different factors that constitute these models. Later on as I develop the WOPRS model I will reference these factors and show how WOPRS generalizes them.
 
-#### Leavitt's Diamond
+##### Leavitt's Diamond
 
 * People -- the individuals who constitute the membership of the organization
 * Tasks -- the actions taken by members of the organization
 * Technology -- the non-human resources which members use as part of carrying out their tasks, such as buildings, desks, computers, software, process inputs, etc.
 * Structure -- the formal and informal relationships between people and technologies, such as information flows, departmental hierarchy, layers of management, etc.
 
-#### Galbraith's Star
+##### Galbraith's Star
 
 * Strategy -- the goals, objectives, values and missions of the organization
 * Structure -- the placement of power and authority
@@ -54,7 +54,7 @@ The following models are quite common in the literature, and I define the differ
 * Rewards -- a system to incentivise and motivate members
 * People -- human resource policies
 
-#### McKinsey's 7S
+##### McKinsey's 7S
 
 * Style -- informal rules of conduct, culture, how members operate between the gaps of particular processes
 * Skills -- the capabilities of the organization, its subgroups, and its members
@@ -64,7 +64,7 @@ The following models are quite common in the literature, and I define the differ
 * Strategy -- main functions of the organization
 * Shared values or superordinate goals -- what does the organization want to achieve, social missions
 
-#### Burke-Litwin
+##### Burke-Litwin
 
 * External environment -- the world the organization lives within: economic climate, wider cultural values, competition and market situation, etc.
 * Mission and strategy -- purpose and goals
@@ -79,7 +79,7 @@ The following models are quite common in the literature, and I define the differ
 * Motivational level -- the level of commitment and alignment that individuals have to the organization's goals
 * Individual and organizational performance -- successful completion of tasks by members and successful achievement of the mission by the organization
 
-#### Purpose and criticism of existing models
+##### Purpose and criticism of existing models
 
 The documented models primarily aim to assist organization designers with understanding the factors involved in creating change and how they interact. Some of the factor definitions are inherently vague or overlapping, because these models are not supposed to provide a rigorous definition of what an organization is, but instead are supposed to stimulate the mind of the organization designer throughout the ideation and evaluation processes, and to allow the designer to make sure they are considering all the different angles and perspectives, creating a 'complete picture' throughout the design process. In other words, they are 'tools for thought'.
 
@@ -274,7 +274,11 @@ Structure occurs in all of the previously discussed models and WOPRS' definition
 
 ### WOPRS in practice
 
-To implement WOPRS, an organization must start with a minimal set of meta-processes, which allow organization designers to iteratively develop the objectives and processes of the organization. The organization should create a central repository of process documents, and populate this initially with the meta-processes. Each meta-process can then be invoked to further build out this suite of processes, and these processes in turn will build out the objectives, structures, and information resources of the organization. Thus I present the fundamental meta-process "Implement WOPRS" and the referenced suite of initial meta-processes.
+To implement WOPRS, an organization must start with a minimal set of meta-processes, which allow organization designers to iteratively develop the objectives and processes of the organization. The organization should create a central repository of process documents, and populate this initially with the meta-processes. Each meta-process can then be invoked to further build out this suite of processes, and these processes in turn will build out the objectives, structures, and information resources of the organization.
+
+It is important to adjust these processes to suit the specifics of your organization. There may be additional information that needs capturing in a process document, or you may have particular rules around what structure documentation needs updating, or timeboxed mechanisms for ratify a proposed process. One key issue to clarify is set of consultees for various processes: who needs to be involved in making a decision about creating or replacing a process or objective, and how is that decision made. These restrictions define the leadership structure of the organization.
+
+To implement WOPRS, proceed with the "Implement WOPRS" process.
 
 #### The "Implement WOPRS" process
 
@@ -289,11 +293,12 @@ To implement WOPRS, an organization must start with a minimal set of meta-proces
       3. Text files in a version control system or file system, like Git or NFS.
 2. Create a section in the WOPRS document repository labelled "Processes".
 3. Create a document for each meta-process from the below documentation of "Initial meta-processes".
-4. Begin the "Update objectives" process.
+4. Create a document called "Process template" using the below template.
+5. Begin the "Update objectives" process.
 
 #### Initial meta-processes
 
-##### Update objectives
+##### Define objectives
 
 1. In the root of the WOPRS document repository, create a document labelled "Objectives" if it does not already exist.
 2. Edit the "Objectives" document with the new objectives.
@@ -320,9 +325,25 @@ To implement WOPRS, an organization must start with a minimal set of meta-proces
    1. This would include any documentation on resource flows, and may include documentation about roles and responsibilities (e.g. RACI charts) or org charts.
    2. If so, update each structure document according to its relevant process.
 
-<!-- TODO who needs consulting? how is that documented? -->
-
 ##### Create a process
+
+1. Determine the objectives of the process and how these relate to the organization's objectives, through reference to the Objectives document.
+   1. If the process does not benefit an existing objective, consider if the process is truly necessary, or if there are missing objectives in the Objectives document.
+      1. If there are undocumented objective, perform "Define objectives".
+2. Determine the set of individuals who must be consulted about this new process.
+   1. This may include:
+      1. Any individuals or roles connected to surrounding processes, which provide inputs to or take outputs from this process.
+3. Produce a request-for-comment (RFC) draft of the updated process as a new document in the organization's document repository inside "Processes" > "Drafts".
+   1. This draft must follow the organization's template at
+4. Perform "Evaluate process" against the RFC to determine if any other documents need to be changed.
+   1. If so, produce new drafts of those documents to include with the RFC.
+5. Circulate the RFC to all consultees.
+6. Gather feedback from the consultees.
+   1. If all consultees approve the new draft:
+      1. Move the RFC process document to the authoritative "Process" documents folder.
+      2. Update any other documents as per the result of the evaluation from step 3.
+      3. Communicate to all consultees that this process has been completed and the process document is updated.
+   2. Otherwise, revise the RFC and seek another round of feedback, returning to step 2.
 
 ##### Update or replace a process
 
@@ -366,54 +387,50 @@ To implement WOPRS, an organization must start with a minimal set of meta-proces
       1. If related documents require further revision, update the drafts and seek another round of feedback, returning to step 3.
       2. If consultees do not agree that a process should be removed, abandon this change.
 
-##### Update Resource Flow Chart document
-
 #### Process document Markdown template
 
-This code block is a Markdown file you can use as an initial template for a WOPRS process document. Being Markdown, you can paste this in to Notion and some other web-based document systems.
+This code block is a Markdown file you can use as an initial template for WOPRS process documents. You should adjust this template to suit your organization. Being Markdown, you can paste this in to Notion and some other web-based document systems.
 
 ```markdown
 # <title of process>
 _Give this process a unique title. The title should be actionable, like a command, e.g. "Onboard an Engineer"._
 
 **Author**: _Provide the name and contact information of the author of the process document. This ensures anyone reading the document has a point of contact for questions, and indicates an appropriate person to consult about changes to the process._
+**Date written**: _Provide the date the document was last revised. Once an RFC is approved and becomes authoritative, the document should not be updated directly, but should go through the "Update or replace a process" meta-process._
+**Date ratified**: _Provide the date the process was ratified and became authoritative._
+
+## Consultees
+_Provide a list of names and contact details for all persons and roles who should be consulted in the event this process is being updated._
+
+*
 
 ## Relevant objectives
-_List any objectives which this process helps the organization to achieve when it is carried out, with the expected changes to metrics if possible._
-_For example, "Onboard an Engineer" may affect "Have enough Engineers to deliver our roadmap", and "Have enough money to pay all our employees next month"._
+_List any objectives which this process helps the organization to achieve when it is carried out, with the expected changes to metrics if possible. For example, "Onboard an Engineer" may affect "Have enough Engineers to deliver our roadmap", and "Have enough money to pay all our employees next month"._
 
 *
 
 ## Input resources
-_List any resources that this process requires or are touched during its execution. This includes specific members or roles if they are involved in the process or if they are required to initiate a follow-on process._
-_For example, "Onboard an Engineer" may require "HR Manager", "New Engineer", "GSuite Admin panel", and "Engineer Onboarding Checklist"._
+_List any resources that this process requires or are touched during its execution. This includes specific members or roles if they are involved in the process or if they are required to initiate a follow-on process. For example, "Onboard an Engineer" may require "HR Manager", "New Engineer", "GSuite Admin panel", and "Engineer Onboarding Checklist"._
 
 *
 
 ## Output resources
-_List any resources that this process produces._
-_For example, "Onboard an Engineer" may produce "copy of onboarding checklist" and "new GSuite account"._
+_List any resources that this process produces. For example, "Onboard an Engineer" may produce "copy of onboarding checklist" and "new GSuite account"._
 
 *
 
 ## Steps
-_A numbered list of steps to be taken when carrying out this process. Each step should be actionable, like the process title, and may contain sub-steps and additional explanation, context, or constraints, as required._
-_For example, "Onboard an Engineer" may include a step "1. Create a new account in GSuite" with sub-items "1.1 Ensure a new email account will be created.", and "1.1.1 The email format should be <first name>.<last name>@org.org"._
+_A numbered list of steps to be taken when carrying out this process. Each step should be actionable, like the process title, and may contain sub-steps and additional explanation, context, or constraints, as required. For example, "Onboard an Engineer" may include a step "1. Create a new account in GSuite" with sub-items "1.1 Ensure a new email account will be created.", and "1.1.1 The email format should be <first name>.<last name>@org.org"._
 
 1.
 
 ## Design notes
-_Any documentation to explain how this process was developed or why it is the way it is. This may help people to understand the motivation for the process, why certain steps are necessary or omitted, and is particularly useful when re-evaulating or changing this process._
-_For example, "Onboard an Engineer" might include a note that "Step 4.1 ('Find an existing Engineer to be a Buddy for the new Engineer') is included because in the past new joiners have struggled to build connections with their colleagues."._
+_Any documentation to explain how this process was developed or why it is the way it is. This may help people to understand the motivation for the process, why certain steps are necessary or omitted, and is particularly useful when re-evaulating or changing this process. For example, "Onboard an Engineer" might include a note that "Step 4.1 ('Find an existing Engineer to be a Buddy for the new Engineer') is included because in the past new joiners have struggled to build connections with their colleagues."._
 
 
 ```
 {: .white-space-break-spaces}
 
-... TODO ... <!-- ... TODO ... meta-processes, bootstrapping,  -->
-
-
-### Summary
 
 ### References
 
@@ -422,7 +439,6 @@ Abbas, Tahir. ‘Burke Litwin Model of Change’. CMI (blog), 6 April 2020. <htt
 Felipe Castro. ‘OKRs Do Not Cascade’, 2 April 2016. <https://felipecastro.com/en/okr/okrs-not-cascade/>.
 
 Galbraith, Jay R. ‘The Star Model’. Accessed 4 September 2021. <https://www.jaygalbraith.com/images/pdfs/StarModel.pdf>.
-
 
 McKinsey. ‘Enduring Ideas: The 7-S Framework’. Accessed 4 September 2021. <https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/enduring-ideas-the-7-s-framework>.
 
@@ -434,6 +450,8 @@ Tahir, Umar. ‘What Is Leavitt’s Diamond Model?’ CMI (blog), 10 January 202
 Atlassian. ‘What Is Agile?’ Atlassian. Accessed 3 September 2021. <https://www.atlassian.com/agile>.
 
 Daft, Richard L. Organization Theory and Design. Cengage Learning, 2012.
+
+Fernhout, Paul D. High Performance Organizations Reading List, 2021. https://github.com/pdfernhout/High-Performance-Organizations-Reading-List.
 
 International Institute of Business Analysis. BABOK: A Guide to the Business Analysis Body of Knowledge. International Institute of Business Analysis, 2015.
 
