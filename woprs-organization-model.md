@@ -2,21 +2,21 @@
 layout: page
 title: The WOPRS Organization Model
 date: '2021-09-02'
-last_modified_at: '2021-09-14'
+last_modified_at: '2021-09-23'
 ---
 
-This [[essay]] presents my thoughts on the nature of organizations: the factors that make up what an 'organization' is, how those factors interrelate, and what it means for these factors to be well-designed. I define the 'WOPRS' model, a concrete framework for defining all relevant knowledge for maintaining an organization. I show how the factors I define in the WOPRS model relate to factors and components in other theories of the organization, such as the McKinsey 7S model and the Burke-Litwin model. I discuss some of the meta-processes an organization may carry out, and provide a minimal blueprint for developing new and existing organizations.
+This living [[essay]] presents my thoughts on the nature of organizations: the factors that make up what an 'organization' is, how those factors interrelate, and what it means for these factors to be well-designed. I define the 'WOPRS' model, a concrete framework for defining all relevant knowledge for maintaining an organization. I discuss some of the meta-processes an organization may carry out, and provide a minimal blueprint for developing new and existing organizations. In an appendix, I show how the factors I define in the WOPRS model relate to factors and components in other theories of the organization, such as the McKinsey 7S model and the Burke-Litwin model.
 
 * Table of Contents
 {:toc}
 
-### Summary
+### tl;dr
 
-Many organizations fail to clearly define their objectives and processes, which leads to confusion and misalignment between members and the organization as a whole. Existing models of the organization and organizational change are vague and better used as high-level 'tools for thought' to aid with design thinking, rather than as comprehensive frameworks indicating how organization designers should enact change and how change can be captured and communicated. The WOPRS model provides a minimal set of documentation with a strong focus on processes, providing a concrete framework for enacting change.
+Many organizations fail to clearly define their objectives and processes, which leads to confusion and misalignment between members and the organization as a whole. It is important to document objectives and processes in detail and to provide easy access to these documents to everyone in your organization. Fewer organizations define robust 'meta-processes' which clearly explain how non-leadership members can participate in the organization design process and help to make the organization more effective. Additionally, leadership often fails to consult individual contributors when undertaking organization design and process design work, even if these members are primary stakeholders who may be executing those processes!
 
-### Background
+Your organization should have a location in its document repository which contains authoritative descriptions of the organization's processes, and this should include meta-processes to handle how the existing processes can be updated. Your objectives should also be clearly documented in detail, and you should view the revision of these objectives as another process. Your processes are your primary method of achieving your objectives, and your structures should arise from your processes, rather than the other way round. Maintain structure documentation in response to your process documentation, and in particular maintain a document showing how all your resources flow through your different processes.
 
-#### Basic definitions
+### Basic definitions
 
 Organizations are groups of individuals who share one or more objectives, and seek to achieve those objectives by coordinated action, which is managed by certain structures and processes.
 
@@ -32,91 +32,6 @@ Design is a wide-reaching approach to solution development which involves:
 * Formation of a plan to bring about a chosen solution
 * Execution of that plan
 * Liaising with other stakeholders throughout this process
-
-#### Existing theories of the organization
-
-Many theories and models of the organization and organizational change break down the abstract concept of the organization into a set of interconnected factors. These factors influence each other in specific ways, which leads to the success or failure of the organization and any initiatives to redesign it.
-
-The following models are quite common in the literature, and I define the different factors that constitute these models. Later on as I develop the WOPRS model I will reference these factors and show how WOPRS generalizes them.
-
-##### Leavitt's Diamond
-
-* People -- the individuals who constitute the membership of the organization
-* Tasks -- the actions taken by members of the organization
-* Technology -- the non-human resources which members use as part of carrying out their tasks, such as buildings, desks, computers, software, process inputs, etc.
-* Structure -- the formal and informal relationships between people and technologies, such as information flows, departmental hierarchy, layers of management, etc.
-
-##### Galbraith's Star
-
-* Strategy -- the goals, objectives, values and missions of the organization
-* Structure -- the placement of power and authority
-* Process -- how information flows around the structure
-* Rewards -- a system to incentivise and motivate members
-* People -- human resource policies
-
-##### McKinsey's 7S
-
-* Style -- informal rules of conduct, culture, how members operate between the gaps of particular processes
-* Skills -- the capabilities of the organization, its subgroups, and its members
-* Systems -- processes, how work is done
-* Structure -- authority relations
-* Staff -- members, their intrinsic talents, diversity of membership
-* Strategy -- main functions of the organization
-* Shared values or superordinate goals -- what does the organization want to achieve, social missions
-
-##### Burke-Litwin
-
-* External environment -- the world the organization lives within: economic climate, wider cultural values, competition and market situation, etc.
-* Mission and strategy -- purpose and goals
-* Leadership -- the members responsible for determining and communicating the mission and strategy, and leading organizational change
-* Culture -- norms, behaviours, and value systems
-* Structure -- hierarchies, departments, lines of communication and decision making relationships
-* Systems -- rules and regulations, policies, and procedures
-* Management practice -- behaviour of managers towards strategy and change
-* Working climate -- the attitude of members, how they feel about leadership, management and culture
-* Tasks and skills -- actions required to be completed by members and their capacities for successful execution
-* Individual values and needs -- principles and objectives of individual members
-* Motivational level -- the level of commitment and alignment that individuals have to the organization's goals
-* Individual and organizational performance -- successful completion of tasks by members and successful achievement of the mission by the organization
-
-##### Purpose and criticism of existing models
-
-The documented models primarily aim to assist organization designers with understanding the factors involved in creating change and how they interact. Some of the factor definitions are inherently vague or overlapping, because these models are not supposed to provide a rigorous definition of what an organization is, but instead are supposed to stimulate the mind of the organization designer throughout the ideation and evaluation processes, and to allow the designer to make sure they are considering all the different angles and perspectives, creating a 'complete picture' throughout the design process. In other words, they are 'tools for thought'.
-
-For example, in McKinsey's 7S model, there is overlap between skills, systems, and strategy -- as I will demonstrate later in WOPRS, these can all be reduced to 'processes'. Likewise in Burke-Litwin, working climate, motivational level, and culture also overlap, whereas in WOPRS these factors are instead viewed as particular objectives and processes.
-
-Despite these overlaps, when we ask "what is X in this organization/team/individual?" or "how will changing X affect this organization/team/individual?" or "how do X and Y interact?", we will come up with different ideas for different factors, and this is why these models are useful as design tools: they assist with thinking and exploration, rather than concrete definition.
-
-This lack of concrete definition and hard separation between these factors can create problems later in the change process when we are trying to develop a particular design or transformation. Where do we start, and where do we end? What needs to be re-evaluated along the way, and what can remain the same? When we are dealing with the specifics of one particular organization, we want to be able to identify specific problems, and determine specific changes and their effects.
-
-For example, imagine a software company that uses Asana for managing a Kanban-style product development workflow. The Sales department are finding it hard to understand how the roadmap is changing when a project has to be extended a few weeks due to unforeseen complexity, and the project managers in the Product team are struggling to reorganise the roadmap in response to these delays. Team members take some time to do some organization design thinking and evaluate the problems through the aforementioned models, and many perspectives are formed:
-
-1. Asana doesn't provide the right kind of insight into the roadmap.
-   1. It doesn't have a good timeline view for scheduling projects.
-   2. It doesn't make it easy to update the wider company when the roadmap changes.
-   3. It doesn't let us experiment with the roadmap, weigh all the factors, and determine what the roadmap should look like.
-   4. It doesn't allow us to attach explanations to the roadmap, so Sales don't know why the roadmap is the way it is.
-2. The Kanban process is not suitable for the kinds of projects we are working on right now.
-   1. There is no timeboxing of projects or tickets, so some people get bogged down in complexity and are required to press ahead until they can move the ticket on, which creates a drain of available engineers.
-   2. Projects get fragmented into smaller tickets which deliver technical slices of the solution (e.g. "update database tables", "implement API", "implement frontend") but which don't deliver tangible outcomes to our customers or the business.
-   3. The PM spends a lot of time trying to prioritise work that has been pushed into the backlog, but the analysis on this work has started to go 'stale' and become out of date by the time the projects are prioritised.
-
-Some solutions are proposed:
-
-1. Switch from Asana to JIRA and Confluence
-   1. It has a better timeline view.
-   2. It can send people notifications when start dates are changed.
-   3. It can associate the roadmap with an explanation document.
-2. Kill the backlog.
-   1. Instead the PM will meet with stakeholders each week to determine upcoming work as we move along the roadmap.
-3. Projects in the Kanban will not be split up in to smaller tickets.
-   1. Instead the engineers and designers on each project can organise their own workflow as they see fit, until the project is finally delivered.
-4. Projects are given a grace period of one week beyond their deadline, to allow for unseen complexity.
-   1. If the project can't be delivered in that time, it's removed from the board and development continues along the roadmap as if it had been successfully delivered.
-   2. The PM must incorporate this grace period in to the roadmap as it is built out.
-   3. The PM must notify Sales as soon as the grace period is entered and whenever a project is cancelled.
-
-There are many other possible solutions, but even this small set of changes would affect style, systems, structure, leadership, culture, working climate, and motivation. I will avoid a SWOT analysis of these changes here as this is merely an illustrative example to demonstrate the complexity and specificity involved in organization design 'in the trenches'. The existing models do not address how these problems are identified, how solutions are developed and adopted, and how this adoption is communicated and monitored. WOPRS aims to codify these processes and enable organizations to successfully enact continuous and specific changes to address their specific needs and problems.
 
 ### The WOPRS model
 
@@ -144,8 +59,6 @@ In the meta mode, the world constrains our processes and resources, through exte
 
 The organization can bring about changes in the world through its processes. When the world changes, it may be necessary to re-evaluate all other factors, particularly objectives and processes.
 
-World corresponds to external environment in Burke-Litwin, and is notably missing from other models. World also serves to describe the current status of the organization, since the organization is situated inside the world. In this way, factors such as Burke-Litwin's culture, working climate, and motivational level appear in WOPRS as statements in both world and objectives: there is a current culture, climate, and motivation, and there is also an ideal culture, climate, and motivation.
-
 Beliefs can also appear in the world factor as statements of the form "X believes Y", such as "our organization (i.e. all members) believe that brie is better than camembert". When documenting the world, you may need to take care to distinguish between 'facts' and beliefs. Philosophically we may argue that a 'fact' is just a belief in which we have a very high level of confidence, and pragmatically we may argue that we should be confident of any belief worth stating. Fundamentally, what world-statements are relevant for your organization and if a distinction between facts and beliefs is relevant depends on your objectives, and you must decide what world-statements need documenting and connecting to your objectives, if any.
 
 #### Objectives
@@ -166,8 +79,6 @@ Individual members will have their own objectives, for example many employees of
 
 Galbraith's rewards constitute a nexus of particular objectives and processes, such as the previous salary example, or a yearly bonus. Members have an objective of "earn a bonus" and the organization has the objective "incentivise members", which is supported by the additional objective of "pay members a bonus if they help the organization to achieve certain objectives".
 
-McKinsey's shared values and Burke-Litwin's mission and strategy map directly on to WOPRS' objectives.
-
 ##### Comparison with OKRs and KPIs
 
 There are many tools and frameworks an organization can use for thinking about and setting its objectives and measuring how well the organization is meeting those objectives. OKRs and KPIs are two common tools.
@@ -176,7 +87,7 @@ In OKR thinking, an objective should be inspirational and may be qualitative and
 
 KPIs may be qualitative or quantitative but they are inherently metrics, because each KPI has a value which may change over time. In this respect KPIs are essentially the same as OKR's key results, except with OKRs the 'true' objective is make explicit, whereas with a KPI there is an implicit assumption that the organization wants to achieve a certain value of that KPI because that is good, or an objective, in and of itself. Hence why many organizations prefer OKR thinking to KPI thinking: writing down the objective separately to the metrics reminds us of our 'true' goal and prevents us from over-optimizing the metrics without attention to how the metric and the goal can start to diverge. OKRs advance KPIs by incorporating Goodhart's law, as expressed by Marilyn Strathern: "when a measure becomes a target, it ceases to be a good measure".
 
-Since a OKR-objective _can_ be measurable, and because larger organizations tend to have deeper structures, it is not uncommon for there to be multiple sets of OKRs which connect into a tree, where the key result of one department becomes an objective for a subdepartment, who may then choose their own key results. This can be an explicit part of the process for how OKRs are deployed in an organization, but it may also arise more as an artifact of well-aligned 'strategic' and 'tactical' OKRs, rather than as a step-by-step 'cascade' (see Castro 2016).
+Since a OKR-objective _can_ be measurable, and because larger organizations tend to have deeper structures, it is not uncommon for there to be multiple sets of OKRs which connect into a tree, where the key result of one department becomes an objective for a sub-department, who may then choose their own key results. This can be an explicit part of the process for how OKRs are deployed in an organization, but it may also arise more as an artifact of well-aligned 'strategic' and 'tactical' OKRs, rather than as a step-by-step 'cascade' (see Castro 2016).
 
 With KPIs there is an implicit and unstated assumption that a certain value for each KPI is good, but this can create problems. Firstly, if this is unstated, it is not obvious that everyone in the organization has the same idea of what the optimal value, or range of values is. Secondly, the optimal value for a KPI may change over time and in response to other KPIs. For example, if "manufactured widgets per day" is high then I want "widgets sold per day" to be high so I don't amass a big inventory of widgets, and likewise if sales are high I want manufacturing to keep up with demand. Conversely, if sales are low then I need to reduce production, and if production is low then it will put a limit on how much I can sell. This latter scenario is particularly interesting because it means a poor KPI in sales does not indicate a problem in the sales department, it may indicate a problem in another area of the organization which affects sales. OKR's key results can also suffer from this "unspecified optimum value" problem, but the objective part of the OKR framework seeks to offset this. Additionally, key results can be phrased as "value of X should be above/below/equal to Y" to incorporate the optimum value explicitly.
 
@@ -184,13 +95,13 @@ The definition I provide of an objective as "a statement someone wants to be tru
 
 #### Processes
 
-A process is an algorithm. It defines a sequence of steps which must be carried out by one or more individuals, the inputs they require, and the outputs they produce. Examples of processes include "hire an engineer", "process payroll", "manufacture a widget", and "sell a widget". Without processes, the world is static and unchanging: it is only because people and nature 'do' things over time that we have a concept of a past, present, and future which are different and not identical.
+In WOPRS, a process is an algorithm. It defines a sequence of steps which must be carried out by one or more individuals, the inputs they require, and the outputs they produce. Examples of processes include "hire an engineer", "process payroll", "manufacture a widget", and "sell a widget". Without processes, the world is static and unchanging: it is only because people and nature 'do' things over time that we have a concept of a past, present, and future which are different and not identical.
+
+According to ISO 9000:2015, a process is a "set of interrelated or interacting activities that use inputs to deliver an intended result", and a procedure is a "specified way to carry out an activity or a process". Thus in WOPRS there is a conflation of process and procedure, as WOPRS places primacy on the 'algorithm' and the sequence of steps. However, a good WOPRS process document will also include the required input and output resources and the objectives that the process intends to support, in addition to the list of steps, i.e. the procedure or algorithm. Additionally, the ISO definition allows for a process to contain a set of procedures, whereas in WOPRS each procedure is modelled as a separate 'process', and these separate WOPRS processes are interrelated through their inputs and outputs, or additional structures, which are defined in separate documentation.
 
 In the standard mode, processes are dependent on objectives, because we need to know what we want before we can decide how we can get it. If objectives describe how we should measure the current state of the world, and tell us what state we want the world to be in, processes are the tools which allow us to change the world and move us towards that ideal state.
 
 In the meta mode, the development of an organization, its objectives and other factors are themselves processes. Even the action of writing a process is itself a process! These meta-processes are very commonly undocumented, and this presents a huge gap in the day-to-day life of organizations, and organization design thinking. How are processes developed? Who develops them? What's involved? How does a new process replace an old process? Who needs to be consulted? All these questions and more are addressed by defining your meta-processes (processes which operate on processes) and a key feature of the WOPRS model is to explicitly document these meta-processes, as we will see later.
-
-Processes subsume Leavitt's tasks, McKinsey's systems, and various factors in Burke-Litwin including systems and tasks and skills.
 
 ##### Culture and style as unwritten processes
 
@@ -202,7 +113,7 @@ By documenting cultural and stylistic beliefs and processes, you are implying th
 
 ##### Examples of processes
 
-Processes may define roles and deliverables, and may be recursive or initiate other processes. Here is an example set of processes:
+Processes may define roles and deliverables, and may be recursive or initiate other processes. Here is an example of a process:
 
 * Hire an Engineer
   1. The Hiring Manager takes a set of job applications from the Engineering Job Applications inbox.
@@ -221,26 +132,6 @@ Processes may define roles and deliverables, and may be recursive or initiate ot
      1. The Hiring Manager cannot choose to hire a candidate who has received a "do not hire" recommendation from the relevant Interviewer.
   10. The Hiring Manager submits an offer or rejection letter to each candidate, subject to their decision.
   11. If a candidate accepts an offer, the Hiring Manager forwards on the acceptance email to HR, who begin the "Onboard an Engineer" process.
-* Interview an Engineering Candidate
-  1. The Interviewer arranges a one-hour call with the candidate.
-  2. Over the course of the interview, the Interviewer asks each question on the Engineering Interview Questions Checklist
-  3. The Interviewer should take notes throughout the interview to help them with summarising their findings later.
-  4. After the interview, the Interviewer must write up a recommendation.
-     1. The recommendation is either "hire" or "don't hire".
-     2. The recommendation should include a summary of the findings from each section of the Interview Questions Checklist, justifying the overall recommendation.
-  5. The Interviewer submits the recommendation to the Hiring Manager who originally requested the interview.
-* Onboard an Engineer
-  1. The HR department receives an offer acceptance email.
-  2. The Head of HR creates a task in Asana to perform the onboarding and assigns a member of the department, at their discretion.
-  3. The assigned member completes their part of the Engineer Onboarding Checklist on the Asana task.
-     1. This includes:
-        1. Setting up an Asana account for the new Engineer.
-        2. Assigning them to the task so they can complete their portion of the Checklist.
-        3. Explaining what onboarding tasks the new Engineer has to complete.
-  4. The assigned HR person notifies the Head of Engineering via an @-mention on the Asana task.
-  5. The Head of Engineering completes their part of the Checklist.
-     1. This includes:
-        1. Arranging a call with the new Engineer to welcome them to the team.
 
 The heart of a process description is this algorithmic sequence of steps, but the mentions of people, roles, checklists, inboxes, notifications and hand-overs, reveals that processes encode resources and structures, and in their respective sections we will see how these are extracted from processes.
 
@@ -260,8 +151,6 @@ In the normal mode, resources are dependent on processes because we only need ce
 
 In the meta mode, resources push back on processes because we can only design processes for which the required resources are readily available, or can be secured by other processes. For example, if I decide I want to start manufacturing steel widgets, and I write a "manufacture a steel widget" process, I will also need to build an "obtain steel" process. In this way, the inputs and outputs of different processes connect together to form a structure of resource flows, where the terminal inputs and outputs come from and flow out of the organization. For a manufacturing company, these terminal resources include raw materials for production, customers, investment capital, and candidate staff as in-flows, and products, profits, and outgoing staff as out-flows.
 
-Resources directly maps to Leavitt's technology and people, Galbraith's people, McKinsey's skills, and Burke-Litwin's leadership.
-
 #### Structures
 
 Organizations contain many structures, which are networks of relationships between members and resources.
@@ -269,8 +158,6 @@ Organizations contain many structures, which are networks of relationships betwe
 In the normal mode, structures are dependent on processes, because a process defines the interactions between members and resources which constitute a structure. We can describe many structures in an organization, such as a tree of departments and teams, or a tree of managers and their reports, or a RACI grid, or the flows of inputs and outputs between different processes, but all of these structures exist as a 'shadow' of the processes which are operating within the organization on daily, weekly, and monthly bases. If a worker never has to communicate with their manager or vice versa, it is questionable if there should really be a line connecting them in the org chart, and if that manager-report structure and relationship really exists.
 
 In the meta mode, structures are sometimes proscribed by conventional wisdom, a desire to maintain oversight, control, or authority, or because particular members want to hold particular roles. It is possible for structures to come before processes, but WOPRS argues that this is faulty, and instead structures should arise totally from the reality of the processes which exist in the organization. If a problem is detected, it is never a problem of structure, it is always a problem of process, and when that problem is fixed by changing the processes, then the change may be reflected by a change in some structures.
-
-Structure occurs in all of the previously discussed models and WOPRS' definition of structure subsumes all of these other definitions. Where WOPRS structure differs is this insight that structures arise from processes, rather than existing by themselves.
 
 ### WOPRS in practice
 
@@ -341,9 +228,9 @@ To implement WOPRS, proceed with the "Implement WOPRS" process.
 6. Gather feedback from the consultees.
    1. If all consultees approve the new draft:
       1. Move the RFC process document to the authoritative "Process" documents folder.
-      2. Update any other documents as per the result of the evaluation from step 3.
+      2. Update any other documents as per the result of the evaluation from step 4.
       3. Communicate to all consultees that this process has been completed and the process document is updated.
-   2. Otherwise, revise the RFC and seek another round of feedback, returning to step 2.
+   2. Otherwise, revise the RFC and seek another round of feedback, returning to step 3.
 
 ##### Update or replace a process
 
@@ -431,6 +318,130 @@ _Any documentation to explain how this process was developed or why it is the wa
 ```
 {: .white-space-break-spaces}
 
+### Appendix 1 - A WOPRS documentation example
+
+In order to clarify the WOPRS approach, here is some example documentation for a hypothetical pen manufacturing company.
+
+#### Objectives
+
+Objectives are nested to indicate dependencies.
+
+* Reliably supply our customers with reliable pens.
+  * Maintain our factories and all necessary equipment.
+    * Hold a contract with an appropriate machinery servicing company.
+  * Employ a capable Manufacturing team.
+  * Hold purchasing agreements for all necessary materials for making each of our pens.
+* Innovate and produce new pen designs for the market.
+  * Understand the problems people have with existing pen designs.
+  * Maintain a Design team to lead on research and development.
+* Continue to grow our customer base.
+  * Maintain Sales and Marketing teams responsible for attracting new customers and negotiating volume sales.
+* Make enough revenue each year to cover all costs, including shareholder dividends.
+
+#### Processes
+
+TODO
+
+#### Structures
+
+TODO
+
+### Appendix 2 - Existing theories of the organization
+
+Many theories and models of the organization and organizational change break down the abstract concept of the organization into a set of interconnected factors. These factors influence each other in specific ways, which leads to the success or failure of the organization and any initiatives to redesign it.
+
+The following models are quite common in the literature, and I define the different factors that constitute these models. I will then show how the factors in WOPRS generalize and relate to the factors in these other models.
+
+##### Leavitt's Diamond
+
+* People -- the individuals who constitute the membership of the organization
+* Tasks -- the actions taken by members of the organization
+* Technology -- the non-human resources which members use as part of carrying out their tasks, such as buildings, desks, computers, software, process inputs, etc.
+* Structure -- the formal and informal relationships between people and technologies, such as information flows, departmental hierarchy, layers of management, etc.
+
+##### Galbraith's Star
+
+* Strategy -- the goals, objectives, values and missions of the organization
+* Structure -- the placement of power and authority
+* Process -- how information flows around the structure
+* Rewards -- a system to incentivise and motivate members
+* People -- human resource policies
+
+##### McKinsey's 7S
+
+* Style -- informal rules of conduct, culture, how members operate between the gaps of particular processes
+* Skills -- the capabilities of the organization, its subgroups, and its members
+* Systems -- processes, how work is done
+* Structure -- authority relations
+* Staff -- members, their intrinsic talents, diversity of membership
+* Strategy -- main functions of the organization
+* Shared values or superordinate goals -- what does the organization want to achieve, social missions
+
+##### Burke-Litwin
+
+* External environment -- the world the organization lives within: economic climate, wider cultural values, competition and market situation, etc.
+* Mission and strategy -- purpose and goals
+* Leadership -- the members responsible for determining and communicating the mission and strategy, and leading organizational change
+* Culture -- norms, behaviours, and value systems
+* Structure -- hierarchies, departments, lines of communication and decision making relationships
+* Systems -- rules and regulations, policies, and procedures
+* Management practice -- behaviour of managers towards strategy and change
+* Working climate -- the attitude of members, how they feel about leadership, management and culture
+* Tasks and skills -- actions required to be completed by members and their capacities for successful execution
+* Individual values and needs -- principles and objectives of individual members
+* Motivational level -- the level of commitment and alignment that individuals have to the organization's goals
+* Individual and organizational performance -- successful completion of tasks by members and successful achievement of the mission by the organization
+
+##### Purpose and criticism of existing models
+
+The documented models primarily aim to assist organization designers with understanding the factors involved in creating change and how they interact. Some of the factor definitions are inherently vague or overlapping, because these models are not supposed to provide a rigorous definition of what an organization is, but instead are supposed to stimulate the mind of the organization designer throughout the ideation and evaluation processes, and to allow the designer to make sure they are considering all the different angles and perspectives, creating a 'complete picture' throughout the design process. In other words, they are 'tools for thought'.
+
+For example, in McKinsey's 7S model, there is overlap between skills, systems, and strategy -- as I will demonstrate later in WOPRS, these can all be reduced to 'processes'. Likewise in Burke-Litwin, working climate, motivational level, and culture also overlap, whereas in WOPRS these factors are instead viewed as particular objectives and processes.
+
+Despite these overlaps, when we ask "what is X in this organization/team/individual?" or "how will changing X affect this organization/team/individual?" or "how do X and Y interact?", we will come up with different ideas for different factors, and this is why these models are useful as design tools: they assist with thinking and exploration, rather than concrete definition.
+
+This lack of concrete definition and hard separation between these factors can create problems later in the change process when we are trying to develop a particular design or transformation. Where do we start, and where do we end? What needs to be re-evaluated along the way, and what can remain the same? When we are dealing with the specifics of one particular organization, we want to be able to identify specific problems, and determine specific changes and their effects.
+
+For example, imagine a software company that uses Asana for managing a Kanban-style product development workflow. The Sales department are finding it hard to understand how the roadmap is changing when a project has to be extended a few weeks due to unforeseen complexity, and the project managers in the Product team are struggling to reorganise the roadmap in response to these delays. Team members take some time to do some organization design thinking and evaluate the problems through the aforementioned models, and many perspectives are formed:
+
+1. Asana doesn't provide the right kind of insight into the roadmap.
+   1. It doesn't have a good timeline view for scheduling projects.
+   2. It doesn't make it easy to update the wider company when the roadmap changes.
+   3. It doesn't let us experiment with the roadmap, weigh all the factors, and determine what the roadmap should look like.
+   4. It doesn't allow us to attach explanations to the roadmap, so Sales don't know why the roadmap is the way it is.
+2. The Kanban process is not suitable for the kinds of projects we are working on right now.
+   1. There is no timeboxing of projects or tickets, so some people get bogged down in complexity and are required to press ahead until they can move the ticket on, which creates a drain of available engineers.
+   2. Projects get fragmented into smaller tickets which deliver technical slices of the solution (e.g. "update database tables", "implement API", "implement frontend") but which don't deliver tangible outcomes to our customers or the business.
+   3. The PM spends a lot of time trying to prioritise work that has been pushed into the backlog, but the analysis on this work has started to go 'stale' and become out of date by the time the projects are prioritised.
+
+Some solutions are proposed:
+
+1. Switch from Asana to JIRA and Confluence
+   1. It has a better timeline view.
+   2. It can send people notifications when start dates are changed.
+   3. It can associate the roadmap with an explanation document.
+2. Kill the backlog.
+   1. Instead the PM will meet with stakeholders each week to determine upcoming work as we move along the roadmap.
+3. Projects in the Kanban will not be split up in to smaller tickets.
+   1. Instead the engineers and designers on each project can organise their own workflow as they see fit, until the project is finally delivered.
+4. Projects are given a grace period of one week beyond their deadline, to allow for unseen complexity.
+   1. If the project can't be delivered in that time, it's removed from the board and development continues along the roadmap as if it had been successfully delivered.
+   2. The PM must incorporate this grace period in to the roadmap as it is built out.
+   3. The PM must notify Sales as soon as the grace period is entered and whenever a project is cancelled.
+
+There are many other possible solutions, but even this small set of changes would affect style, systems, structure, leadership, culture, working climate, and motivation. I will avoid a SWOT analysis of these changes here as this is merely an illustrative example to demonstrate the complexity and specificity involved in organization design 'in the trenches'. The existing models do not address how these problems are identified, how solutions are developed and adopted, and how this adoption is communicated and monitored. WOPRS aims to codify these processes and enable organizations to successfully enact continuous and specific changes to address their specific needs and problems.
+
+##### Relationships between WOPRS factors and existing models
+
+World corresponds to external environment in Burke-Litwin, and is notably missing from other models. World also serves to describe the current status of the organization, since the organization is situated inside the world. In this way, factors such as Burke-Litwin's culture, working climate, and motivational level appear in WOPRS as statements in both world and objectives: there is a current culture, climate, and motivation, and there is also an ideal culture, climate, and motivation.
+
+McKinsey's shared values and Burke-Litwin's mission and strategy map directly on to WOPRS' objectives.
+
+Processes subsume Leavitt's tasks, McKinsey's systems, and various factors in Burke-Litwin including systems and tasks and skills.
+
+Resources directly maps to Leavitt's technology and people, Galbraith's people, McKinsey's skills, and Burke-Litwin's leadership.
+
+Structure occurs in all of the previously discussed models and WOPRS' definition of structure subsumes all of these other definitions. Where WOPRS structure differs is this insight that structures arise from processes, rather than existing by themselves.
 
 ### References
 
@@ -439,6 +450,8 @@ Abbas, Tahir. ‘Burke Litwin Model of Change’. CMI (blog), 6 April 2020. <htt
 Felipe Castro. ‘OKRs Do Not Cascade’, 2 April 2016. <https://felipecastro.com/en/okr/okrs-not-cascade/>.
 
 Galbraith, Jay R. ‘The Star Model’. Accessed 4 September 2021. <https://www.jaygalbraith.com/images/pdfs/StarModel.pdf>.
+
+International Organization for Standardization. ‘ISO 9000:2015(En), Quality Management Systems — Fundamentals and Vocabulary’. Accessed 23 September 2021. https://www.iso.org/obp/ui/#iso:std:iso:9000:ed-4:v1:en.
 
 McKinsey. ‘Enduring Ideas: The 7-S Framework’. Accessed 4 September 2021. <https://www.mckinsey.com/business-functions/strategy-and-corporate-finance/our-insights/enduring-ideas-the-7-s-framework>.
 
