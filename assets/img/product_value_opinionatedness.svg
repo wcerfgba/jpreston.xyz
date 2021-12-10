@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="104.99mm" height="88.097mm" version="1.1" viewBox="0 0 104.99 88.097" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker id="Arrow1Lend-6" overflow="visible" orient="auto">
+   <path transform="matrix(-.8 0 0 -.8 -10 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(-33.67 -26.636)">
+  <g transform="translate(4.7223 3.8968)">
+   <text x="28.231173" y="59.446869" font-family="'Liberation Sans'" font-size="4.2333px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="28.231173" y="59.446869" stroke-width=".26458"/></text>
+   <g transform="matrix(1.7943 0 0 1.7943 29.862 5.5574)">
+    <path d="m7.2674 15.703v39.438h50.692v-38.874s-4.9035 0.85243-8.5254 11.623c-9.1969 27.349-24.324 25.414-31.442 1.4912-3.8803-13.041-10.666-13.539-10.666-13.539" fill="#f3f3f3"/>
+    <g fill="none" stroke="#000">
+     <path d="m57.96 16.267s-4.9035 0.85243-8.5254 11.623c-9.1969 27.349-24.324 25.414-31.442 1.4912-3.8803-13.041-10.666-13.539-10.666-13.539" stroke-width=".52917"/>
+     <path d="m7.2674 55.141h50.692" stroke-width=".26458"/>
+     <path d="m7.2674 55.141v-45.051" marker-end="url(#Arrow1Lend-6)" stroke-width=".26458"/>
+    </g>
+   </g>
+   <g font-family="'Liberation Sans'" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+    <text x="71.297653" y="109.95804" font-size="4.2333px" style="line-height:1.25" xml:space="preserve"><tspan x="71.297653" y="109.95804" font-family="'Liberation Sans'" font-size="4.2333px" font-weight="bold" stroke-width=".26458" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Opinionated-ness</tspan></text>
+    <g font-size="3.5278px" text-anchor="middle">
+     <text x="55.595783" y="74.367722" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="55.595783" y="74.367722" text-align="center">Flexible,</tspan><tspan x="55.595783" y="78.777435" text-align="center">unopinionated</tspan></text>
+     <text x="89.153015" y="72.594696" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="89.153015" y="72.594696" text-align="center">Not</tspan><tspan x="89.153015" y="77.00441" text-align="center">(un)opinionated</tspan><tspan x="89.153015" y="81.414124" text-align="center">enough</tspan></text>
+     <text x="122.57208" y="74.339073" style="line-height:1.25" xml:space="preserve"><tspan x="122.57208" y="74.339073" text-align="center">Inflexible,</tspan><tspan x="122.57208" y="78.748787" text-align="center">opinionated</tspan></text>
+    </g>
+    <text x="28.918442" y="69.889557" font-size="4.2333px" style="line-height:1.25" xml:space="preserve"><tspan x="28.918442" y="69.889557" font-family="'Liberation Sans'" font-size="4.2333px" font-weight="bold" stroke-width=".26458" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">Value</tspan></text>
+   </g>
+   <path d="m71.262 27.969v75.905" fill="none" stroke="#000" stroke-dasharray="0.273109, 0.54622" stroke-width=".27311"/>
+   <path d="m106.72 27.969v75.905" fill="none" stroke="#000" stroke-dasharray="0.273109, 0.54622" stroke-width=".27311"/>
+  </g>
+ </g>
+</svg>
