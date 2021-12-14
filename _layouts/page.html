@@ -33,8 +33,7 @@ layout: default
     {%- if item_parts.size < 2 -%}
       {%- assign replaced_content = replaced_content | append: item -%}
     {%- else -%}
-      {%- assign link = site.url | append: '/' | append: item_parts[0] | append: '.html' -%}
-      {%- assign replaced_content = replaced_content | append: '<a href="' | append: link | append: '">' | append: '[[' | append: item_parts[0] | append: ']]</a>' | append: item_parts[1] -%}
+      {%- assign replaced_content = replaced_content | append: item_parts[0] | append: item_parts[1] -%}
     {%- endif -%}
   {%- endfor -%}
   <div class="page-content e-content" itemprop="mainContentOfPage">
