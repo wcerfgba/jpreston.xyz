@@ -9,7 +9,7 @@ last_modified_at: '2021-08-11'
 
 An [[invention]] to improve the ergonomics of unbound booklets.
 
-I enjoy printing out academic papers and book chapters for reading, as opposed to using my cheap eInk e-reader. After struggling to find native Linux software which allows printing a PDF in the traditional booklet layout [1], I settled for installing Adobe Acrobat DC [2], which allows me to print a section of a PDF in the traditional booklet layout.
+I enjoy printing out academic papers and book chapters for reading, as opposed to using my cheap eInk e-reader. After struggling to find native Linux software which allows printing a PDF in the traditional booklet layout [^1], I settled for installing Adobe Acrobat DC [^2], which allows me to print a section of a PDF in the traditional booklet layout.
 
 [![](/assets/img/booklet_standard.svg)](/assets/img/booklet_standard.svg)
 
@@ -39,7 +39,7 @@ As we continue and fold over page 2, folio 2 moves to wrap around the back of fo
 
 ### Calculator
 
-Below is a calculator [[software]], implemented in ClojureScript using scittle [3] which allows you to determine the page numbers for use with your printing software. Because of the way the page numbering works inside a criss-cross booklet, if you do not want to print an exact multiple of 4 pages (thus making each folio complete), you will need to provide a page number for a _filler page_, which is an ideally blank page, inserted in to the page number sequence, to allow you to skip pages which appear in the topology of the criss-cross booklet, but which you do not actually want printed.
+Below is a calculator [[software]], implemented in ClojureScript using scittle [^3] which allows you to determine the page numbers for use with your printing software. Because of the way the page numbering works inside a criss-cross booklet, if you do not want to print an exact multiple of 4 pages (thus making each folio complete), you will need to provide a page number for a _filler page_, which is an ideally blank page, inserted in to the page number sequence, to allow you to skip pages which appear in the topology of the criss-cross booklet, but which you do not actually want printed.
 
 Please note that this calculator has only been lightly tested!
 
@@ -252,12 +252,12 @@ Please note that this calculator has only been lightly tested!
   #calculator-app #pages-label { grid-area: pages; }
 </style>
 
-[1] There is a section of the GNOME help webpages for Evince, the GNOME PDF reader, which provide algorithms for calculating the page numbers [1.1] but there is no calculator widget and nobody has implemented this in Evince or GNOME print settings yet 🙃.
+[^1]: There is a section of the GNOME help webpages for Evince, the GNOME PDF reader, which provide algorithms for calculating the page numbers [^1-1] but there is no calculator widget and nobody has implemented this in Evince or GNOME print settings yet 🙃.
 
-[1.1] <https://help.gnome.org/users/evince/stable/print-booklet.html.en>
+[^1-1]: <https://help.gnome.org/users/evince/stable/print-booklet.html.en>
 
-[2] Installing Adobe Acrobat DC on Linux was a _painful_ experience: between the absurd throttling of Adobe's file servers (I averaged about 10-20 KiB/s) and random crashes in the installer due to Wine config, it took me _multiple hours_ to get it working. In the end I had to use a Snap package [2.1].
+[^2]: Installing Adobe Acrobat DC on Linux was a _painful_ experience: between the absurd throttling of Adobe's file servers (I averaged about 10-20 KiB/s) and random crashes in the installer due to Wine config, it took me _multiple hours_ to get it working. In the end I had to use a Snap package [^2-1].
 
-[2.1] <https://github.com/mmtrt/acrordrdc>
+[^2-1]: <https://github.com/mmtrt/acrordrdc>
 
-[3] <https://borkdude.github.io/scittle/>
+[^3]: <https://borkdude.github.io/scittle/>

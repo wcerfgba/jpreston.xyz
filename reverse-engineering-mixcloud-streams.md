@@ -13,7 +13,7 @@ I was listening to a show on Mixcloud today and when I went to try and rewind I 
 
 ### Investigation
 
-We begin by opening the page for a Mixcloud show in our browser of choice and opening Developer Tools. For this example I am using "Afrojack pres. JACKED Radio Ep. 469" [1]. In order to play the show, our browser will have to request some data from Mixcloud, and this should show up as a request in the Network tab. We hit Play on the stream and see what requests are fired off.
+We begin by opening the page for a Mixcloud show in our browser of choice and opening Developer Tools. For this example I am using "Afrojack pres. JACKED Radio Ep. 469" [^1]. In order to play the show, our browser will have to request some data from Mixcloud, and this should show up as a request in the Network tab. We hit Play on the stream and see what requests are fired off.
 
 The first three requests are GraphQL requests to load some metadata about the stream. There is a `fetchAudioAdsInfoQuery`, a `seedQuery`, and a `PlayerQuery`. The `seedQuery` and `PlayerQuery` both include a `streamInfo` fragment which looks interesting:
 
@@ -100,9 +100,9 @@ Finally, we have our rendered MP3 with the complete stream of the show, which we
 
 The Mixcloud stream protocol is not heavily obfuscated and is trivial to reverse engineer using commonly available Unix tools and a bit of intuition about how streaming media works. If Mixcloud wanted to make this reverse engineering more difficult in the future, they should encrypt the individual MPEG segments and then decrypt them in the browser once they are downloaded. This would ensure that they are encrypted at rest in the cache, and an attacker would have to inspect the JavaScript to determine how to decrypt the segments, and then apply this decryption to the downloaded segments, before they could be stitched together.
 
-Additionally, Mixcloud could offer an option to download a complete MP3 so users can listen to a stream offline. If such a feature required a subscription, this would be a good motivator for people to convert from free users, and in my opinion is a much better approach to take than crippling the UX for free users: providing a poor experience for free users doesn't motivate me to become a subscriber, instead it leaves a bad taste in my mouth and makes me _not_ want to pay. From what I can glean from Mixcloud's knowledge base, downloading is currently supported for 'Select' creators (so the uploader of the stream you want to download from also has to have a paid plan) and is limited to in-app downloads (meaning you have to use Android or iOS, and can only listen in the official Mixcloud app) [2].
+Additionally, Mixcloud could offer an option to download a complete MP3 so users can listen to a stream offline. If such a feature required a subscription, this would be a good motivator for people to convert from free users, and in my opinion is a much better approach to take than crippling the UX for free users: providing a poor experience for free users doesn't motivate me to become a subscriber, instead it leaves a bad taste in my mouth and makes me _not_ want to pay. From what I can glean from Mixcloud's knowledge base, downloading is currently supported for 'Select' creators (so the uploader of the stream you want to download from also has to have a paid plan) and is limited to in-app downloads (meaning you have to use Android or iOS, and can only listen in the official Mixcloud app) [^2].
 
 ### References
 
-[1] <https://www.mixcloud.com/afrojack/afrojack-pres-jacked-radio-ep-470/> \
-[2] <https://help.mixcloud.com/hc/en-us/articles/360004054359-How-do-I-listen-offline->
+[^1]: <https://www.mixcloud.com/afrojack/afrojack-pres-jacked-radio-ep-470/>
+[^2]: <https://help.mixcloud.com/hc/en-us/articles/360004054359-How-do-I-listen-offline->

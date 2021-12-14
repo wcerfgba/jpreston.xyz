@@ -5,10 +5,10 @@ date: '2020-03-14'
 last_modified_at: '2020-03-14'
 ---
 
-A [[recipe]], originally from Victoria Granof at Epicurious [1].
+A [[recipe]], originally from Victoria Granof at Epicurious [^1].
 
 * 2 cups broth
-* 2/3 cup uncooked orzo (or rice or pastina) [2]
+* 2/3 cup uncooked orzo (or rice or pastina) [^2]
 * Salt and pepper to taste
 * 2 eggs
 * 2 tablespoons lemon juice
@@ -27,6 +27,6 @@ Ideas:
 * a bit of diced or sliced carrot
 * dill
 
-[1] <https://www.epicurious.com/recipes/food/views/avgolemono-352269>
+[^1]: <https://www.epicurious.com/recipes/food/views/avgolemono-352269>
 
-[2] Traditionally this is a soup, and has chicken added to it. There is only supposed to be a bit of orzo, but I bulk up the carbs instead of subsituting the chicken. You could add tofu, not sure what else to use.
+[^2]: Traditionally this is a soup, and has chicken added to it. There is only supposed to be a bit of orzo, but I bulk up the carbs instead of substituting the chicken. You could add tofu, not sure what else to use.

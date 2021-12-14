@@ -24,7 +24,7 @@ example
 
 In the middle of the chart is the valley of products which are not (un)opinionated enough. These are products which offer some flexibility in how they can be used, but not enough flexibility for a user to shape the product to fit their needs. Conversely, these products provide users with a great deal of flexibility in areas where they don't need or want that flexibility, and where they would prefer the product to be more opinionated and recommend or provide the 'correct' solution. In other words, products in the valley provide freedom where there should be restrictions, and restrictions where there should be freedom.
 
-Recently my company has started to migrate our internal document system away from Notion [1] and towards Coda [2], and this transition feels like it has taken me in to the valley: compared to Notion, Coda is definitely not (un)opinionated enough, and this is most clear when comparing their document models.
+Recently my company has started to migrate our internal document system away from Notion [^1] and towards Coda [^2], and this transition feels like it has taken me in to the valley: compared to Notion, Coda is definitely not (un)opinionated enough, and this is most clear when comparing their document models.
 
 Notion's document model is quite simple: you have a workspace which can contain one or more pages, and each of those pages can contain one or more sub-pages. All pages are the same 'type' of thing and all behave in the same way. You will probably create a single workspace for all of your personal notes, or for your organisation, and organise your information by building a hierarchy of pages.
 
@@ -36,13 +36,13 @@ Coda's document model is much more complex. You start with a workspace again, bu
 
 We are only a small company, but as each department has started to move over to Coda this is already creating friction because they have all started to split up their docs slightly differently, and it's become difficult to keep track of the different docs being created and used by different departments.
 
-Having a document model with more concepts isn't an inherently bad idea, and if Coda explained why they have chosen this model and how it should be used, they could make a very opinionated product with a high value ceiling... but I haven't been able to find any documentation about why Coda works like this! Coda's tutorial-style documentation takes the form of videos [3] [4], and the first video starts off inside a doc, so it just assumes I already understand why this distinction is here! Their knowledge base [5] also doesn't provide an explanation.
+Having a document model with more concepts isn't an inherently bad idea, and if Coda explained why they have chosen this model and how it should be used, they could make a very opinionated product with a high value ceiling... but I haven't been able to find any documentation about why Coda works like this! Coda's tutorial-style documentation takes the form of videos [^3] [^4], and the first video starts off inside a doc, so it just assumes I already understand why this distinction is here! Their knowledge base [^5] also doesn't provide an explanation.
 
 Coda's workspace-folder-doc-page document model also has some strange consequences for other parts of the product. In Notion, each page has it's own revision history, but in Coda only docs have history, which means if two people make edits to two different pages in a doc at the same time, their changes will get smooshed together in the doc history. It's also not clear from the history view on which page the edits have been made, and it's not possible to restore a single page of a doc from a given revision.
 
 
-[1] <https://notion.so/> \
-[2] <https://coda.io/> \
-[3] <https://coda.io/learn/coda-essentials-2> \
-[4] Side rant: I really dislike that the tutorials are videos, because I can't skim or search a video like I can with a page of text with some images on it, and I want to learn how to use the product as quickly as possible. \
-[5] <https://help.coda.io/en/>
+[^1]: <https://notion.so/>
+[^2]: <https://coda.io/>
+[^3]: <https://coda.io/learn/coda-essentials-2>
+[^4]: Side rant: I really dislike that the tutorials are videos, because I can't skim or search a video like I can with a page of text with some images on it, and I want to learn how to use the product as quickly as possible.
+[^5]: <https://help.coda.io/en/>

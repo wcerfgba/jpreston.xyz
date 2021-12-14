@@ -130,6 +130,33 @@ a:any-link {
 
 
 
+.footnotes ol {
+  list-style: none;
+  counter-reset: items;
+  margin-left: 0;
+  padding-left: 0;
+
+  li {
+    counter-increment: items;
+    margin-bottom: 0.5em;
+
+    &::before {
+      content: "[" counter(items) "] ";
+      display: inline;
+    }
+  }
+
+  p {
+    margin: 0 0 0.5rem 0;
+    display: inline;
+  }
+
+  .reversefootnote {
+    margin-left: 0.3em;
+  }
+}
+
+
 
 .site-container {
   max-width: 40rem;
