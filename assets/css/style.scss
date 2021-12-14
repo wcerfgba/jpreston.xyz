@@ -197,7 +197,7 @@ td {
 }
 
 .page-tree {
-  &, ul {
+  &, &-links, &-backlinks, ul {
     margin-left: 1rem;
     padding-left: 0;
   }
