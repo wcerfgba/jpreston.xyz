@@ -1,11 +1,13 @@
 ---
 layout: page
-title: Digging in to New Zealand's Smokefree Aotearoa 2025 Policy
+title: "Democratic Transparency of Policy Evidence: Digging in to New Zealand's Smokefree Aotearoa 2025 Action Plan"
 date: '2021-12-14'
 last_modified_at: '2021-12-14'
+redirect_from:
+  - /digging-in-to-new-zealands-smokefree-aotearoa-2025-policy.html
 ---
 
-This [[essay]] chronicles a short dive in to the evidence supporting New Zealand's Smokefree Aotearoa 2025 [[policy]]. I first became aware of this initiative through coverage on BBC News [^1] . I am currently undertaking a PhD in policy modelling and simulation, so I am interested in understanding what evidence (especially modelling evidence) has been used by the New Zealand government to support these proposals. In particular, the government is proposing to introduce a prohibition on tobacco sales to anyone born after a certain date. From the BBC News article:
+This [[essay]] chronicles a short dive in to some of the evidence supporting New Zealand's Smokefree Aotearoa 2025 [[policy]]. I first became aware of this initiative through coverage on BBC News [^1] . I am currently undertaking a PhD in policy modelling and simulation, so I am interested in understanding what evidence (especially modelling evidence) has been used by the New Zealand government to support these proposals. In particular, the government is proposing to introduce a prohibition on tobacco sales to anyone born after a certain date. From the BBC News article:
 
 > New Zealand will ban the sale of tobacco to its next generation, in a bid to eventually phase out smoking. Anyone born after 2008 will not be able to buy cigarettes or tobacco products in their lifetime, under a law expected to be enacted next year.
 
