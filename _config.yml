@@ -6,6 +6,11 @@ url: "https://jpreston.xyz" # the base hostname & protocol for your site, e.g. h
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-feed
+  - jekyll-redirect-from
 
 feed:
   path: "/posts.xml"
