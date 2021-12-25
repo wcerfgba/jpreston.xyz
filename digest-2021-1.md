@@ -27,3 +27,11 @@ Enspiral (<https://www.enspiral.com/>)
 ### A Guide to Automated Forecasting of Criminal Court Cases at the Ministry of Justice, by Ben Lavelle
 
 <https://www.youtube.com/watch?v=_j92yPEmIrM>
+
+### The Data Journalism Handbook, edited by Liliana Bounegru and Jonathan Gray
+
+<https://www.aup.nl/en/book/9789048542079/the-data-journalism-handbook>
+
+### Statistical Rethinking, by Richard McElreath
+
+<https://xcelab.net/rm/statistical-rethinking/>
