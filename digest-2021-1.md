@@ -35,3 +35,15 @@ Enspiral (<https://www.enspiral.com/>)
 ### Statistical Rethinking, by Richard McElreath
 
 <https://xcelab.net/rm/statistical-rethinking/>
+
+### Epistemic conflicts and Achilles’ heels: constraints of a university and public sector partnership to research obesity in Australia, by Megan Warin and Vivienne Moore
+
+<https://www.tandfonline.com/doi/abs/10.1080/09581596.2020.1761944>
+
+### DAG-informed regression modelling, agent-based modelling and microsimulation modelling: a critical comparison of methods for causal inference, by Kellyn Arnold et al.
+
+<https://academic.oup.com/ije/article/48/1/243/5231935>
+
+### The Tyranny of Structurelessness, by Jo Freeman
+
+<https://www.jofreeman.com/joreen/tyranny.htm>
