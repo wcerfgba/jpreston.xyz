@@ -47,3 +47,7 @@ Enspiral (<https://www.enspiral.com/>)
 ### The Tyranny of Structurelessness, by Jo Freeman
 
 <https://www.jofreeman.com/joreen/tyranny.htm>
+
+### Maintenance Phase - Is Being Fat Bad For You?, by Aubrey Gordon and Michael Hobbes
+
+<https://maintenancephase.buzzsprout.com/1411126/9551555-is-being-fat-bad-for-you>
