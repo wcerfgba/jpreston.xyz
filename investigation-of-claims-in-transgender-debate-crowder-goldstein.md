@@ -4,7 +4,7 @@ title: >-
   Investigation of Claims in "TRANSGENDER DEBATE: Crowder Argues Science vs.
   Julie Rei Goldstein | Louder With Crowder"
 date: '2021-03-03'
-last_modified_at: '2021-03-03'
+last_modified_at: '2021-12-29'
 ---
 
 The following [[essay]] is an analysis of the claims made and references provided in the video "TRANSGENDER DEBATE: Crowder Argues Science vs. Julie Rei Goldstein \| Louder With Crowder" [^1].
@@ -86,7 +86,7 @@ Unfortunately Crowder provides no citations for this claim. To contrast, I found
 
 > Suicide attempt rates decreased after   sex reassignment but stayed higher than the  normal population rate. In one study,   although most individuals reported   improvement in their psychological status   (19/23); the remaining individuals worsened and had increased intake of alcohol and anxiolytics.
 
-[^J2]: "Hormonal therapy and sex reassignment: a systematic review andmeta-analysis of quality of life and psychosocial outcomes", Mohammad Hassan Murad, Mohamed B. Elamin, Magaly Zumaeta Garcia, et al. <https://sci-hub.tf/https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2265.2009.03625.x>
+[^J2]: "Hormonal therapy and sex reassignment: a systematic review and meta-analysis of quality of life and psychosocial outcomes", Mohammad Hassan Murad, Mohamed B. Elamin, Magaly Zumaeta Garcia, et al. <https://sci-hub.tf/https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2265.2009.03625.x>
 
 We should note that the paper indicates that many of the studies included in the meta-analysis are of low quality and that more research is needed:
 
@@ -254,7 +254,9 @@ Emphasis mine.
 
 The study [^C10] makes reference to other papers regarding differences and similarities in various brain features, but itself contains no data. Instead, the paper only hypothesises that the observed changes may be a result of cultural and behavioural effects on brain structure according to a proposed model from an opinion piece [^J11]. The paper referenced by Crowder [^C10] is  purely suggestive, and draws no causal relationship or even correlation between particular behaviours, cultural practices, or beliefs, and any aspect of brain structure.
 
-[^J11]: "A Culture–Behavior–Brain Loop Model  of Human Development", Shihui Han and Yina Ma <https://sci-hub.tf/https://www.sciencedirect.com/science/article/abs/pii/S1364661315002004>
+[^J10]: "Transgender Research in the 21st Century: A Selective Critical Review From a Neurocognitive Perspective", Sven C. Mueller, Griet De Cuypere and Guy T’Sjoen <https://biblio.ugent.be/publication/8542009/file/8542010.pdf>
+
+[^J11]: "A Culture–Behavior–Brain Loop Model of Human Development", Shihui Han and Yina Ma <https://sci-hub.tf/https://www.sciencedirect.com/science/article/abs/pii/S1364661315002004>
 
 ### Conclusion
 
