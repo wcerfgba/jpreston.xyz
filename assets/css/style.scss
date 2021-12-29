@@ -16,79 +16,72 @@ $white: #fbfbfb;
 }
 
 html {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.75;
 }
 
 body {
-  font-family: sans-serif;
-  font-family: 'Merriweather';
+  background: $white;
+  font-family: 'Merriweather', serif;
   font-weight: 400;
-  font-size: 1em;
-  line-height: 1.75;
-  background-color: $white;
+  font-size: 14px;
+  line-height: 1.7143;
   color: $black;
-  margin: 1rem;
 }
 
-h1, .h1 {
+p {
+  font-size: 1em; /* 14px */
+  line-height: 1.7143; /* 24px */
+  margin: 1.7143em 0;
   font-weight: 400;
-  font-size: 3.0625em;
-  line-height: 1.14285714;
-  margin-top: 0em;
-  margin-bottom: 1.14285714em;
 }
 
-h2, .h2 {
+/* 34.84px - The quick brown fox jumps over the lazy dog */
+h1 {
+  font-size: 2.4886em; /* 34.84px */
+  line-height: 1.3777; /* 48px */
+  margin: 0.6889em 0;
   font-weight: 400;
-  font-size: 2.4375em;
-  line-height: 1.43589744;
-  margin-top: 0em;
-  margin-bottom: 0.71794872em;
 }
 
-h3, .h3 {
+/* 29.03px - The quick brown fox jumps over the lazy dog */
+h2 {
+  font-size: 2.0736em; /* 29.03px */
+  line-height: 1.6535; /* 48px */
+  margin: 0.8267em 0;
   font-weight: 400;
-  font-size: 1.9375em;
-  line-height: 1.80645162;
-  margin-top: 0em;
-  margin-bottom: 0.90322581em;
 }
 
-h4, .h4 {
+/* 24.19px - The quick brown fox jumps over the lazy dog */
+h3 {
+  font-size: 1.7279em; /* 24.19px */
+  line-height: 1.9843; /* 48px */
+  margin: 0.9921em 0;
   font-weight: 400;
-  font-size: 1.5625em;
-  line-height: 1.12;
-  margin-top: 0em;
-  margin-bottom: 1.12em;
 }
 
-h5, .h5 {
+/* 20.16px - The quick brown fox jumps over the lazy dog */
+h4 {
+  font-size: 1.4400em; /* 20.16px */
+  line-height: 1.1905; /* 24px */
+  margin: 1.1905em 0;
   font-weight: 400;
-  font-size: 1.25em;
-  line-height: 1.4;
-  margin-top: 0em;
-  margin-bottom: 1.4em;
 }
 
-p, ul, ol, pre, table, blockquote {
-  margin-top: 1.75em;
-  margin-bottom: 1.75em;
+/* 16.80px - The quick brown fox jumps over the lazy dog */
+h5 {
+  font-size: 1.2000em; /* 16.80px */
+  line-height: 1.4286; /* 24px */
+  margin: 1.4286em 0;
+  font-weight: 400;
 }
 
-ul ul, ol ol, ul ol, ol ul {
-  margin-top: 0em;
-  margin-bottom: 0em;
-}
-
-/* Let's make sure all's aligned */
-hr, .hr {
-  border: 1px solid;
-  margin: -1px 0;
-}
-
-a, b, i, strong, em, small, code {
-  line-height: 0;
+/* 11.67px - The quick brown fox jumps over the lazy dog */
+small, .text_small {
+  font-size: 0.8336em; /* 11.67px */
+  line-height: 2.0566; /* 24px */
+  margin: 2.0566em 0;
+  font-weight: 400;
 }
 
 sub, sup {
@@ -105,9 +98,6 @@ sub {
   bottom: -0.25em;
 }
 
-
-
-small, .text_small {font-size: 0.8em;}
 
 pre, code {
   font-family: monospace;
@@ -129,6 +119,8 @@ a:any-link {
 }
 
 
+ul, ol { padding-left: 2em; }
+
 
 .footnotes ol {
   list-style: none;
@@ -138,7 +130,7 @@ a:any-link {
 
   li {
     counter-increment: items;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.75em;
 
     &::before {
       content: "[" counter(items) "] ";
@@ -186,7 +178,7 @@ a:any-link {
 
 .site-footer {
   border-top: 1px solid $black;
-  margin-top: 3.25rem;
+  margin-top: 2rem;
 }
 
 .page-list {
