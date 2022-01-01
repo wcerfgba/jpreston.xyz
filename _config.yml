@@ -18,6 +18,8 @@ feed:
     pages:
       path: "/feed.xml"
 
+page_excerpts: true
+
 defaults:
   -
     scope:
