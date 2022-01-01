@@ -2,7 +2,7 @@
 layout: page
 title: Terrible Sultana Jokes
 date: '2021-04-02'
-last_modified_at: '2021-05-18'
+last_modified_at: '2022-01-01'
 ---
 
 Some terrible jokes, maybe a [[poem]]?
@@ -28,8 +28,11 @@ Sulktana
 What fruit likes to frolic in the ocean? \
 Sealtana
 
-What is the best fruit for research? \
-Scitana
+What is the most despondent fruit? \
+Sightana
+
+What fruit has the best vision? \
+Sightana
 
 What is the boniest fruit? \
 Skulltana
