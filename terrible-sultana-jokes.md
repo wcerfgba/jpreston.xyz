@@ -2,7 +2,7 @@
 layout: page
 title: Terrible Sultana Jokes
 date: '2021-04-02'
-last_modified_at: '2022-01-01'
+last_modified_at: '2022-01-03'
 ---
 
 Some terrible jokes, maybe a [[poem]]?
@@ -33,6 +33,9 @@ Sightana
 
 What fruit has the best vision? \
 Sightana
+
+What is the most regal fruit? \
+Sultana
 
 What is the boniest fruit? \
 Skulltana
