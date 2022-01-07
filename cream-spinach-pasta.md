@@ -16,6 +16,7 @@ Wilt down whole spinach in pan. Once spinach is sufficiently wilted down into a 
 
 [^1]: I use half of a 300ml tub, common in UK supermarkets, and that lets me make two portions of sauce, good to serve 2-3 people.
 
-[^2]: The second or third time I made this, I left the sauce simmering for about 10-20 minutes, and when I came back I had evaporated all of the water out of the cream. The contents of the pan looked as if I had used 1/4 - 1/2 cup of straight oil to cook the spinach in.
+[^2]:
+    The second or third time I made this, I left the sauce simmering for about 10-20 minutes, and when I came back I had evaporated all of the water out of the cream. The contents of the pan looked as if I had used 1/4 - 1/2 cup of straight oil to cook the spinach in.
 
-I managed to save the sauce by mixing in hot water from the kettle. Perhaps it is the increased surface area created by the minced spinach, but upon addition of water the sauce immediately forms an opaque white emulsion, and after mixing in enough water I was able to re-hydrate the sauce without much change in flavour, consistency, mouthfeel or appearance. Hopefully this points to a way to create a vegan version of this sauce, using olive oil and then emulsifying with perhaps pasta water and/or stock?
+    I managed to save the sauce by mixing in hot water from the kettle. Perhaps it is the increased surface area created by the minced spinach, but upon addition of water the sauce immediately forms an opaque white emulsion, and after mixing in enough water I was able to re-hydrate the sauce without much change in flavour, consistency, mouthfeel or appearance. Hopefully this points to a way to create a vegan version of this sauce, using olive oil and then emulsifying with perhaps pasta water and/or stock?

@@ -123,24 +123,12 @@ ul, ol { padding-left: 2em; }
 
 
 .footnotes ol {
-  list-style: none;
-  counter-reset: items;
+  list-style: decimal;
   margin-left: 0;
-  padding-left: 0;
-
-  li {
-    counter-increment: items;
-    margin-bottom: 0.75em;
-
-    &::before {
-      content: "[" counter(items) "] ";
-      display: inline;
-    }
-  }
+  padding-left: 2em;
 
   p {
     margin: 0 0 0.5rem 0;
-    display: inline;
   }
 
   .reversefootnote {
