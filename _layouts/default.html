@@ -2,35 +2,7 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {%- include head.html -%}
-
-  {%- assign backlinks = '' | split: '' -%}
-  {%- assign links = '' | split: '' -%}
-  {%- for page in site.pages %}
-    {%- assign page_name = page.name | split: '.' | first -%}
-    {%- assign page_links = '' | split: '' -%}
-    {%- assign content_array = page.content | split: '[[' -%}
-    {%- for item in content_array -%}
-      {%- assign item_parts = item | split: ']]' -%}
-      {%- if item_parts.size >= 2 -%}
-        {%- assign page_links = page_links | push: item_parts[0] -%}
-      {%- endif -%}
-    {%- endfor -%}
-    {%- assign page_links = '' | split: '' | push: page_name | push: page_links -%}
-    {%- assign links = links | push: page_links -%}
-  {%- endfor -%}
-  {%- for page in site.pages -%}
-    {%- assign page_name = page.name | split: '.' | first -%}
-    {%- assign page_backlinks = '' | split: '' -%}
-    {%- for page_links in links -%}
-      {%- for link in page_links[1] -%}
-        {%- if page_name == link -%}
-          {%- assign page_backlinks = page_backlinks | push: page_links[0] -%}
-        {%- endif -%}
-      {%- endfor -%}
-    {%- endfor -%}
-    {%- assign page_backlinks = '' | split: '' | push: page_name | push: page_backlinks -%}
-    {%- assign backlinks = backlinks | push: page_backlinks -%}
-  {%- endfor -%}
+  {%- include variables.html -%}
 
   <body>
     <div class="site-container">

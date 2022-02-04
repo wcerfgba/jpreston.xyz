@@ -1,8 +1,16 @@
+---
+layout: page
+title: Site tree
+in_tree: false
+---
+
+{%- include variables.html -%}
+
 {%- assign pages = site.pages | sort: "title" -%}
 {%- if pages.size > 0 -%}
   <ul class="page-tree">
     {%- for page in pages -%}
-      {%- if page.layout == "page" -%}
+      {%- if page.layout == "page" and page.in_tree != false and page.title -%}
         {%- assign page_name = page.name | split: '.' | first -%}
         {%- assign links_where_exp = "links[0] == '" | append: page_name | append: "'" -%}
         {%- assign page_backlinks = backlinks | where_exp: "links", links_where_exp | first | last -%}
