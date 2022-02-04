@@ -1,9 +1,8 @@
 ---
 ---
 
-$black: #333;
-$light-grey: #eee;
-$white: #fbfbfb;
+$black: #004;
+$light-grey: rgba(0, 0, 0, 0.02);
 
 /* latin */
 @font-face {
@@ -21,12 +20,13 @@ html {
 }
 
 body {
-  background: $white;
+  background-color: #fff;
   font-family: 'Merriweather', serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7143;
   color: $black;
+  transition: background-color 10s ease;
 }
 
 p {
@@ -105,10 +105,20 @@ pre, code {
   overflow-x: auto;
 }
 
+pre > code {
+  background: rgba(0, 0, 0, 0%);
+}
+
 
 blockquote {
   margin: 0 0 0 2rem;
   font-size: 0.95em;
+}
+
+
+
+input, textarea {
+  background: rgba(0, 0, 0, 0%);
 }
 
 
@@ -166,7 +176,7 @@ ul, ol { padding-left: 2em; }
 
 .site-footer {
   border-top: 1px solid $black;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .page-list {

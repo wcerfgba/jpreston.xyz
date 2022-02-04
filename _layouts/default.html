@@ -47,5 +47,16 @@
 
       {%- include footer.html -%}
     </div>
+
+    <script>
+      const now = new Date();
+      let theta = 6 * now.getMinutes() + (now.getSeconds() / 10);
+      const set_background = () => {
+        document.body.style.backgroundColor = `hsl(${theta}, 100%, 99%)`;
+        theta = (theta + 1) % 360;
+      }
+      window.setInterval(set_background, 10_000);
+      set_background();
+    </script>
   </body>
 </html>
