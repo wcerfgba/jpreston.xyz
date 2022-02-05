@@ -50,12 +50,12 @@
 
     <script>
       const now = new Date();
-      let theta = 6 * now.getMinutes() + (now.getSeconds() / 10);
+      let theta = (3 * (6 * now.getMinutes() + (now.getSeconds() / 10))) % 360;
       const set_background = () => {
-        document.body.style.backgroundColor = `hsl(${theta}, 100%, 98%)`;
-        theta = (theta + 1) % 360;
+        document.body.style.backgroundColor = `hsl(${theta}, 100%, 97%)`;
+        theta = (theta + 3.6) % 360;
       }
-      window.setInterval(set_background, 10_000);
+      window.setInterval(set_background, 20 * 60 * 1000 / 100);
       set_background();
     </script>
   </body>
