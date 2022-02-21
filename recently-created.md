@@ -11,7 +11,7 @@ in_tree: false
     {%- for page in pages -%}
       {%- if page.date -%}
         <tr>
-          <td class="page-meta padding-right-0-5 white-space-nowrap">{{ page.date | date: date_format }}</td>
+          <td class="page-meta white-space-nowrap">{{ page.date | date: date_format }}</td>
           <td>
             <a class="page-link" href="{{ page.url | relative_url }}">
               {{ page.title | escape }}
