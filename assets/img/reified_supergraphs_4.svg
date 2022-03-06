@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="75.967mm" height="47.161mm" version="1.1" viewBox="0 0 75.967 47.161" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker id="Arrow1Lend_Fnone_S-000000" overflow="visible" orient="auto">
+   <path transform="matrix(-.8 0 0 -.8 -10 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill-rule="evenodd" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(28.715 9.255)">
+  <g font-family="'Liberation Sans'" font-size="2.8222px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+   <text x="8.229248" y="16.096447" style="line-height:1.25" xml:space="preserve"><tspan x="8.229248" y="16.096447" stroke-width=".26458">Leek</tspan></text>
+   <text x="7.990027" y="22.986591" style="line-height:1.25" xml:space="preserve"><tspan x="7.990027" y="22.986591" stroke-width=".26458">Potato</tspan></text>
+   <text x="12.609792" y="33.067894" style="line-height:1.25" xml:space="preserve"><tspan x="12.609792" y="33.067894" stroke-width=".26458">Tomato</tspan></text>
+   <text x="27.139929" y="23.064566" style="line-height:1.25" xml:space="preserve"><tspan x="27.139929" y="23.064566" stroke-width=".26458">Vegetable</tspan></text>
+  </g>
+  <g fill="none" stroke="#000" stroke-width=".1">
+   <g stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="3.5">
+    <ellipse cx="11.285" cy="15.168" rx="4.5174" ry="2.8039"/>
+    <ellipse cx="12.06" cy="22.266" rx="5.5861" ry="2.7516"/>
+    <ellipse cx="17.336" cy="32.531" rx="6.343" ry="3.3813"/>
+    <ellipse cx="33.255" cy="22.124" rx="8.3899" ry="3.3176"/>
+   </g>
+   <g>
+    <path d="m15.935 15.205 12.355 4.1594" marker-end="url(#Arrow1Lend_Fnone_S-000000)"/>
+    <path d="m17.645 22.495 7.1217-0.4128" marker-end="url(#Arrow1Lend_Fnone_S-000000)"/>
+    <path d="m21.511 29.852 6.2886-5.2316" marker-end="url(#Arrow1Lend_Fnone_S-000000)" stroke-linecap="round" stroke-linejoin="bevel"/>
+   </g>
+  </g>
+  <text x="-20.652111" y="18.589016" font-family="'Liberation Sans'" font-size="2.8222px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-20.652111" y="18.589016">Soup Recipe</tspan><tspan x="-20.652111" y="22.116804"/></text>
+  <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel">
+   <ellipse cx="-12.8" cy="17.637" rx="10.123" ry="3.301" stroke-miterlimit="3.5" stroke-width=".10957"/>
+   <g>
+    <path d="m6.8346 15.359-10.735 0.80767" marker-end="url(#Arrow1Lend_Fnone_S-000000)" stroke-width=".1"/>
+    <path d="m6.4205 22.299-10.451-3.0276" marker-end="url(#Arrow1Lend_Fnone_S-000000)" stroke-width=".1"/>
+    <ellipse cx="-.58966" cy="17.59" rx="24.513" ry="9.1688" stroke-width=".10535"/>
+    <ellipse cx="24.412" cy="22.142" rx="22.79" ry="15.714" stroke-width=".1"/>
+   </g>
+  </g>
+  <text x="-5.0005326" y="-1.3000785" font-family="'Liberation Sans'" font-size="2.8222px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-5.0005326" y="-1.3000785" stroke-width=".26458">Recipe</tspan></text>
+  <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width=".1">
+   <ellipse cx="-.85752" cy="-2.1523" rx="6.3215" ry="2.3807"/>
+   <path d="m-0.4145 8.4659-0.65868-8.4378" marker-end="url(#Arrow1Lend_Fnone_S-000000)"/>
+   <ellipse cx="-.77546" cy="10.645" rx="27.889" ry="19.849"/>
+  </g>
+ </g>
+</svg>

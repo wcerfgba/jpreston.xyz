@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="54.105mm" height="45.116mm" version="1.1" viewBox="0 0 54.105 45.116" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker id="Arrow1Lend_Fnone_S-000000" overflow="visible" orient="auto">
+   <path transform="matrix(-.8 0 0 -.8 -10 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill-rule="evenodd" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(20.226 -38.526)">
+  <text x="10.693636" y="59.954079" font-family="'Liberation Sans'" font-size="2.8222px" letter-spacing="0px" stroke-width=".26458" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="10.693636" y="59.954079" text-align="center">Conservative</tspan><tspan x="10.693636" y="63.481865" text-align="center">Party</tspan></text>
+  <g transform="translate(0 -13.758)" font-family="'Liberation Sans'" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+   <text x="-10.53548" y="58.254574" font-size="2.8222px" style="line-height:1.25" xml:space="preserve"><tspan x="-10.53548" y="58.254574" stroke-width=".26458">pm1</tspan></text>
+   <text x="-16.351542" y="60.959877" font-size="2.1167px" style="line-height:1.25" xml:space="preserve"><tspan x="-16.351542" y="60.959877">first-name: Theresa</tspan><tspan x="-16.351542" y="63.605713">last-name: May</tspan></text>
+  </g>
+  <g transform="translate(9.1578 -12.377)" font-family="'Liberation Sans'" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+   <text x="13.094924" y="56.473675" font-size="2.8222px" style="line-height:1.25" xml:space="preserve"><tspan x="13.094924" y="56.473675" stroke-width=".26458">prem1</tspan></text>
+   <text x="12.237192" y="58.78521" font-size="2.1167px" style="line-height:1.25" xml:space="preserve"><tspan x="12.237192" y="58.78521">start: 2016</tspan><tspan x="12.237192" y="61.431046">end: 2019</tspan></text>
+  </g>
+  <g transform="translate(.39733 15.587)" font-family="'Liberation Sans'" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+   <text x="-10.53548" y="58.254574" font-size="2.8222px" style="line-height:1.25" xml:space="preserve"><tspan x="-10.53548" y="58.254574" stroke-width=".26458">pm2</tspan></text>
+   <text x="-16.351542" y="60.959877" font-size="2.1167px" style="line-height:1.25" xml:space="preserve"><tspan x="-16.351542" y="60.959877">first-name: Boris</tspan><tspan x="-16.351542" y="63.605713">last-name: Johnson</tspan></text>
+  </g>
+  <g transform="translate(9.5552 16.968)" font-family="'Liberation Sans'" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+   <text x="13.094924" y="56.473675" font-size="2.8222px" style="line-height:1.25" xml:space="preserve"><tspan x="13.094924" y="56.473675" stroke-width=".26458">prem2</tspan></text>
+   <text x="12.237192" y="58.78521" font-size="2.1167px" style="line-height:1.25" xml:space="preserve"><tspan x="12.237192" y="58.78521">start: 2019</tspan><tspan x="12.237192" y="61.431046">end: NULL</tspan></text>
+  </g>
+  <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width=".1">
+   <ellipse cx="-7.7181" cy="46.465" rx="12.458" ry="6.9527"/>
+   <ellipse cx="26.292" cy="45.085" rx="7.5367" ry="6.5091"/>
+   <ellipse cx="10.466" cy="59.888" rx="9.3416" ry="4.8476"/>
+   <ellipse cx="-6.7613" cy="76.756" rx="10.34" ry="6.8356"/>
+   <ellipse cx="27.015" cy="75.597" rx="6.5317" ry="5.4158"/>
+   <path d="m4.5648 46.339 13.644-0.49948" marker-end="url(#Arrow1Lend_Fnone_S-000000)"/>
+   <path d="m2.1458 51.056 4.1681 4.2283" marker-end="url(#Arrow1Lend_Fnone_S-000000)"/>
+   <path d="m0.96883 72.112 5.8809-7.6605" marker-end="url(#Arrow1Lend_Fnone_S-000000)"/>
+   <path d="m3.6567 77.216 16.439-0.81497" marker-end="url(#Arrow1Lend_Fnone_S-000000)"/>
+  </g>
+  <g font-family="'Liberation Sans'" font-size="2.1167px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+   <text x="5.495913" y="44.983822" style="line-height:1.25" xml:space="preserve"><tspan x="5.495913" y="44.983822" stroke-width=".26458">premiership</tspan></text>
+   <text x="6.4373507" y="75.835754" style="line-height:1.25" xml:space="preserve"><tspan x="6.4373507" y="75.835754" stroke-width=".26458">premiership</tspan></text>
+   <text x="4.3572259" y="52.62072" style="line-height:1.25" xml:space="preserve"><tspan x="4.3572259" y="52.62072" stroke-width=".26458">party</tspan></text>
+   <text x="4.0851612" y="69.619576" style="line-height:1.25" xml:space="preserve"><tspan x="4.0851612" y="69.619576" stroke-width=".26458">party</tspan></text>
+  </g>
+ </g>
+</svg>

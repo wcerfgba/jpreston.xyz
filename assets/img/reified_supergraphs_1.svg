@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="36.043mm" height="21.003mm" version="1.1" viewBox="0 0 36.043 21.003" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker id="Arrow1Lend" overflow="visible" orient="auto">
+   <path transform="matrix(-.8 0 0 -.8 -10 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="#000" fill-rule="evenodd" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(-5.6514 -12.314)">
+  <g font-family="'Liberation Sans'" font-size="2.8222px" letter-spacing="0px" stroke-width=".26458" word-spacing="0px">
+   <text x="8.229248" y="16.096447" style="line-height:1.25" xml:space="preserve"><tspan x="8.229248" y="16.096447" stroke-width=".26458">Leek</tspan></text>
+   <text x="7.990027" y="22.986591" style="line-height:1.25" xml:space="preserve"><tspan x="7.990027" y="22.986591" stroke-width=".26458">Potato</tspan></text>
+   <text x="7.3181295" y="30.422058" style="line-height:1.25" xml:space="preserve"><tspan x="7.3181295" y="30.422058" stroke-width=".26458">Tomato</tspan></text>
+   <text x="27.139929" y="23.064566" style="line-height:1.25" xml:space="preserve"><tspan x="27.139929" y="23.064566" stroke-width=".26458">Vegetable</tspan></text>
+  </g>
+  <g fill="none" stroke="#000" stroke-width=".1">
+   <g stroke-linecap="round" stroke-linejoin="bevel" stroke-miterlimit="3.5">
+    <ellipse cx="11.285" cy="15.168" rx="4.5174" ry="2.8039"/>
+    <ellipse cx="12.06" cy="22.266" rx="5.5861" ry="2.7516"/>
+    <ellipse cx="12.044" cy="29.886" rx="6.343" ry="3.3813"/>
+    <ellipse cx="33.255" cy="22.124" rx="8.3899" ry="3.3176"/>
+   </g>
+   <g>
+    <path d="m15.935 15.205 12.355 4.1594" marker-end="url(#Arrow1Lend)"/>
+    <path d="m17.645 22.495 7.1217-0.4128" marker-end="url(#Arrow1Lend)"/>
+    <path d="m18.572 30.099 9.2273-5.4786" marker-end="url(#Arrow1Lend)" stroke-linecap="round" stroke-linejoin="bevel"/>
+   </g>
+  </g>
+ </g>
+</svg>
