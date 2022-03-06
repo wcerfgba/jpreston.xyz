@@ -3,10 +3,10 @@
 <svg width="76.739mm" height="30.552mm" version="1.1" viewBox="0 0 76.739 30.552" xmlns="http://www.w3.org/2000/svg">
  <defs>
   <marker id="Arrow1Lend-1" overflow="visible" orient="auto">
-   <path transform="matrix(-.8 0 0 -.8 -10 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+   <path transform="matrix(-.8 0 0 -.8 -10 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="#000" fill-rule="evenodd" stroke="#000" stroke-width="1pt"/>
   </marker>
   <marker id="Arrow1Lend-8-6-9" overflow="visible" orient="auto">
-   <path transform="matrix(-.8 0 0 -.8 -10 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="context-stroke" fill-rule="evenodd" stroke="context-stroke" stroke-width="1pt"/>
+   <path transform="matrix(-.8 0 0 -.8 -10 0)" d="m0 0 5-5-17.5 5 17.5 5z" fill="#000" fill-rule="evenodd" stroke="#000" stroke-width="1pt"/>
   </marker>
  </defs>
  <g transform="translate(-12.49 -203.24)">
