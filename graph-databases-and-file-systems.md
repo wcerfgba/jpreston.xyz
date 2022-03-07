@@ -54,7 +54,7 @@ I don't like the property graph model because it inflates the underlying graph m
 
 For example, here is a typical property graph representation of some UK Prime Ministers:
 
-[![](assets/img/reified_supergraphs_5.svg){:style="max-width: 250px"}](assets/img/reified_supergraphs_5.svg)
+[![](assets/img/reified_supergraphs_5.svg){:style="max-width: 300px"}](assets/img/reified_supergraphs_5.svg)
 
 This can be broken down into a set of subgraphs in a number of different ways. One option is to represent first each vertex with its attributes, and then each edge. However, we may want to consider the party affiliation as an attribute and include that in our first step; or we may want to associate the Prime Ministers and their premierships within a single subgraph. We can of course include additional subgraphs which include no new vertices or edges, and importantly this does not make these subgraphs redundant, rather each of the subgraphs which are explicitly included in a reified supergraph exists to tell its own story about the overall supergraph, drawing attention to some data over others.
 
