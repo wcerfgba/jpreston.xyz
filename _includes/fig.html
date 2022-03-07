@@ -1,0 +1,6 @@
+<figure>
+  <a href="{{ include.bigsrc | default: include.src }}">
+    <img src="{{ include.src }}" alt="{{ include.alt }}" style="{{ include.style }}">
+  </a>
+  <figcaption>{%- if include.n -%}Figure {{ include.n }}.&nbsp;{%- endif -%}{{ include.alt }}</figcaption>
+</figure>

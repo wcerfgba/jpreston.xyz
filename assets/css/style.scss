@@ -193,6 +193,20 @@ img {
   width: 100%;
 }
 
+figure {
+  margin: 1rem;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  figcaption {
+    margin: 1rem 0 0 0;
+    font-size: 0.95em;
+  }
+}
+
 table {
   border-collapse: collapse;
 }
