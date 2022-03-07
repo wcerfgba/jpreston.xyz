@@ -26,6 +26,8 @@ Fourth, both vertex labels and vertex attributes are redundant features. Vertex 
 
 
 
+
+
 ### References
 
 [^levene]: Levene, M., and A. Poulovassilis. ‘The Hypernode Model and Its Associated Query Language’. In Proceedings of the 5th Jerusalem Conference on Information Technology, 1990. ‘Next Decade in Information Technology’, 520–30, 1990. <https://doi.org/10.1109/JCIT.1990.128324>.
