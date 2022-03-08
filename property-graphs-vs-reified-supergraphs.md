@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 'Property graphs vs. reified supergraphs'
+title: 'Property graphs vs. reified graphset-graphs'
 date: '2022-03-07'
 last_modified_at: '2022-03-07'
 published: false
@@ -24,14 +24,42 @@ Third, although the property graph is able to represent hyperedges (by reifying 
 
 Fourth, both vertex labels and vertex attributes are redundant features. Vertex labels are a strict subset of vertex attributes. A vertex label can be implemented as a vertex attribute whose key corresponds to the label, and whose value is `true` or some other trivial constant. Vertex attributes are simply key-value stores or functions, and thus they are just bipartite graphs. Any data which can be stored in a vertex attribute can be stored in the graph itself, and as previously discussed this often provides benefits to the users of the graph. The presence of vertex attributes and vertex labels as distinct features may be useful for partitioning data to optimise certain queries and transformations, but this comes at the cost of inflexibility and inelegance in the graph model.
 
+To fix these issues, we need a new graph model which removes vertex labels and vertex attributes; reifies all edges as vertices; and supports hypervertices. Mandatory reification of all edges further allows us to eliminate edge labels and edge attributes. However, this presents a new issue in that it will no longer be possible to deduplicate vertices which represent edges without making it impossible to determine the start and end vertices of these edges. Figure 2 demonstrates this problem: if `pm1` and `pm2` both have `first-name` edges, then if we reify both of these via a single `first-name` edge-vertex, it becomes impossible to determine which name corresponds to each person!
 
+{% include fig.html
+  src='assets/img/property_graphs_vs_reified_supergraphs_2.svg'
+  style='max-width: 300px;'
+  n=2
+  alt='' %}
 
+Fortunately, it is possible to solve this problem using hypervertices. Figure 3 shows the same graph as Figure 2, with a single `first-name` edge-vertex, except now we also have two hypervertices, each of which contains a single person and a single name. Each hypervertex specifies a subgraph in which the true relationship is clear.
+
+{% include fig.html
+  src='assets/img/property_graphs_vs_reified_supergraphs_3.svg'
+  style='max-width: 300px;'
+  n=3
+  alt='' %}
+
+The resulting model is a directed, unlabelled, unattributed, non-multigraph, with hypervertices, and without hyperedges. It is through the use of hypervertices that we are able to implement features such as attributes and labels. Hypervertices can be seen simply as explicit subgraphs: the graph in Figure 3 could be split into two graphs, one for each hypervertex, and each representing the `first-name` relationship for each Prime Minister.
+
+Because the hypervertices are simply subgraphs, we can represent such a graph $$G$$ as a set of all of these subgraphs/hypervertices $$SG_i$$, such that if $$\bar{G} = \{ SG_i = (V_i, E_i) \mid SG_i \text{ is a graph} \}$$ is this set then $$G = (\bar{G} \cup \bigcup V_i, \bigcup E_i)$$. A set of graphs can be called a _graphset_ and so I refer to graphs such as $$G$$ as _reified graphset-graphs_, i.e. graphs which are constructed from the union of a set of subgraphs (graphset-graphs), and which embed the underlying set of subgraphs into the resulting supergraph as hypervertices (reified).
+
+The only papers I have found so far which discuss a graph model for databases making use of hypervertices are Levene and Poulovassilis's "Hypernode" model[^levene]; and Angles' "Nested Graph" model[^angles]. The differences with the reified graphset-graph model are that in the "Hypernode" model, hypernodes/hypervertices have (unique) labels; and in the "Nested Graph" model, edges have labels. In the case of hypernode/hypervertex labels, I see these as redundant since a label can be represented as a vertex and associated directly to the hypervertex to be labelled, and I have already discussed how edge labels can be eliminated through reifying edges as vertices.
 
 
 ### References
 
+[^angles]: Angles, Renzo. ‘A Nested Graph Model for Visualizing RDF Data’. In Proceedings of the 3rd Alberto Mendelzon International Workshop on Foundations of Data Management. Arequipa, Peru, 2009. <http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.159.5254>.
+
 [^levene]: Levene, M., and A. Poulovassilis. ‘The Hypernode Model and Its Associated Query Language’. In Proceedings of the 5th Jerusalem Conference on Information Technology, 1990. ‘Next Decade in Information Technology’, 520–30, 1990. <https://doi.org/10.1109/JCIT.1990.128324>.
+
+[^reification]: ‘Reification (Computer Science)’. In Wikipedia, 11 May 2020. <https://en.wikipedia.org/w/index.php?title=Reification_(computer_science)&oldid=956141410>.
 
 [^rodriguez]: Rodriguez, Marko A., and Peter Neubauer. ‘Constructions from Dots and Lines’. Bulletin of the American Society for Information Science and Technology 36, no. 6 (2010): 35–41. <https://doi.org/10.1002/bult.2010.1720360610>.
 
-[^reification]: ‘Reification (Computer Science)’. In Wikipedia, 11 May 2020. <https://en.wikipedia.org/w/index.php?title=Reification_(computer_science)&oldid=956141410>.
+
+
+
+
+
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
