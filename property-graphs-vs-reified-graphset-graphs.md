@@ -1,10 +1,12 @@
 ---
 layout: page
 title: 'Property graphs vs. reified graphset-graphs'
-date: '2022-03-07'
-last_modified_at: '2022-03-07'
-published: false
+date: '2022-03-09'
+last_modified_at: '2022-03-09'
+published: true
 ---
+
+This [[essay]] presents some ideas on the limitations of property [[graphs]], and outlines a new, more general model which I call 'reified graphset-graphs'.
 
 * Table of Contents
 {:toc}
@@ -37,7 +39,7 @@ To fix these issues, we need a new graph model which removes vertex labels and v
   src='assets/img/property_graphs_vs_reified_supergraphs_2.svg'
   style='max-width: 300px;'
   n=2
-  alt='' %}
+  alt="A graph of Prime Minister's first names, where the `first-name` relation has been reified to a vertex and deduplicated. This makes it impossible to determine which name corresponds to which person." %}
 
 Fortunately, it is possible to solve this problem using hypervertices. Figure 3 shows the same graph as Figure 2, with a single `first-name` edge-vertex, except now we also have two hypervertices, each of which contains a single person and a single name. Each hypervertex specifies a subgraph in which the true relationship is clear.
 
@@ -45,21 +47,23 @@ Fortunately, it is possible to solve this problem using hypervertices. Figure 3 
   src='assets/img/property_graphs_vs_reified_supergraphs_3.svg'
   style='max-width: 300px;'
   n=3
-  alt='' %}
+  alt='By augmenting the graph in Figure 2 with hypervertices, we are able to demarcate semantically valid subgraphs and represent the first name of each Prime Minister without ambiguity.' %}
 
 The resulting model is a directed, unlabelled, unattributed, non-multigraph[^non-multigraph], with hypervertices, and without hyperedges. It is through the use of hypervertices that we are able to implement features such as attributes and labels. Hypervertices can be seen simply as explicit subgraphs: the graph in Figure 3 could be split into two graphs, one for each hypervertex, and each representing the `first-name` relationship for each Prime Minister.
 
 Because the hypervertices are simply subgraphs, we can represent such a graph $$G$$ as a set of all of these subgraphs/hypervertices $$SG_i$$. If $$\bar{G} = \{ SG_i = (V_i, E_i) \mid SG_i \text{ is a graph} \}$$ then $$G = (\bar{G} \cup \bigcup V_i, \bigcup E_i)$$. A set of graphs can be called a _graphset_ and so I refer to graphs such as $$G$$ as _reified graphset-graphs_, i.e. graphs which are constructed from the union of a set of subgraphs (graphset-graphs), and which embed the underlying set of subgraphs into the resulting supergraph as hypervertices (reified).
 
-
 ### The benefits of hypervertices
 
+Hypervertices do not just solve the aforementioned disambiguation problem, they also enable us to achieve many other outcomes from our graphs.
 
+First, hypervertices allow the modelling of containment relations and structural data. In the case of the Prime Ministers example used thus far, we could construct a hypervertex to contain all of the attribute relations for each person and then associate these to the respective `pm` vertices. We could go further and consider this hypervertex of attribute key-value pairs as a complete replacement for the other nodes. This use of hypervertices for representing structural, multilevel, or nested data is given treatment in the papers documenting Levene and Poulovassilis's "Hypernode" model[^levene], and Angles' "Nested Graph" model[^angles].
 
-the graph to capture data about itself. If we query the graph and get a subgraph as a result, how should I record this result, and how can I attach metadata to this query-subgraph such as the time at which it was executed?
+Second, hypervertices can be used for contextualisation and to draw attention to particular subsets of a graph. This can be useful when a graph is very large, and allow users to embed hints about how the graph can be used directly in the graph itself. Users can freely record any subgraph with semantic significance as a hypervertex, and associate metadata to this hypervertex.
 
-Unfortunately, the only papers I have found so far which discuss graph models for databases making use of hypervertices are Levene and Poulovassilis's "Hypernode" model[^levene]; and Angles' "Nested Graph" model[^angles]. The differences with the reified graphset-graph model are that in the "Hypernode" model, hypernodes/hypervertices have (unique) labels; and in the "Nested Graph" model, edges have labels. Given the additional capabilities afforded by hypervertices I hope they become available in a production-ready database package.
+Third, building on contextualisation, hypervertices allow users to record their interactions with the graph. If a user visits a sequence of vertices; runs a query which returns a subgraph; or inserts new data, all of these interactions can be recorded as a new hypervertex around the relevant vertices and edges. Thus graph databases which support hypervertices allow themselves to be their own query logs and audit trails.
 
+Unfortunately, the only papers I have found so far which discuss graph models for databases making use of hypervertices are the "Hypernode" model[^levene] and the "Nested Graph" model[^angles]. The differences with the reified graphset-graph model are that in the "Hypernode" model, hypernodes/hypervertices have (unique) labels; and in the "Nested Graph" model, edges have labels. Given the additional capabilities afforded by hypervertices I hope they become available in a production-ready database package.
 
 ### References and footnotes
 
@@ -72,7 +76,6 @@ Unfortunately, the only papers I have found so far which discuss graph models fo
 [^rodriguez]: Rodriguez, Marko A., and Peter Neubauer. ‘Constructions from Dots and Lines’. Bulletin of the American Society for Information Science and Technology 36, no. 6 (2010): 35–41. <https://doi.org/10.1002/bult.2010.1720360610>.
 
 [^non-multigraph]: I assume that there is no need to create multiple edges of the same direction between the same pair of vertices, because any information captured by the count of the edges could trivially be encoded in the graph. However, the non-multigraph constraint is not necessary to construct reified graphset-graphs, and an alternative 'reified graphset-multigraphs' formulation could be built instead if desired.
-
 
 
 
