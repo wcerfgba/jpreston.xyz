@@ -16,7 +16,7 @@ At their most basic, tag systems can be modelled as a bipartite graph. All verti
 
 Category systems differ from most tag systems by allowing the user to construct a hierarchy of categories with transitive membership, such that if some category B is a subcategory of another category A, then if an object is categorised as B it will also be transitively categorised as A. Some category systems are many-to-one, and only allow an object to be a member of a single category.
 
-I used to make heavy use of del.icio.us[^del.icio.us] many years ago and I was fascinated by the idea of 'folksonomy': an organically evolving, user constructed classification system. As far as I remember, del.icio.us' tag system was flat, and tags could not be associated with each other. However, I did wonder what the site would look like if users could construct their own tag hierarchies and share these with other people. For example, I may tag some links with 'cooking' and 'cheese' and assemble these under a super-tag 'food'. I could then publish my taxonomy and other people could then explore their own links and tags through this hierarchy.
+I used to make heavy use of del.icio.us[^del-icio-us] many years ago and I was fascinated by the idea of 'folksonomy': an organically evolving, user constructed classification system. As far as I remember, del.icio.us' tag system was flat, and tags could not be associated with each other. However, I did wonder what the site would look like if users could construct their own tag hierarchies and share these with other people. For example, I may tag some links with 'cooking' and 'cheese' and assemble these under a super-tag 'food'. I could then publish my taxonomy and other people could then explore their own links and tags through this hierarchy.
 
 A couple of years ago I discovered the zettelkasten system of note-taking and I adore it. I would summarise the two key properties of a zettelkasten as short notes, and links. I have yet to dive deeper into the short notes aspect, but the emphasis on links as the primary organisation system has been revolutionary for me. Links subsume both tags and categories in their entirety, because arbitrary linking is much more generic than these other systems. If I want to tag some articles as 'food', I can just create a 'food' page and then link to this 'tag-page' from the other pages. This is exactly how I organise this website, using a set of pages which can freely link to each other, and then creating some empty pages to serve as categories or tags. This allows me to organise pages and tags hierarchically and to break out of the hierarchy and link between pages when necessary.
 
@@ -46,7 +46,7 @@ There is also the need to determine how links should behave when the underlying 
 
 ### References and footnotes
 
-[^del.icio.us]: A snapshot is available at the Internet Archive at <https://web.archive.org/web/20080731101324/http://del.icio.us/>.
+[^del-icio-us]: A snapshot is available at the Internet Archive at <https://web.archive.org/web/20080731101324/http://del.icio.us/>.
 [^tmsu]: <https://tmsu.org/>
 [^foam]: <https://foambubble.github.io/foam/>
 [^square-brackets]: Foam defaults to parsing double square brackets as wikilinks, and I have used the same syntax for this website. Due to limitations in my own code for parsing out wikilinks I cannot write an example with square brackets or it will get parsed as an actual link! Therefore in these examples I use double angle brackets as an alternative.
