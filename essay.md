@@ -7,4 +7,6 @@ Essays are usually descriptive or discursive pieces which constitute a project i
 
 See also [[invention]] for write-ups about physical projects.
 
+See also [[letter]] for correspondence.
+
 See also [[notes]].
