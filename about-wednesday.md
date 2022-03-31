@@ -5,7 +5,7 @@ date: '2022-01-21'
 last_modified_at: '2022-03-31'
 ---
 
-The following email was sent to the members of the Leadership team at one of my former employers, after myself and five other members of staff were laid off without warning. I never received a response to the issues I raised in this email.
+The following email [[letter]] was sent to the members of the Leadership team at one of my former employers, after myself and five other members of staff were laid off without warning. I never received a response to the issues I raised in this email.
 
 -----
 
