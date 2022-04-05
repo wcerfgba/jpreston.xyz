@@ -65,3 +65,5 @@ Notations are (semi-)formal methods for reifying abstract concepts. Notational e
 |                         | River               | Line                |             |
 |                         |                     | Colour              |             |
 |                         |                     | Label               |             |
+
+How does a musical score work? Is it a representation or a notation, or both?
