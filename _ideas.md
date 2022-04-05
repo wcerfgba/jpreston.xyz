@@ -21,72 +21,47 @@ Need to deconstruct the semantics of various existing representations, find comm
 
 Notations are (semi-)formal methods for reifying abstract concepts. Notational elements are the components of a notation and the rules for composing them. Concepts are 'stuff in your head' ???. Representations are instances of notations which bind notational elements to concepts, and provide a way for individuals to communicate ideas through an agreed relationship between concepts and notational elements.
 
-```{graphviz}
-graph G {
-    rankdir=LR;
 
-    # Notations
-    "Graph", "Scatterplot", "Bar chart", "Natural language", "Source code",
-    "Mathematics" [color=red]
-
-    # Notational Elements
-    Vertex, "Edge", "Horizontal position", Hierarchy, "Edge direction",
-    "Vertical position", Point, "Regression line", Axis,
-    "Credibility interval", Word, Sentence, Noun, Verb, Adjective,
-    Paragraph [color=orange]
-
-    Word -- {Noun, Verb, Adjective} [style=dotted, dir=back]
-
-    ## Mandatory elements
-    "Graph" -- {Vertex, "Edge", Point}
-    "Scatterplot" -- {Axis, "Horizontal position", "Vertical position"}
-    "Bar chart" -- {Axis, "Horizontal position", "Vertical position"}
-    "Natural language" -- {Word, Sentence, Noun, Verb, Adjective}
-
-    ## Optional elements
-    edge [style=dashed]
-
-    "Graph" -- {"Horizontal position", Hierarchy, "Edge direction"}
-    "Scatterplot" -- {"Regression line", "Credibility interval"}
-    "Natural language" -- Paragraph
-
-    edge [style=solid]
-
-    # Concepts
-    Expressions, "Order of operations", Parameters, "Order of parameters",
-    Literals, Number, Category, Relationship, Correlation, Estimate,
-    "Parameter range", Mean, Difference, "Difference vs mean", Thing,
-    Description, Action, Story [color=blue]
-
-    Relationship -- "Difference vs mean" [style=dotted, dir=back]
-
-    # Representations
-    subgraph cluster_AST {
-        color=green
-        label=AST
-
-        Vertex -- {Expressions, Parameters, Literals}
-        "Horizontal position" -- "Order of parameters"
-        {"Edge direction", Hierarchy} -- "Order of operations"
-    }
-
-    subgraph cluster_bland_altman {
-        color=green
-        label="Bland-Altman plot"
-
-        Axis -- {Mean, Difference}
-        "Vertical position" -- Difference
-        "Horizontal position" -- Mean
-        Point -- "Difference vs mean"
-    }
-
-    subgraph cluster_language {
-        color=green
-        label="Language ????"
-
-        Noun -- Thing
-        Adjective -- Description
-        Verb -- Action
-    }
-}
-```
+| Representation          | Concept             | Notational element  | Notation    |
+|-------------------------|---------------------|---------------------|-------------|
+| Abstract syntax tree    | Expression          | Vertex              | Graph       |
+|                         | Parameter           |                     |             |
+|                         | Literal             |                     |             |
+|                         | Order of parameters | Horizontal position |             |
+|                         | Order of operations | Directed edge       |             |
+|                         |                     | Hierarchy           |             |
+| Flowchart               | Step                | Vertex              | Graph       |
+|                         | Type of step        | Shape               |             |
+|                         | Order of operations | Directed edge       |             |
+| Bland-Altman plot       | Mean                | Axis                | Scatterplot |
+|                         |                     | Horizontal position |             |
+|                         | Difference          | Axis                |             |
+|                         |                     | Vertical position   |             |
+|                         | Observation         | Point               |             |
+| Histogram               | Bin                 | Axis                | Bar chart   |
+|                         |                     | Horizontal position |             |
+|                         | Count               | Axis                |             |
+|                         |                     | Bar height          |             |
+|                         | Category            | Colour              |             |
+|                         |                     | Pattern             |             |
+| Resaurant menu          | Course              | Heading             | ???         |
+|                         |                     | Grouping            |             |
+|                         | Dish                | ???                 |             |
+|                         | Ingredients         | ???                 |             |
+|                         | Dietary suitability | Icon                |             |
+|                         |                     | Colour              |             |
+|                         |                     | Grouping            |             |
+|                         | Price               | ???                 |             |
+| IKEA instructions       | Inventory           | Drawing             | Diagram?    |
+|                         | Order of steps      | Sequence            |             |
+|                         |                     | Numbering           |             |
+|                         | Assembly            | Arrow               |             |
+| Construction blueprints | ???                 | ???                 | ???         |
+| World map               | Latitude            | Axis                | Map         |
+|                         | Longitude           | Axis                |             |
+|                         | Country             | Outline             |             |
+|                         |                     | Colour              |             |
+|                         |                     | Label               |             |
+|                         | River               | Line                |             |
+|                         |                     | Colour              |             |
+|                         |                     | Label               |             |
