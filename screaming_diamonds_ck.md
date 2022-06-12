@@ -5,7 +5,7 @@ date: '2014-11-07'
 last_modified_at: '2022-01-09'
 ---
 
-WARNING: This audio is loud and clips heavily, please turn down your volume before playing!
+**WARNING: This audio is loud and clips heavily, please turn down your volume before playing!**
 
 Note: The file presented here is FLAC, not MP3, because I could not get an MP3 to accurately reproduce the clipped waveforms which are essential for this audio. You may need to install a FLAC codec or download this file in order to play it.
 
