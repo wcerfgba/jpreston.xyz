@@ -4,3 +4,5 @@ title: Music
 ---
 
 You can follow my music on SoundCloud at <https://soundcloud.com/wcerfgba/>.
+
+See also [[art]].
