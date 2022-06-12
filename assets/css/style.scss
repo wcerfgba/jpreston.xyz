@@ -1,8 +1,8 @@
 ---
 ---
 
-$black: #004;
-$light-grey: rgba(0, 0, 0, 0.02);
+$black: #006;
+$light-grey: rgba(0, 0, 0, 0.03);
 
 /* latin */
 @font-face {
@@ -20,13 +20,13 @@ html {
 }
 
 body {
+  background: none;
   background-color: hsl(0, 0%, 98%);
   font-family: 'Merriweather', serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7143;
   color: $black;
-  transition: background-color 6s ease;
 }
 
 p {
