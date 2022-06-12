@@ -8,7 +8,7 @@ layout: default
     <h2 class="page-title p-name" itemprop="name headline">{{ page.title | escape }}</h2>
     {%- if page.date -%}
       <p class="page-meta">
-        Original date:
+        Index date:
         <time class="dt-created" datetime="{{ page.date | date_to_xmlschema }}" itemprop="dateCreated">
           {{ page.date | date: date_format }}
         </time>

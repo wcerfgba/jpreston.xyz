@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Recently created pages
+title: Pages by index date
 in_tree: false
 ---
+
+<p>All pages except for categories have an 'index date' which is the creation date of the underlying work that the page documents. For example, the page [[old-fractal-art]] was only created on this website on 2022-04-24, but the original artworks were created around 2007-09-08, and so the 2007 date serves as the index date.</p>
 
 {%- assign pages = site.pages | sort: "date" | reverse -%}
 {%- if pages.size > 0 -%}

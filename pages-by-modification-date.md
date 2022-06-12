@@ -1,8 +1,10 @@
 ---
 layout: page
-title: Recently changed pages
+title: Pages by modification date
 in_tree: false
 ---
+
+<p>All pages except category pages have a modification date, representing the date the page received it's last significant update, or the date it was created.</p>
 
 {%- assign pages = site.pages | sort: "last_modified_at" | reverse -%}
 {%- if pages.size > 0 -%}
