@@ -262,31 +262,31 @@ td, th {
       margin-left: 2.5rem;
     }
   }
+}
 
-  &-tree-toggle {
+.page-table-tree-toggle {
+  display: none;
+
+  & ~ .page-tree-links,
+  & ~ .page-tree-backlinks {
     display: none;
+  }
 
+  & ~ label::after {
+    content: '▸';
+    padding-right: 0.5rem;
+    cursor: pointer;
+  }
+
+  &:checked {
     & ~ .page-tree-links,
     & ~ .page-tree-backlinks {
-      display: none;
+      display: block;
     }
+  }
 
-    & ~ label::after {
-      content: '▸';
-      padding-right: 0.5rem;
-      cursor: pointer;
-    }
-
-    &:checked {
-      & ~ .page-tree-links,
-      & ~ .page-tree-backlinks {
-        display: block;
-      }
-    }
-
-    &:checked ~ label::after {
-      content: '▾';
-    }
+  &:checked ~ label::after {
+    content: '▾';
   }
 }
 
