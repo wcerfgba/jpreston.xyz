@@ -255,3 +255,84 @@ td, th {
     }
   }
 }
+
+.page-table {
+  .page-tree {
+    &, &-links, &-backlinks, ul {
+      margin-left: 2.5rem;
+    }
+  }
+
+  &-tree-toggle {
+    display: none;
+
+    & ~ .page-tree-links,
+    & ~ .page-tree-backlinks {
+      display: none;
+    }
+
+    & ~ label::after {
+      content: '▸';
+      padding-right: 0.5rem;
+      cursor: pointer;
+    }
+
+    &:checked {
+      & ~ .page-tree-links,
+      & ~ .page-tree-backlinks {
+        display: block;
+      }
+    }
+
+    &:checked ~ label::after {
+      content: '▾';
+    }
+  }
+}
+
+
+.sortable th {
+  cursor: pointer;
+}
+.sortable th.no-sort {
+  pointer-events: none;
+}
+.sortable th::after, .sortable th::before {
+  transition: color 0.1s ease-in-out;
+  color: transparent;
+}
+.sortable th::after {
+  margin-left: 0.5rem;
+  margin-right: -1rem;
+  content: "▸";
+}
+.sortable th:hover::after {
+  color: inherit;
+}
+.sortable th.dir-d::after {
+  color: inherit;
+  content: "▾";
+}
+.sortable th.dir-u::after {
+  color: inherit;
+  content: "▴";
+}
+.sortable th.indicator-left::after {
+  content: "";
+}
+.sortable th.indicator-left::before {
+  margin-right: 0.5rem;
+  margin-left: -1rem;
+  content: "▸";
+}
+.sortable th.indicator-left:hover::before {
+  color: inherit;
+}
+.sortable th.indicator-left.dir-d::before {
+  color: inherit;
+  content: "▾";
+}
+.sortable th.indicator-left.dir-u::before {
+  color: inherit;
+  content: "▴";
+}

@@ -33,31 +33,33 @@
       {%- assign page_links = links | where_exp: "links", links_where_exp | first | last -%}
 
       {%- assign linked_pages = page_links | concat: page_backlinks -%}
-      {%- if linked_pages.size > 0 -%}
-        <h3>Linked pages</h3>
-        <ul class="page-tree-links">
-          {%- for link in page_links -%}
-            {%- assign link_name = link | append: '.md' -%}
-            {%- assign subpage = site.pages | where: "name", link_name | first -%}
-            <li>
-              <a class="page-link" href="{{ subpage.url | relative_url }}">
-                {{ subpage.title | escape }}
-              </a>
-            </li>
-          {%- endfor -%}
-        </ul>
-        <ul class="page-tree-backlinks">
-          {%- for link in page_backlinks -%}
-            {%- assign link_name = link | append: '.md' -%}
-            {%- assign subpage = site.pages | where: "name", link_name | first -%}
-            <li>
-              <a class="page-link" href="{{ subpage.url | relative_url }}">
-                {{ subpage.title | escape }}
-              </a>
-            </li>
-          {%- endfor -%}
-        </ul>
-      {%- endif -%}
+      {%- unless page.no_linked_pages -%}
+        {%- if linked_pages.size > 0 -%}
+          <h3>Linked pages</h3>
+          <ul class="page-tree-links">
+            {%- for link in page_links -%}
+              {%- assign link_name = link | append: '.md' -%}
+              {%- assign subpage = site.pages | where: "name", link_name | first -%}
+              <li>
+                <a class="page-link" href="{{ subpage.url | relative_url }}">
+                  {{ subpage.title | escape }}
+                </a>
+              </li>
+            {%- endfor -%}
+          </ul>
+          <ul class="page-tree-backlinks">
+            {%- for link in page_backlinks -%}
+              {%- assign link_name = link | append: '.md' -%}
+              {%- assign subpage = site.pages | where: "name", link_name | first -%}
+              <li>
+                <a class="page-link" href="{{ subpage.url | relative_url }}">
+                  {{ subpage.title | escape }}
+                </a>
+              </li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+      {%- endunless -%}
 
 
       {%- include footer.html -%}
