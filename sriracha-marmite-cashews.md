@@ -3,9 +3,10 @@ layout: page
 title: Sriracha Marmite Cashews
 date: '2021-03-18'
 last_modified_at: '2021-03-18'
+recipe: true
 ---
 
-My colleague Carnun shared this great snack [[recipe]] with me, which combines three of my favourite things! I've gradually refined the recipe to get these just how I like them. Be careful, they are extremely moreish!
+My colleague Carnun shared this great snack recipe with me, which combines three of my favourite things! I've gradually refined the recipe to get these just how I like them. Be careful, they are extremely moreish!
 
 I get a 500g bag of unroasted, unsalted cashews from the supermarket, and this recipe required roasing the cashews yourself, as I will explain shortly.
 

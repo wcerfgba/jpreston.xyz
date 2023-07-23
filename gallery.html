@@ -1,0 +1,70 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .container {
+      margin: 2rem 1rem;
+    }
+
+    .flex-container {
+      margin: 1rem 0;
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+    }
+
+    .item {
+      display: block;
+      width: calc(100% - 1rem);
+      margin: 0.5rem;
+    }
+
+    @media screen and (min-width: 700px) {
+      .item {
+        width: calc(50% - 1rem);
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      .item {
+        width: calc(33.333% - 1rem);
+      }
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <a href="/">&lt; back</a>
+      <div class="flex-container">
+        {%- assign items = site.pages | sort: 'date' | reverse -%}
+        {%- for item in items -%}
+          {%- if item.gallery_img -%}
+            <a class="item" href="{{ item.url }}">
+              <img src="{{ item.gallery_img }}" alt="{{ item.title }}">
+            </a>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+
+    <script>
+      const bg_cycle_time_hrs = 0.3;
+      const set_background = () => {
+        const now = new Date();
+        let bg_theta = (6 * (now.getMinutes() + (now.getSeconds() / 60)) / bg_cycle_time_hrs) % 360;
+        document.body.style.backgroundColor = `hsl(${bg_theta}, 100%, 90%)`;
+      }
+      window.setInterval(set_background, 2000);
+      set_background();
+    </script>
+  </body>
+</html>

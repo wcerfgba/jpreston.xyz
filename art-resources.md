@@ -3,9 +3,8 @@ layout: page
 title: Art Resources
 date: '2021-08-28'
 last_modified_at: '2021-08-29'
+note: true
 ---
-
-Some useful [[links]] about [[art]].
 
 ### Multitudes
 

@@ -3,9 +3,10 @@ layout: page
 title: Mushroom Stroganoff
 date: '2020-03-13'
 last_modified_at: '2020-03-13'
+recipe: true
 ---
 
-A [[recipe]].
+A recipe.
 
 * 1pt onion
 * 2pt mushrooms

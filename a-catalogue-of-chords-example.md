@@ -3,11 +3,20 @@ layout: page
 title: A Catalogue of Chords Example
 date: '2021-02-04'
 last_modified_at: '2021-08-14'
+gallery_img: /catalogue_of_chords.png
+note: true
+code: true
+music: true
+music_file: /assets/audio/jjazzlab_catalogue_demo.mp3
+excerpt: |
+  At the start of 2021 I spent some time writing some Clojure code to generate a catalogue of assorted musical chords. You can find the catalogue, with explanatory info and the script to generate it, on GitHub.
+
+  In this essay I'll demonstrate using the catalogue to build a chord progression.
 ---
 
-At the start of 2021 I spent some time writing some Clojure [[software]] to generate a catalogue of assorted [[music]]al chords. You can find the catalogue, with explanatory info and the script to generate it, on GitHub [^1].
+At the start of 2021 I spent some time writing some Clojure code to generate a catalogue of assorted musical chords. You can find the catalogue, with explanatory info and the script to generate it, on GitHub[^1].
 
-In this [[essay]] I'll demonstrate using the catalogue to build a chord progression.
+In this essay I'll demonstrate using the catalogue to build a chord progression.
 
 ### Background
 
@@ -159,7 +168,7 @@ The final 8 chord sequence is:
 Dmin11 - AbMaj6 - D7#11 - Ab7sus4 \
 Fmin11 - BMaj6 - F7#11 - B7sus4
 
-I used JJazzLab [^2] to see what this sounds like, and here is an MP3 of the complete 8 chord sequence, one chord per bar, with a single repeat, giving 16 bars.
+I used JJazzLab[^2] to see what this sounds like, and here is an MP3 of the complete 8 chord sequence, one chord per bar, with a single repeat, giving 16 bars.
 
 <audio controls="controls" src="/assets/audio/jjazzlab_catalogue_demo.mp3"></audio>
 
@@ -167,7 +176,7 @@ While I worked on this progression, I did not construct it completely analytical
 
 ### Analysis
 
-I think the final progression sounds quite good, even though at first glance to my untrained eyes there is no obvious tonicity or functionality to the progression. The reason these chords work well together is the use of smooth voice leading: because each note only moves by a small distance between each chord, there is a sense of continuation and closeness between the chords as a whole. This is effectively counterpoint, and I am reminded of Hal Galper's comments on Bill Evans' use of counterpoint, from a 2002 interview by Jan Stevens [^3]:
+I think the final progression sounds quite good, even though at first glance to my untrained eyes there is no obvious tonicity or functionality to the progression. The reason these chords work well together is the use of smooth voice leading: because each note only moves by a small distance between each chord, there is a sense of continuation and closeness between the chords as a whole. This is effectively counterpoint, and I am reminded of Hal Galper's comments on Bill Evans' use of counterpoint, from a 2002 interview by Jan Stevens[^3]:
 
 > It was only then that I realized that I had been, at times using counterpoint but didn't know it. It was then that I realized that anyone investigating harmony on it's deepest level would naturally come to the counterpoint conclusion. That made me feel a lot better. I'm now being more "picky" about the way I move my voicings. The problem is that pianists usually start learning voicings by the process of "stacking" notes in thirds or fourths or whatever. This creates a static perception of harmony. What is remarkable about Bill's voicings is that each note can function separately as a independent melodic line. True counterpoint. It really hit me while listening to his "Practice Tape #1," where, after working on his voice leading for a while, he slips into Bach's "Art of the Fugue" then switches back to his voicing work. (What a great Bach interpreter he was!) You can really get the clearest idea of his use of counterpoint from his switching back and forth. It was Jack Reilly's paper on inversions that gave me the clue: you have to have a thorough and complete knowledge of inversions to use harmony as counterpoint.
 

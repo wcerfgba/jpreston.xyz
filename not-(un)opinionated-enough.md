@@ -3,9 +3,16 @@ layout: page
 title: Not (Un)opinionated Enough
 date: '2021-12-10'
 last_modified_at: '2022-07-24'
+gallery_img: /assets/img/product_value_opinionatedness.svg
+code: true
+note: true
+excerpt: |
+  This is an essay on (software) product development that I started writing in December 2021 but never finished. I've tried to polish this off and publish it so that it's actually 'out there' in the world and able to inspire other people's thoughts, but if it's a bit clunky to read, now you know why! 😅
+
+  Products are vehicles for delivering value to customers. Most often products deliver value by being use-objects: they are things which customers can use to perform a task and achieve a goal. For example, a can opener allows me to open a can, and an electric can opener allows me to open a can with less manual effort than a manual can opener.
 ---
 
-This is an [[essay]] on ([[software]]) product development that I started writing in December 2021 but never finished. I've tried to polish this off and publish it so that it's actually 'out there' in the world and able to inspire other people's thoughts, but if it's a bit clunky to read, now you know why! 😅
+This is an essay on (software) product development that I started writing in December 2021 but never finished. I've tried to polish this off and publish it so that it's actually 'out there' in the world and able to inspire other people's thoughts, but if it's a bit clunky to read, now you know why! 😅
 
 Products are vehicles for delivering value to customers. Most often products deliver value by being use-objects: they are things which customers can use to perform a task and achieve a goal. For example, a can opener allows me to open a can, and an electric can opener allows me to open a can with less manual effort than a manual can opener.
 

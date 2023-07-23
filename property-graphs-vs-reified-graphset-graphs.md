@@ -4,9 +4,14 @@ title: 'Property graphs vs. reified graphset-graphs'
 date: '2022-03-09'
 last_modified_at: '2022-03-09'
 published: true
+code: true
+note: true
+gallery_img: property-graphs-vs-reified-graphset-graphs.png
+excerpt: |
+  This essay presents some ideas on the limitations of property graphs, and outlines a new, more general model which I call 'reified graphset-graphs'.
 ---
 
-This [[essay]] presents some ideas on the limitations of property [[graphs]], and outlines a new, more general model which I call 'reified graphset-graphs'.
+This essay presents some ideas on the limitations of property graphs, and outlines a new, more general model which I call 'reified graphset-graphs'.
 
 * Table of Contents
 {:toc}

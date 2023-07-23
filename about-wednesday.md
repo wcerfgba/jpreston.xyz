@@ -3,9 +3,18 @@ layout: page
 title: About Wednesday
 date: '2022-01-21'
 last_modified_at: '2022-03-31'
+letter_to: Commsor C-suite
+excerpt: |
+  The following email was sent to the members of the Leadership team at one of my former employers, after myself and five other members of staff were laid off without warning. I never received a response to the issues I raised in this email.
+
+  -----
+
+  Hi all,
+
+  I had originally intended to write this email to Mac and CC in the Leadership team, but since he is currently ill I have decided to address it to you all. The things I have to say may be difficult to hear, but it is important to me that they are heard, and I believe a proper acknowledgement of these issues will also benefit Commsor as it continues to grow and evolve.
 ---
 
-The following email [[letter]] was sent to the members of the Leadership team at one of my former employers, after myself and five other members of staff were laid off without warning. I never received a response to the issues I raised in this email.
+The following email was sent to the members of the Leadership team at one of my former employers, after myself and five other members of staff were laid off without warning. I never received a response to the issues I raised in this email.
 
 -----
 

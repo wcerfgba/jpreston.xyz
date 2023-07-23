@@ -3,13 +3,20 @@ layout: page
 title: 2022 Annual Letter
 date: '2022-12-25'
 last_modified_at: '2022-12-25'
+letter_to: Friends and family
+excerpt: |
+  Greetings, good friends and family members!
+
+  I hope your Decembers are going well and you have many good things to look forward to in 2023. 😊
+
+  This year I have decided to embrace my inner Boomer and write an annual / round-robin letter, after a friend shared their father's in the pub one evening during our last Christmas spell. In typical John style, I have embraced my virtues of laziness and forgetfulness, and am only just writing this on Christmas Day, as the onions for our gravy are reducing on the stove.
 ---
 
 Greetings, good friends and family members!
 
 I hope your Decembers are going well and you have many good things to look forward to in 2023. 😊
 
-This year I have decided to embrace my inner Boomer and write an annual / round-robin [[letter]], after a friend shared their father's in the pub one evening during our last Christmas spell. In typical John style, I have embraced my virtues of laziness and forgetfulness, and am only just writing this on Christmas Day, as the onions for our gravy are reducing on the stove.
+This year I have decided to embrace my inner Boomer and write an annual / round-robin letter, after a friend shared their father's in the pub one evening during our last Christmas spell. In typical John style, I have embraced my virtues of laziness and forgetfulness, and am only just writing this on Christmas Day, as the onions for our gravy are reducing on the stove.
 
 2022 has been a rather good year for me. The first adjectives which come to mind include 'successful', 'productive', and 'busy'. Life under capitalism changes our culture to emphasise the importance of work and of our roles as material producers, and so it is somewhat expected that the first thing I should talk about is my job. I've executed a quite reasonable career shift over the last 12 to 15 months. In October 2021 I started a PhD in public health and ob*sity[^fat-language] prevention, which I carried out part-time while I moved to a part-time Technical Project Management role at the company I was working for. In January this year I applied for an Analyst job in the Ministry of Justice, and have now achieved one of my lifelong aspirations of becoming a Civil Servant. My transition to the new job was aided by being very abruptly laid off by my former employer, which led to me writing a rather long and somewhat scathing open letter ([[about-wednesday]]). I'm now over a year into my PhD and have nicely hit the first milestone of throwing away my initial approach and redesigning my project. Towards the start of my PhD journey, my friend Olu pointed me towards fat liberation perspectives, and so now I am trying to create space in my project for exploring issues beyond health, and to share control of and power over the project with people with lived experience. Somewhat ironically, I find myself slipping back into a project management role, as I now have to assemble a research team, secure funding, and support other people to carry out their roles as researchers. Nonetheless, I am very excited to continue with my research in 2023.
 

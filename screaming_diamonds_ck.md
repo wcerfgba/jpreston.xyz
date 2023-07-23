@@ -3,6 +3,13 @@ layout: page
 title: 'screaming_diamonds.ck'
 date: '2014-11-07'
 last_modified_at: '2022-01-09'
+code: true
+music: true
+music_file: /assets/audio/screaming_diamonds.ck.flac
+excerpt: |
+  **WARNING: This audio is loud and clips heavily, please turn down your volume before playing!**
+
+  An experiment generated in the ChucK programming langauge.
 ---
 
 **WARNING: This audio is loud and clips heavily, please turn down your volume before playing!**
@@ -11,7 +18,7 @@ Note: The file presented here is FLAC, not MP3, because I could not get an MP3 t
 
 <audio controls="controls" src="/assets/audio/screaming_diamonds.ck.flac"></audio>
 
-This [[music]]al experiment was generated in the ChucK programming language[^chuck], using runtime version 1.4.1.0, from the following code:
+This musical experiment was generated in the ChucK programming language[^chuck], using runtime version 1.4.1.0, from the following code:
 
 ```
 Math.pow(2.0, 1.0 / 12.0) => float semitone;

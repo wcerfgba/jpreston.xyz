@@ -3,9 +3,13 @@ layout: page
 title: 1D Isomorphic Chromatic Piano Keyboard Mod
 date: '2021-01-30'
 last_modified_at: '2021-01-30'
----
+gallery_img: /assets/img/1d_chromatic_angle.jpg
+music: true
+excerpt: |
+  I have never liked the popular Western piano keyboard layout because it prioritises the C Major diatonic over all other keys, by making the notes of the C Major scale the white keys and moving the 'accidentals' to black keys. The design of the keyboard makes it awkward to play in any other key without explicit practice, and is a big motivator for the musical advice to "practice in all twelve keys".
 
-A [[music]]al [[invention]] to make approaching the keyboard easier.
+  Similar to the Dodeka layout, I have modified a MIDI keyboard (a Launchkey 49 Mk 1) with 'risers' on the white keys, to fill in the gaps between the black keys and present a single row of identical keys, all separated by a semitone.
+---
 
 My approach to music theory is very mathematical and chromatic. To demonstrate, here are a few different ways one might think about a CMaj7 chord:
 
@@ -24,7 +28,7 @@ I have never liked the popular Western piano keyboard layout because it prioriti
 
 By comparison, a bass guitar is (usually) tuned with each string a perfect fourth above the next, and each note is accessible on the fretboard (or fingerboard) in the same manner as all the others. If you want to play a CMaj7, DMaj7 or GMaj7 arpeggio on a bass guitar, you can use the same pattern in three different places on the neck and you are always playing a chord with a Maj7 quality. As someone who thinks in a very mathematical, chromatic, and patterned way, this has always seemed much simpler to me.
 
-There are many different designs for isomorphic keyboards [^1] which preserve intervallic distance and chord shapes as one moves around the keyboard, but the vast majority of these are 2D, which presents some problems for ergonomics -- rotating my hands to hit different keys is less intuitive to my body than keeping my fingers in the same relative position and moving my hand left or right. The only 1D isomorphic layout I could find is the Dodeka Stellar keyboard [^2], which is pegged to launch on Kickstarter this year, but which is as of yet unavailable.
+There are many different designs for isomorphic keyboards[^1] which preserve intervallic distance and chord shapes as one moves around the keyboard, but the vast majority of these are 2D, which presents some problems for ergonomics -- rotating my hands to hit different keys is less intuitive to my body than keeping my fingers in the same relative position and moving my hand left or right. The only 1D isomorphic layout I could find is the Dodeka Stellar keyboard[^2], which is pegged to launch on Kickstarter this year, but which is as of yet unavailable.
 
 Similar to the Dodeka layout, I have modified a MIDI keyboard (a Launchkey 49 Mk 1) with 'risers' on the white keys, to fill in the gaps between the black keys and present a single row of identical keys, all separated by a semitone.
 
@@ -32,7 +36,7 @@ Similar to the Dodeka layout, I have modified a MIDI keyboard (a Launchkey 49 Mk
 
 [![](/assets/img/1d_chromatic_top.jpg)](/assets/img/1d_chromatic_top.jpg)
 
-The risers are 3D printed, and to make them I first had to create a CAD model. I placed a piece of card in between a black and white key and used a pencil to trace the profile (side) of the black key. I made sure to mark out the base of the riser as the top of the adjacent white key. I used some Vernier calipers to measure the length of the black key, the elevation at the back and front, and the width at the base and across the top. I also measused the width of the narrow section of the B, C, E and F keys where I would be placing two risers on adjacent keys -- it is important to make sure that the base of the riser does not extend over onto an adjacent key. With my sketch and measurements, I was able to build a basic model using Onshape [^3]. I was able to import the sketch, scale it according to the measurements, draw the outline of the side of the key, extrude the 2D profile into a 3D model, draft the sides to create a taper from the base to the top, and then fillet the corners to make them rounded. Once the model was complete I exported it as an STL [^4].
+The risers are 3D printed, and to make them I first had to create a CAD model. I placed a piece of card in between a black and white key and used a pencil to trace the profile (side) of the black key. I made sure to mark out the base of the riser as the top of the adjacent white key. I used some Vernier calipers to measure the length of the black key, the elevation at the back and front, and the width at the base and across the top. I also measused the width of the narrow section of the B, C, E and F keys where I would be placing two risers on adjacent keys -- it is important to make sure that the base of the riser does not extend over onto an adjacent key. With my sketch and measurements, I was able to build a basic model using Onshape[^3]. I was able to import the sketch, scale it according to the measurements, draw the outline of the side of the key, extrude the 2D profile into a 3D model, draft the sides to create a taper from the base to the top, and then fillet the corners to make them rounded. Once the model was complete I exported it as an STL[^4].
 
 The next step was prototyping. I couldn't find any 3D printing providers who would do a small run of three risers without a high minimum order or startup cost, but fortunately I have a friend with access to a 3D printer who was able to print me three risers (thanks Jack!) in order to check that the length and height are suitable and to make sure that the risers don't foul the adjacent keys.
 

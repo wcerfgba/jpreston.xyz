@@ -3,9 +3,10 @@ layout: page
 title: 'Beetroot, Oat and Lentil Burgers'
 date: '2020-09-30'
 last_modified_at: '2021-05-22'
+recipe: true
 ---
 
-I have finally perfected my burger [[recipe]]. The key is to ensure the final mixture is not too moist -- in the past I have cooked the lentils in too much water and this created a very wet burger mix, making the burgers too crumbly once cooked.
+I have finally perfected my burger recipe. The key is to ensure the final mixture is not too moist -- in the past I have cooked the lentils in too much water and this created a very wet burger mix, making the burgers too crumbly once cooked.
 
 To make 8 burgers, combine:
 

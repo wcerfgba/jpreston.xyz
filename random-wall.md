@@ -3,8 +3,9 @@ layout: page
 title: Random Wall
 date: '2019-06-18'
 last_modified_at: '2020-10-25'
+gallery_img: /assets/img/random wall_small.jpg
 ---
 
 [![](/assets/img/random wall_small.jpg)](/assets/img/random wall.jpg)
 
-For this [[photograph]], a single real exposure was pushed to different EVs and then each image was overlaid and cropped to create a patchwork image highlighting the various textures, shapes and colours visible in this simple wall.
+For this photograph, a single real exposure was pushed to different EVs and then each image was overlaid and cropped to create a patchwork image highlighting the various textures, shapes and colours visible in this simple wall.
