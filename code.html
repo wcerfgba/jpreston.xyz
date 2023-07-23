@@ -1,0 +1,74 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <style>
+    body {
+      font-family: 'Comic Mono', monospace;
+      margin: 0;
+      background: #004;
+      color: #0d0;
+    }
+
+    a:any-link {
+      color: #0d0;
+      text-decoration: underline;
+    }
+
+    .container {
+      margin: 2rem auto;
+      max-width: 45rem;
+    }
+
+    .items-container {
+      margin: 2rem 0;
+    }
+
+    .item {
+      margin: 4rem 1rem 6rem;
+      display: block;
+      text-decoration: none;
+      border-bottom: 1px solid #0d0;
+      padding-bottom: 1rem;
+    }
+
+    .item h2 {
+      margin: 1rem 0;
+      line-height: 1;
+    }
+
+    .item p {
+      margin: 1rem 0;
+    }
+
+    .item audio {
+      margin-bottom: 1rem;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <a href="/" style="margin: 1rem;">&lt; back</a>
+      <div class="items-container">
+        {%- assign items = site.pages | sort: 'date' | reverse -%}
+        {%- for item in items -%}
+          {%- if item.code -%}
+            <div class="item">
+              <a href="{{ item.url }}">
+                <h2>{{ item.title }}</h2>
+              </a>
+              <p>{{ item.date }}</p>
+              {%- if item.excerpt -%}
+                <div class="excerpt">{{ item.excerpt | markdownify }}</div>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </body>
+</html>

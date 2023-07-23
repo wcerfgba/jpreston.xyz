@@ -3,6 +3,13 @@ layout: page
 title: Isotope tracing of Xinjiang cotton
 date: '2021-12-18'
 last_modified_at: '2022-03-31'
+letter_to: UK Parliament Foreign Affairs Committee
+excerpt: |
+  Hello members of the FAC,
+
+  I was disappointed to read the Government's responses to your recent report on the Uighur genocide in Xinjiang [1]. It is an issue I have been following for some time and I grow increasingly concerned about the ineffectiveness of our Government in responding to this atrocity.
+
+  I thought that another option you may wish to pursue would be tracing the provenance of cotton used in consumer textiles in the UK. If it can be demonstrated that consumer goods being sold in the UK contain cotton which can be traced back to Xinjiang, this could be used to apply pressure on firms throughout the supply chain to implement greater controls and more successfully move away from Xinjiang cotton.
 ---
 
 The following email [[letter]] was originally sent to the UK Parliament Foreign Affairs Committee ([fac@parliament.uk](mailto:fac@parliament.uk)).

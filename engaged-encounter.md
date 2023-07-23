@@ -3,6 +3,9 @@ layout: page
 title: Engaged Encounter
 date: '2022-07-10'
 last_modified_at: '2022-07-10'
+note: true
+excerpt: |
+  In the UK, the Roman Catholic Church and the Anglican Church both offer a weekend retreat for couples called 'Engaged Encounter'. These weekends are aimed at couples who are engaged to be married, to provide them with tools to carry into their marriage so that their relationships can grow stronger within themselves and as a part of their communities and the Church.
 ---
 
 In the UK, the Roman Catholic Church and the Anglican Church both offer a weekend retreat for couples called 'Engaged Encounter'. These weekends are aimed at couples who are engaged to be married, to provide them with tools to carry into their marriage so that their relationships can grow stronger within themselves and as a part of their communities and the Church.

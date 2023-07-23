@@ -3,9 +3,13 @@ layout: page
 title: the-light-of-the.world
 date: '2019-05-20'
 last_modified_at: '2021-07-02'
+gallery_img: the-light-of-the-world.png
+code: true
+excerpt: |
+  [the-light-of-the.world](https://the-light-of-the.world) was a piece of self-describing network software art I created that was active from May 2019 to June 2020. The original copy that was hosted on the site is presented below.
 ---
 
-[the-light-of-the.world](https://the-light-of-the.world) was a piece of self-describing network [[software]] [[art]] I created that was active from May 2019 to June 2020. The original copy that was hosted on the site is presented below.
+[the-light-of-the.world](https://the-light-of-the.world) was a piece of self-describing network software art I created that was active from May 2019 to June 2020. The original copy that was hosted on the site is presented below.
 
 <style>
   .container {

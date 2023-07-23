@@ -3,9 +3,12 @@ layout: page
 title: 'Digest 2021 #1: Data and Democracy'
 date: '2021-12-29'
 last_modified_at: '2021-12-29'
+note: true
+excerpt: |
+  Welcome to my first digest, on the theme of 'Data and Democracy'. In this article I'll share some of the best resources I've found in the last few months of 2021, covering science, data, statistics, modelling, policy, and democracy.
 ---
 
-Welcome to my first [[digest]], on the theme of 'Data and Democracy'. In this article I'll share some of the best resources I've found in the last few months of 2021, covering science, data, statistics, modelling, policy, and democracy.
+Welcome to my first digest, on the theme of 'Data and Democracy'. In this article I'll share some of the best resources I've found in the last few months of 2021, covering science, data, statistics, modelling, policy, and democracy.
 
 **Parker, Simon. ‘Conservative Anarchism, Self-Organisation and the Future of Government’. Medium (blog), 22 June 2020. <https://medium.com/@SimonFParker/conservative-anarchism-self-organisation-and-the-future-of-government-2ef5447b7f02>.**
 

@@ -3,13 +3,18 @@ layout: page
 title: 'Searching YouTube Watch History by Transcripts'
 date: '2022-03-31'
 last_modified_at: '2022-03-31'
+code: true
+excerpt: |
+  The other day I was discussing something with a friend and I remembered a video essay I had watched which referenced a play by Samuel Beckett. Unfortunately I couldn't remember what the video was, but I did remember the description of the referenced work.
+
+  In order to find the original video, I wrote the following short Python 3 software script to search through the transcripts of my YouTube watch history.
 ---
 
 <link rel="stylesheet" href="{{ "/assets/css/highlight.css" | relative_url }}">
 
 The other day I was discussing something with a friend and I remembered a video essay I had watched which referenced a play by Samuel Beckett. Unfortunately I couldn't remember what the video was, but I did remember the description of the referenced work.
 
-In order to find the original video, I wrote the following short Python 3 [[software]] script to search through the transcripts of my YouTube watch history:
+In order to find the original video, I wrote the following short Python 3 software script to search through the transcripts of my YouTube watch history:
 
 ```py
 from youtube_transcript_api import YouTubeTranscriptApi

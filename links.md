@@ -3,6 +3,7 @@ layout: page
 title: Links
 date: '2021-08-28'
 last_modified_at: '2022-02-21'
+note: true
 ---
 
 I store most of my links in my Zotero library at <https://www.zotero.org/wcerfgba/library>. This is where you can find papers, articles, podcasts, and other resources I stumble across. I rely on my own set of tags to organise my collection, but I still collect the automatic tags. I recommend hiding the automatic tags to help you navigate my collection. Previously I made use of folders/sub-collections but I find tags are more flexible.

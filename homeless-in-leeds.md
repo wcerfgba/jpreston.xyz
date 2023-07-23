@@ -3,9 +3,14 @@ layout: page
 title: Homeless in Leeds
 date: '2022-04-12'
 last_modified_at: '2022-04-21'
+note: true
+excerpt: |
+  Some notes on homelessness, marginalisation, and social policy.
+
+  Yesterday I was in Leeds visiting some colleagues. On the way to the campus, I was stopped by a homeless man who needed help. They showed me an open wound on their leg and explained that they have diabetes, and that this can flare up and cause ulcers, which is what had happened.
 ---
 
-Some [[notes]] on homelessness, marginalisation, and social policy.
+Some notes on homelessness, marginalisation, and social policy.
 
 Yesterday I was in Leeds visiting some colleagues. On the way to the campus, I was stopped by a homeless man who needed help. They showed me an open wound on their leg and explained that they have diabetes, and that this can flare up and cause ulcers, which is what had happened.
 

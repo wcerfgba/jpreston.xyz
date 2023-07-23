@@ -3,9 +3,10 @@ layout: page
 title: Bolognese
 date: '2021-08-12'
 last_modified_at: '2021-08-12'
+recipe: true
 ---
 
-My [[recipe]] for vegan bolognese is quite simple and very flexible. Here are some of my top tips.
+My recipe for vegan bolognese is quite simple and very flexible. Here are some of my top tips.
 
 For a typical bolognese, I use:
 

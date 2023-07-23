@@ -3,16 +3,17 @@ layout: page
 title: Cream Spinach Pasta
 date: '2020-03-14'
 last_modified_at: '2020-03-14'
+recipe: true
 ---
 
-My partner came up with this [[recipe]] for a rich pasta sauce incorporating minced spinach.
+My partner came up with this recipe for a rich pasta sauce incorporating minced spinach.
 
 * ~12oz fresh spinach
 * 2-3 cloves garlic, minced
-* 1/2 - 2/3 cup cream [^1]
+* 1/2 - 2/3 cup cream[^1]
 * pasta, prepared while cooking sauce -- I like long pasta like tagliatelle or linguine for this dish.
 
-Wilt down whole spinach in pan. Once spinach is sufficiently wilted down into a dense mass, transfer to a chopping board and mince finely. Return to pan on low heat, add garlic and cream. Incorporate the cream into the spinach to create a rich sauce. Cook on low heat -- barely simmering -- for a few minutes [^2]. Add to pasta, mix to coat, and serve.
+Wilt down whole spinach in pan. Once spinach is sufficiently wilted down into a dense mass, transfer to a chopping board and mince finely. Return to pan on low heat, add garlic and cream. Incorporate the cream into the spinach to create a rich sauce. Cook on low heat -- barely simmering -- for a few minutes[^2]. Add to pasta, mix to coat, and serve.
 
 [^1]: I use half of a 300ml tub, common in UK supermarkets, and that lets me make two portions of sauce, good to serve 2-3 people.
 

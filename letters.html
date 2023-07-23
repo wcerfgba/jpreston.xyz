@@ -1,0 +1,66 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #fffff8;
+    }
+
+    .container {
+      margin: 2rem auto;
+      max-width: 45rem;
+    }
+
+    .items-container {
+      margin: 1rem;
+    }
+
+    .item {
+      padding: 1rem;
+      margin: 3rem 0;
+      background: #ffe;
+      display: block;
+      text-decoration: none;
+      background-image: url(/assets/img/paper.jpg);
+      border: 1px solid #ffe;
+      border-image: url(/assets/img/paper_border.png) 31 / 20px / 19px round;
+    }
+
+    .item .meta {
+      margin: 0 0 0.5rem 0;
+      text-decoration: underline;
+    }
+
+    .item .excerpt {
+      margin-bottom: 0;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <a href="/" style="margin: 1rem;">&lt; back</a>
+      <div class="items-container">
+        {%- assign items = site.pages | sort: 'date' | reverse -%}
+        {%- for item in items -%}
+          {%- if item.letter_to -%}
+            <a class="item" href="{{ item.url }}">
+              <p class="meta">To: {{ item.letter_to }}</p>
+              <p class="meta">Subject: {{ item.title }}</p>
+              <p class="meta">Date: {{ item.date }}</p>
+              {%- if item.excerpt -%}
+                <div class="excerpt">{{ item.excerpt | markdownify }}</div>
+                <p style="margin-bottom: 0;">&hellip;</p>
+              {%- endif -%}
+            </a>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </body>
+</html>

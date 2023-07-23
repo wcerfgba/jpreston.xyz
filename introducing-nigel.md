@@ -3,9 +3,15 @@ layout: page
 title: Introducing Nigel
 date: '2022-08-27'
 last_modified_at: '2022-09-24'
+gallery_img: /assets/img/introducing_nigel_1.png
+code: true
+excerpt: |
+  This short presentation / essay describes a novel hypermedia / artistic software invention. You can watch the video here (locally hosted) or [on YouTube](https://www.youtube.com/watch?v=0Q3T_oqrBjk), and there is a transcript with screenshots below.
+
+  ![](assets/img/introducing_nigel_1.png)
 ---
 
-This short presentation / [[essay]] describes a novel hypermedia / [[art]]istic [[software]] [[invention]]. You can watch the video here (locally hosted) or [on YouTube](https://www.youtube.com/watch?v=0Q3T_oqrBjk), and there is a transcript with screenshots below.
+This short presentation / essay describes a novel hypermedia / artistic software invention. You can watch the video here (locally hosted) or [on YouTube](https://www.youtube.com/watch?v=0Q3T_oqrBjk), and there is a transcript with screenshots below.
 
 <video controls>
   <source src="assets/video/introducing_nigel.mp4" type="video/mp4">

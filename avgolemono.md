@@ -3,12 +3,13 @@ layout: page
 title: Avgolemono
 date: '2020-03-14'
 last_modified_at: '2020-03-14'
+recipe: true
 ---
 
-A [[recipe]], originally from Victoria Granof at Epicurious [^1].
+Originally from Victoria Granof at Epicurious[^1].
 
 * 2 cups broth
-* 2/3 cup uncooked orzo (or rice or pastina) [^2]
+* 2/3 cup uncooked orzo (or rice or pastina)[^2]
 * Salt and pepper to taste
 * 2 eggs
 * 2 tablespoons lemon juice

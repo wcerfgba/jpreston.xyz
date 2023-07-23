@@ -3,9 +3,12 @@ layout: page
 title: The WOPRS Organization Model
 date: '2021-09-02'
 last_modified_at: '2021-09-23'
+note: true
+excerpt: |
+  This living essay presents my thoughts on the nature of organizations: the factors that make up what an 'organization' is, how those factors interrelate, and what it means for these factors to be well-designed. I define the 'WOPRS' model, a concrete framework for defining all relevant knowledge for maintaining an organization. I discuss some of the meta-processes an organization may carry out, and provide a minimal blueprint for developing new and existing organizations. In an appendix, I show how the factors I define in the WOPRS model relate to factors and components in other theories of the organization, such as the McKinsey 7S model and the Burke-Litwin model.
 ---
 
-This living [[essay]] presents my thoughts on the nature of organizations: the factors that make up what an 'organization' is, how those factors interrelate, and what it means for these factors to be well-designed. I define the 'WOPRS' model, a concrete framework for defining all relevant knowledge for maintaining an organization. I discuss some of the meta-processes an organization may carry out, and provide a minimal blueprint for developing new and existing organizations. In an appendix, I show how the factors I define in the WOPRS model relate to factors and components in other theories of the organization, such as the McKinsey 7S model and the Burke-Litwin model.
+This living essay presents my thoughts on the nature of organizations: the factors that make up what an 'organization' is, how those factors interrelate, and what it means for these factors to be well-designed. I define the 'WOPRS' model, a concrete framework for defining all relevant knowledge for maintaining an organization. I discuss some of the meta-processes an organization may carry out, and provide a minimal blueprint for developing new and existing organizations. In an appendix, I show how the factors I define in the WOPRS model relate to factors and components in other theories of the organization, such as the McKinsey 7S model and the Burke-Litwin model.
 
 * Table of Contents
 {:toc}

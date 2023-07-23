@@ -3,6 +3,11 @@ layout: page
 title: Written evidence for the Home Affairs Committee's Inquiry into Drug Policy
 date: '2022-03-23'
 last_modified_at: '2022-04-21'
+letter_to: UK Parliament's Home Affairs Committee
+excerpt: |
+  I am a citizen of the United Kingdom with an interest in transparent and democratic policy-making. This submission represents my personal views and is independent of any organisational affiliations.
+
+  The policy-making process is complex, and requires balancing the perspectives of many different groups in order to develop policies which are successful in achieving their stated objectives. Drugs policy is particularly fraught in this regard, not least because of the moral dimensions around drug use. In an attempt to appeal to the sensibilities of the general public, policy-makers may pursue policies which are ineffective in combating, or even amplify the harms caused by, drug production, distribution, and use, rather than adopting best practice interventions with strong evidence bases. In order to ensure that future drug policy in the UK is truly effective, it is necessary to evaluate the state of current policy, and to determine how policy-makers can craft narratives which align effective interventions with the moral demands of the public.
 ---
 
 The following [[letter]] was submitted to the UK Parliament's Home Affairs Committee as evidence for their inquiry into drug policy. It was accepted by the Committee and published on their website on April 20th. The inquiry website is available at <https://committees.parliament.uk/work/6534/drugs/publications/>.

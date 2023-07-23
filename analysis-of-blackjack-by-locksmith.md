@@ -3,9 +3,12 @@ layout: page
 title: An Analysis of "Blackjack" by Locksmith
 date: '2020-12-31'
 last_modified_at: '2020-12-31'
+music: true
+excerpt: |
+  "Blackjack" is a jazz-funk banger from Locksmith's sole 1980 album "Unlock the Funk". In my pursuit to create similar music, I've tried to analyse the tune using the help of my DAW, and in this essay I will present some of my findings and the techniques I have used.
 ---
 
-"Blackjack" is a jazz-funk banger from Locksmith's sole 1980 album "Unlock the Funk" [^1]. In my pursuit to create similar [[music]], I've tried to analyse the tune using the help of my DAW, and in this [[essay]] I will present some of my findings and the techniques I have used.
+"Blackjack" is a jazz-funk banger from Locksmith's sole 1980 album "Unlock the Funk"[^1]. In my pursuit to create similar music, I've tried to analyse the tune using the help of my DAW, and in this essay I will present some of my findings and the techniques I have used.
 
 ### Use of a DAW
 

@@ -3,14 +3,16 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jpreston.xyz" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-theme: minima
+#theme: minima
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-seo-tag
 
 whitelist:
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-seo-tag
 
 feed:
   path: "/posts.xml"

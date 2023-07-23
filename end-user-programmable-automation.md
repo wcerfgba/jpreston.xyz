@@ -3,9 +3,13 @@ layout: page
 title: End User Programmable Automation
 date: '2021-08-28'
 last_modified_at: '2021-08-28'
+code: true
+note: true
+excerpt: |
+  We have a lot of software in our lives but it all seems to exist in its own bubbles. Interop is an explicit feature which has to be built in by the programmer, often requiring specific data structures and support from both 'ends' of that interop. For example, if I want my calendar to update my presence in my chat client to 'Busy' when I'm in a meeting, I need to have a 'port' in the chat client to receive a "set presence to busy" command, and I have to change my calendar to send the correct message to the chat client. This is all assuming that this software is open to extension by myself, and that I'm able to comprehend the code, make the changes, and make my own build with this interop included.
 ---
 
-Some [[notes]] on [[software]] interop I've been occasionally mulling over for a while.
+Some notes on software interop I've been occasionally mulling over for a while.
 
 We have a lot of software in our lives but it all seems to exist in its own bubbles. Interop is an explicit feature which has to be built in by the programmer, often requiring specific data structures and support from both 'ends' of that interop. For example, if I want my calendar to update my presence in my chat client to 'Busy' when I'm in a meeting, I need to have a 'port' in the chat client to receive a "set presence to busy" command, and I have to change my calendar to send the correct message to the chat client. This is all assuming that this software is open to extension by myself, and that I'm able to comprehend the code, make the changes, and make my own build with this interop included.
 

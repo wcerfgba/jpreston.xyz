@@ -3,9 +3,10 @@ layout: page
 title: Shakshouka
 date: '2020-03-13'
 last_modified_at: '2020-03-13'
+recipe: true
 ---
 
-[[recipe]] for eggs poached in a spicy tomato sauce.
+A recipe for eggs poached in a spicy tomato sauce.
 
 * 1 onion, diced or sliced
 * passata or chopped tomatoes in sauce

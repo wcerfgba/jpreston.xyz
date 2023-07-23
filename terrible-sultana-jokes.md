@@ -3,9 +3,10 @@ layout: page
 title: Terrible Sultana Jokes
 date: '2021-04-02'
 last_modified_at: '2022-01-03'
+note: true
+excerpt: |
+  Some terrible jokes.
 ---
-
-Some terrible jokes, maybe a [[poem]]?
 
 What is the most jealous fruit? \
 Saltana

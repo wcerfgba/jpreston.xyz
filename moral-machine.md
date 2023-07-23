@@ -3,9 +3,12 @@ layout: page
 title: Moral Machine
 date: '2022-02-21'
 last_modified_at: '2022-02-21'
+note: true
+excerpt: |
+  These are some notes about a video game idea originated by my friend [Elle Sullivan](http://thecreativeperiod.com/elle/index.html). I may never make this as game programming is not my area of expertise, and I imagine it could take a lot of time to create, and so I am documenting my notes here in the hopes that if I never get around to it, someone else may find these ideas inspiring and incorporate them into their own work. 😀
 ---
 
-These are some [[notes]] about a video game idea originated by my friend [Elle Sullivan](http://thecreativeperiod.com/elle/index.html). I may never make this as game programming is not my area of expertise, and I imagine it could take a lot of time to create, and so I am documenting my notes here in the hopes that if I never get around to it, someone else may find these ideas inspiring and incorporate them into their own work. 😀
+These are some notes about a video game idea originated by my friend [Elle Sullivan](http://thecreativeperiod.com/elle/index.html). I may never make this as game programming is not my area of expertise, and I imagine it could take a lot of time to create, and so I am documenting my notes here in the hopes that if I never get around to it, someone else may find these ideas inspiring and incorporate them into their own work. 😀
 
 This game is an exploration of morality and the perceptions of morality. All characters in the game have an implant embedded in their arm which can glow green or red to signify the moral judgement of their actions. The implication of this are that there is an objective morality; actions can be evaluated against this in some way; a central organisation such as a government has engineered such a system; the morality implant is mandatory. There may be further consequences for which the implant is sufficient but not necessary, such as the effect that having the implant has on the capacity and desire for moral reasoning by persons within this universe. Morality implants may also have an amber status to indicate ambivalence; and/or a grey status to indicate unknown moral judgement, or perhaps that the character or people around them is not allowed to know the moral judgement at this time.
 

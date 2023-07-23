@@ -4,9 +4,13 @@ title: Knowledge management and graphs
 date: '2022-03-09'
 last_modified_at: '2022-03-09'
 published: true
+code: true
+note: true
+excerpt: |
+  These are some notes about my journey so far with using graphs for knowledge management, and an idea for a Memex-like universal graph knowledge management system.
 ---
 
-These are some [[notes]] about my journey so far with using [[graphs]] for knowledge management, and an idea for a Memex-like universal graph knowledge management system.
+These are some notes about my journey so far with using graphs for knowledge management, and an idea for a Memex-like universal graph knowledge management system.
 
 ### My knowledge management journey so far
 
