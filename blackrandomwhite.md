@@ -3,7 +3,7 @@ layout: page
 title: BlackRandomWhite
 date: '2009-08-01'
 last_modified_at: '2022-04-24'
-gallery_img: /assets/img/blackrandomwhite_zoom_by_gizmoguy_d26dlsu.png_small.jpg
+gallery_img: /assets/img/blackrandomwhite_zoom_by_gizmoguy_d26dlsu.png
 ---
 
 [![](/assets/img/blackrandomwhite_by_gizmoguy_d26dlie.png)](/assets/img/blackrandomwhite_by_gizmoguy_d26dlie.png)
