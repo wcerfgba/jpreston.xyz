@@ -49,15 +49,18 @@
         {%- assign items = site.pages | sort: 'date' | reverse -%}
         {%- for item in items -%}
           {%- if item.letter_to -%}
-            <a class="item" href="{{ item.url }}">
-              <p class="meta">To: {{ item.letter_to }}</p>
-              <p class="meta">Subject: {{ item.title }}</p>
-              <p class="meta">Date: {{ item.date }}</p>
-              {%- if item.excerpt -%}
-                <div class="excerpt">{{ item.excerpt | markdownify }}</div>
-                <p style="margin-bottom: 0;">&hellip;</p>
-              {%- endif -%}
-            </a>
+            <div class="item">
+              <a href="{{ item.url }}">
+                <p class="meta">To: {{ item.letter_to }}</p>
+                <p class="meta">Subject: {{ item.title }}</p>
+                <p class="meta">Date: {{ item.date }}</p>
+              </a>
+                {%- if item.excerpt -%}
+                  <div class="excerpt">{{ item.excerpt | markdownify }}</div>
+                  <p style="margin-bottom: 0;">&hellip;</p>
+                {%- endif -%}
+              </a>
+            </div>
           {%- endif -%}
         {%- endfor -%}
       </div>
