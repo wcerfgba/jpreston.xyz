@@ -9,7 +9,7 @@ code: true
 
 [![](/radio-leyland-whats-on.png)](https://radioleyland.co.uk/whatson/)
 
-I built this website for my town's radio station, to act as an event listing page for the town. I originally started a newsletter which I intended to distribute online and in print. I asked Radio Leyland if they wanted to be included in the first issue, and they said they were looking for something like this.
+I built this website for my town's radio station, to act as an event listing page for the town. I originally started [a newsletter](/the-leyland-newsletter) which I intended to distribute online and in print. I asked Radio Leyland if they wanted to be included in the first issue, and they said they were looking for something like this.
 
 I designed layout for the listings based on how I wanted it for the print distribution, and then I designed the submission form to be as close in layout as possible to the listings, so that it's easy to see what goes where. The listings include positional, non-semantic content in the form of 'additional details' which can go on the left and right underneath the title, location, and date/time.
 
