@@ -7,5 +7,7 @@
     "latex",
     "plaintext"
   ],
-  "foam.edit.linkReferenceDefinitions": "off"
+  "foam.edit.linkReferenceDefinitions": "off",
+  "foam.openDailyNote.directory": "./",
+  "foam.openDailyNote.titleFormat": "'---\nlayout: page\ntitle: Journal - 'yyyy-mm-dd'\ndate: 'yyyy-mm-dd'\nlast_updated_at: 'yyyy-mm-dd'\nnote: true\npublished: false\n---'",
 }
