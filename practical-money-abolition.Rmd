@@ -9,6 +9,11 @@ economy <- tibble::tribble(
   'Baker A',         10,  'hour',   'time',   'Bakery A',
   'Shop A',           1,  'loaf',   'bread',  'Baker A',
   'Baker A',          1,  '£',      'money',  'Shop A',
+  'Mill A',        1000,  'gram',   'flour',  'Bakery A',
+  'Bakery A',         5,  '£',      'money',  'Mill A',
+  'Mill A',           5,  '£',      'money',  'Miller A',
+  'Miller A',         1,  '£',      'money',  'Shop A',
+  'Shop A',           1,  'loaf',   'bread',  'Miller A',
 )
 
 DiagrammeR::grViz(
@@ -40,7 +45,9 @@ DiagrammeR::grViz(
                             <TR><TD><B>{actor}</B></TD></TR>
           ",
           Map(
-            function (x) { glue:: glue("<TR><TD PORT='{x}'>{x}</TD></TR>") },
+            function (x) {
+              glue:: glue("<TR><TD PORT='{x}'>{x}</TD></TR>")
+            },
             types
           ) %>%
             unlist() %>%
@@ -56,7 +63,12 @@ DiagrammeR::grViz(
       Reduce(glue::glue, .),
     economy %>%
       mutate(
-        graphviz_edge = glue::glue("'{source}':'{type}':e -> '{destination}':'{type}':w")
+        graphviz_edge = glue::glue(
+          "
+            '{source}':'{type}':e -> '{destination}':'{type}':w
+            [label='{quantity} {unit}'];
+          "
+        )
       ) %>%
       `$`('graphviz_edge') %>%
       Reduce(glue::glue, .),
@@ -111,7 +123,15 @@ FindCycles <- function(g) {
     Cycles
 }
 
-FindCycles(money_graph)[[1]]
-
-igraph::E(money_graph)[[FindCycles(money_graph)[[1]]]]$quantity
+money_graph %>%
+  FindCycles() %>%
+  Map(
+    function (x) {
+      list(
+        igraph::E(money_graph)[enexpr(x)],
+        min(igraph::E(money_graph)[enexpr(x)]$quantity)
+      )
+    },
+    .
+  )
 ```
