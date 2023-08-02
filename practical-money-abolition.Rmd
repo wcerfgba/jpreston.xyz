@@ -2,47 +2,69 @@
 library(tidyverse)
 
 economy <- tibble::tribble(
-  ~source,    ~quantity,  ~unit,   ~type,   ~destination,
-  'Bakery A',        10,  'loaf',  'bread', 'Shop A',
-  'Bakery A',        10,  '£',     'money', 'Baker A',
-  'Shop A',           1,  'loaf',  'bread', 'Baker A',
-  'Baker A',          1,  '£',     'money', 'Shop A',
+  ~source,    ~quantity,  ~unit,    ~type,    ~destination,
+  'Bakery A',        10,  'loaf',   'bread',  'Shop A',
+  'Shop A',          10,  '£',      'money',  'Bakery A',
+  'Bakery A',        10,  '£',      'money',  'Baker A',
+  'Baker A',         10,  'hour',   'time',   'Bakery A',
+  'Shop A',           1,  'loaf',   'bread',  'Baker A',
+  'Baker A',          1,  '£',      'money',  'Shop A',
 )
 
-economy %>%
-  mutate(
-    graphviz_node = glue::glue(
-      "
-      '{source}' [
-        label =<<TABLE BORDER='0' CELLBORDER='1' CELLSPACING='0'>
-                        <TR><TD><B>{source}</B></TD></TR>
-                        <TR><TD PORT='bread'>bread</TD></TR>
-                        <TR><TD PORT='money'>money</TD></TR>
-                    </TABLE>>
-        shape = 'none'
-      ];
-      "
-    )
+DiagrammeR::grViz(
+  paste0(
+    "
+      digraph {
+          node [shape=record];
+          rankdir=LR;
+    ",
+    economy %>%
+      pivot_longer(
+        cols = c(source, destination),
+        values_to = 'actor',
+        names_to = 'direction'
+      ) %>%
+      group_by(actor) %>%
+      summarise(
+        types = type %>%
+                  unique() %>%
+                  sort() %>%
+                  list()
+      ) %>%
+      rowwise() %>%
+      mutate(
+        graphviz_node = glue::glue(
+          "
+          '{actor}' [
+            label=<<TABLE BORDER='0' CELLBORDER='1' CELLSPACING='0'>
+                            <TR><TD><B>{actor}</B></TD></TR>
+          ",
+          Map(
+            function (x) { glue:: glue("<TR><TD PORT='{x}'>{x}</TD></TR>") },
+            types
+          ) %>%
+            unlist() %>%
+            Reduce(glue::glue, .),
+          "
+                        </TABLE>>
+            shape = 'none'
+          ];
+          "
+        )
+      ) %>%
+      `$`('graphviz_node') %>%
+      Reduce(glue::glue, .),
+    economy %>%
+      mutate(
+        graphviz_edge = glue::glue("'{source}':'{type}':e -> '{destination}':'{type}':w")
+      ) %>%
+      `$`('graphviz_edge') %>%
+      Reduce(glue::glue, .),
+    "
+      }
+    "
   )
-
-DiagrammeR::grViz("
-digraph {
-    node [shape=record];
-    rankdir=LR;
-    'Bakery A' [
-      label =<<TABLE BORDER='0' CELLBORDER='1' CELLSPACING='0'>
-                      <TR><TD><B>Baker A</B></TD></TR>
-                      <TR><TD PORT='bread'>bread</TD></TR>
-                      <TR><TD PORT='money'>money</TD></TR>
-                  </TABLE>>
-      shape = 'none'
-    ];
-    'Shop A' [label='<bread> bread|<money> money'];
-    'Baker A' [label='<bread> bread|<money> money'];
-    'Bakery A':bread -> 'Shop A':bread;
-    'Shop A':bread -> 'Baker A':bread;
-}
-")
+)
 
 
 
