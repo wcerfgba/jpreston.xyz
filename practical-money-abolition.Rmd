@@ -1,0 +1,84 @@
+```{r}
+library(tidyverse)
+
+economy <- tibble::tribble(
+  ~source,    ~quantity,  ~unit,   ~type,   ~destination,
+  'Bakery A',        10,  'loaf',  'bread', 'Shop A',
+  'Bakery A',        10,  '£',     'money', 'Baker A',
+  'Shop A',           1,  'loaf',  'bread', 'Baker A',
+  'Baker A',          1,  '£',     'money', 'Shop A',
+)
+
+economy %>%
+  mutate(
+    graphviz_node = glue::glue(
+      "
+      '{source}' [
+        label =<<TABLE BORDER='0' CELLBORDER='1' CELLSPACING='0'>
+                        <TR><TD><B>{source}</B></TD></TR>
+                        <TR><TD PORT='bread'>bread</TD></TR>
+                        <TR><TD PORT='money'>money</TD></TR>
+                    </TABLE>>
+        shape = 'none'
+      ];
+      "
+    )
+  )
+
+DiagrammeR::grViz("
+digraph {
+    node [shape=record];
+    rankdir=LR;
+    'Bakery A' [
+      label =<<TABLE BORDER='0' CELLBORDER='1' CELLSPACING='0'>
+                      <TR><TD><B>Baker A</B></TD></TR>
+                      <TR><TD PORT='bread'>bread</TD></TR>
+                      <TR><TD PORT='money'>money</TD></TR>
+                  </TABLE>>
+      shape = 'none'
+    ];
+    'Shop A' [label='<bread> bread|<money> money'];
+    'Baker A' [label='<bread> bread|<money> money'];
+    'Bakery A':bread -> 'Shop A':bread;
+    'Shop A':bread -> 'Baker A':bread;
+}
+")
+
+
+
+
+
+# igraph stuff
+
+flows <- economy %>%
+  mutate(
+    source = paste(source, '-', type),
+    destination = paste(destination, '-', type)
+  ) %>%
+  select(
+    !type
+  )
+
+nodes <- c(flows$source, flows$destination) %>% unique()
+
+flows <- flows %>%
+  mutate(
+    source_id = match(source, nodes),
+    destination_id = match(destination, nodes)
+  )
+
+igraph::make_empty_graph() %>%
+  igraph::add_vertices(
+    length(nodes),
+    name = nodes
+  ) %>%
+  igraph::add_edges(
+    flows[, c('source_id', 'destination_id')] %>%
+        as.matrix() %>%
+        t() %>%
+        as.vector(),
+      quantity = flows$quantity,
+      unit = flows$unit
+  ) %>%
+  plot()
+```
