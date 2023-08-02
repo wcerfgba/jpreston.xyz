@@ -66,41 +66,52 @@ DiagrammeR::grViz(
   )
 )
 
-
-
-
-
-# igraph stuff
-
-flows <- economy %>%
-  mutate(
-    source = paste(source, '-', type),
-    destination = paste(destination, '-', type)
-  ) %>%
-  select(
-    !type
+money_flows <- economy %>%
+  filter(
+    type == 'money'
   )
 
-nodes <- c(flows$source, flows$destination) %>% unique()
+money_nodes <- c(money_flows$source, money_flows$destination) %>% unique()
 
-flows <- flows %>%
+money_flows <- money_flows %>%
   mutate(
-    source_id = match(source, nodes),
-    destination_id = match(destination, nodes)
+    source_id = match(source, money_nodes),
+    destination_id = match(destination, money_nodes)
   )
 
-igraph::make_empty_graph() %>%
+money_graph <- igraph::make_empty_graph() %>%
   igraph::add_vertices(
-    length(nodes),
-    name = nodes
+    length(money_nodes),
+    name = money_nodes
   ) %>%
   igraph::add_edges(
-    flows[, c('source_id', 'destination_id')] %>%
+    money_flows[, c('source_id', 'destination_id')] %>%
         as.matrix() %>%
         t() %>%
         as.vector(),
-      quantity = flows$quantity,
-      unit = flows$unit
-  ) %>%
-  plot()
+      quantity = money_flows$quantity
+  )
+
+plot(money_graph)
+
+# Adapted from <https://stackoverflow.com/a/55094319>
+FindCycles <- function(g) {
+    Cycles = NULL
+    for(v1 in igraph::V(g)) {
+        if(igraph::degree(g, v1, mode="in") == 0) { next }
+        GoodNeighbors = igraph::neighbors(g, v1, mode="out")
+        GoodNeighbors = GoodNeighbors[GoodNeighbors > v1]
+        for(v2 in GoodNeighbors) {
+          TempCyc = lapply(igraph::all_simple_paths(g, v2,v1, mode="out"), function(p) c(v1,p))
+          TempCyc = TempCyc[which(sapply(TempCyc, length) > 3)]
+          TempCyc = TempCyc[sapply(TempCyc, min) == sapply(TempCyc, `[`, 1)]
+          Cycles  = c(Cycles, TempCyc)
+        }
+    }
+    Cycles
+}
+
+FindCycles(money_graph)[[1]]
+
+igraph::E(money_graph)[[FindCycles(money_graph)[[1]]]]$quantity
 ```
