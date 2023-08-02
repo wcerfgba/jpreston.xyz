@@ -1,3 +1,14 @@
+
+* The economy is made of flows of materials
+* Money replaces barter
+* Why did people barter? Lack of trust
+* People trust money instead of each other
+* Money is alienating
+* Money provides choice at the expense of relationships
+* Money is not an essential part of the economy
+* The economy is healthy/sustainable/viable iff the flows of materials meet people's needs
+* What are the benefits of local, participatory, inter-organisational stock and flow modelling?
+
 ```{r}
 library(tidyverse)
 
@@ -12,6 +23,7 @@ economy <- tibble::tribble(
   'Mill A',        1000,  'gram',   'flour',  'Bakery A',
   'Bakery A',         5,  '£',      'money',  'Mill A',
   'Mill A',           5,  '£',      'money',  'Miller A',
+  'Miller A',         5,  'hour',   'time',   'Mill A',
   'Miller A',         1,  '£',      'money',  'Shop A',
   'Shop A',           1,  'loaf',   'bread',  'Miller A',
 )
@@ -20,53 +32,34 @@ DiagrammeR::grViz(
   paste0(
     "
       digraph {
-          node [shape=record];
           rankdir=LR;
     ",
     economy %>%
-      pivot_longer(
-        cols = c(source, destination),
-        values_to = 'actor',
-        names_to = 'direction'
+      filter(
+        type != 'money'
       ) %>%
-      group_by(actor) %>%
-      summarise(
-        types = type %>%
-                  unique() %>%
-                  sort() %>%
-                  list()
-      ) %>%
-      rowwise() %>%
-      mutate(
-        graphviz_node = glue::glue(
-          "
-          '{actor}' [
-            label=<<TABLE BORDER='0' CELLBORDER='1' CELLSPACING='0'>
-                            <TR><TD><B>{actor}</B></TD></TR>
-          ",
-          Map(
-            function (x) {
-              glue:: glue("<TR><TD PORT='{x}'>{x}</TD></TR>")
-            },
-            types
-          ) %>%
-            unlist() %>%
-            Reduce(glue::glue, .),
-          "
-                        </TABLE>>
-            shape = 'none'
-          ];
-          "
-        )
-      ) %>%
-      `$`('graphviz_node') %>%
-      Reduce(glue::glue, .),
-    economy %>%
       mutate(
         graphviz_edge = glue::glue(
           "
-            '{source}':'{type}':e -> '{destination}':'{type}':w
-            [label='{quantity} {unit}'];
+            '{source}' -> '{destination}'
+            [label='{quantity} {unit} {type}'];
+          "
+        )
+      ) %>%
+      `$`('graphviz_edge') %>%
+      Reduce(glue::glue, .),
+    "
+    edge [color=blue];
+    ",
+    economy %>%
+      filter(
+        type == 'money'
+      ) %>%
+      mutate(
+        graphviz_edge = glue::glue(
+          "
+            '{source}' -> '{destination}'
+            [label='{quantity} {unit} {type}'];
           "
         )
       ) %>%
